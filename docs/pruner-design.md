@@ -160,9 +160,9 @@ rates. Each family therefore multiplies by the 5 solar cases and nothing else, e
 | 2 | Regeneration (shield generators, hull repair; relays, nanites, cortexes as combinations) | compensated dominance on shield regen and hull repair, protections as dimensions | solar (5) | 5 |
 | 2 | Anti-missile | compensated dominance on anti-missile strength, rate, range | solar (5) | 5 |
 | 2 | Systems (cargo, bunks, scanners, jammers, capture, expansions) | strict dominance only (layer 0) | none | 0 |
-| 3 | Standard combat weapons | compensated dominance within the case | solar (5) × combat case (6–8) | 30–40 |
+| 3 | Standard combat weapons | compensated dominance within the case | solar (5) × combat case (6) | 30 |
 
-**Total pre-run: 57–67 passes**, per game update, on the user's machine. At today's speeds (power passes take
+**Total pre-run: 57 passes**, per game update, on the user's machine. At today's speeds (power passes take
 20 s–3 min; the others should be seconds, being dominance rather than search) that is a few minutes on 12 cores.
 
 ### 6.1 Solar cases (5)
@@ -180,7 +180,7 @@ The optimizer checks every design against fixed solar conditions; the pruner's c
 A design routed to a solar case is designed for that light. Heat is always taken at least at the bright level,
 except in dark, so a design never overheats when it visits a bright system.
 
-### 6.2 Standard combat weapon cases (6–8)
+### 6.2 Standard combat weapon cases (6)
 
 Within a weapon category, the optimizer's weapon value is reordered only by the hull's agility (through the
 comfortable range) and by the fight length (magazine window, secondary duty, ammo depth, how long sustain runs).
@@ -194,8 +194,6 @@ Fire rate, turret turn and projectile speed are fixed per weapon for every comba
 | nimble-240 | nimble | dedicated, 240 s | normal | standard |
 | civil-slow | slow | non-combat rules (no fire-rate penalty, 50% sustained, all weapons for 2.5 s) | normal | standard (armed traders, freighters, scavengers are common) |
 | civil-nimble | nimble | non-combat rules | normal | standard |
-| disable-slow | slow | dedicated, 240 s | disable | optional (plunderers, boarding flagships) |
-| disable-nimble | nimble | dedicated, 240 s | disable | optional |
 
 Agility bands: dominance must hold at both ends of a band (the range factor is monotonic, so the ends are enough). A
 hull within about ±15% of 110 uses the intersection of both bands' relations (an outfit is dropped only if dropped
@@ -204,10 +202,10 @@ in both).
 ## 7. Pre-run vs on demand
 
 **Pre-run at import** (after each game update), in this order: layer 0, power (5), storage, fuel, engines,
-regeneration, anti-missile (5 each), standard weapons (30–40).
+regeneration, anti-missile (5 each), standard weapons (30).
 
 **On demand, the first time a request needs it, then cached:**
-- weapon goals: disable (if not pre-run), destroy, capture-intact, non-lethal;
+- weapon goals: disable (plunderers, boarding flagships; slow and nimble), destroy, capture-intact, non-lethal;
 - fighters and drones (fighter rules, tiny slots);
 - capture targets; fights per restock other than 2;
 - new fight lengths (burst, siege, chains);
@@ -270,7 +268,7 @@ version invalidates only what it changes.
 
 ## 12. Open questions
 
-1. Whether to pre-run the two `disable` weapon cases (6 vs 8 combat cases).
+1. ~~Whether to pre-run the two `disable` weapon cases~~ Decided: 6 cases; disable is on demand.
 2. The reviewed tier table: every in-play attribute in tier 1, 2 or 3, per family (to draft with the optimizer
    session).
 3. Load grids and reference loads per family: the power grid exists; engines and weapons need theirs.
