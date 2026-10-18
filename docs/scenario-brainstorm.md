@@ -183,8 +183,9 @@ step) · speedrun (best design before a story point) · arena duel vs a named hu
 government · siege vs station defences · faction-tech builds (Wanderer, Hai, Pug, Coalition/Heliarch, Korath
 territory, Remnant space) · human-tech purist / one-race showcase · source- and government-limited availability ·
 Quarg hunting · max cargo with no weapons · max jump range · max bunks · immobile regen fortress · minimum mass /
-heat / energy ships · zero-crew automaton · superheavy hulls · unique-only stress test · fleet repair tender (note:
-the game has no ally repair beyond fuel transfer, so this one probably isn't real).
+heat / energy ships · zero-crew automaton · superheavy hulls · unique-only stress test · fleet repair tender (not real: boarding a disabled
+ally un-disables it and transfers jump fuel with no outfits needed, and the only ally healing is a carrier repairing
+its carried fighters/drones with spare regen; merged into "rescue/refuel tender" and "carrier as repair base").
 
 ## Added in the optimizer session's reply to draft 1 (112-155)
 
@@ -342,3 +343,37 @@ player) cost nothing.
    pilot axis, carriers and fleets, refit and upgrade modes.
 4. Safety net: polish re-tries the best dropped outfits; CLI reports what was pruned; `--no-prune`.
 5. Keep the weapon reference set independent of pruning.
+
+## Strict dominance: attribute directions (draft, from the optimizer session)
+
+A beats B only if A ≥ B on every higher-is-better attribute, ≤ on every lower-is-better one, no worse on cost, mass
+and every capacity used, and every other condition below holds. Any attribute not listed blocks, and is reported as
+"blocked by unknown attribute" so it can be classified when the game adds one.
+
+- **Higher is better:** outfit space, cargo space, weapon capacity, engine capacity (negative = use, so less negative
+  is better); energy capacity, energy generation, solar collection, heat dissipation, cooling, active cooling; thrust,
+  turn, reverse thrust; shield generation, hull repair rate, every protection and resistance; fuel capacity, ramscoop,
+  fuel generation; jamming, scan interference, scan opacity, scan powers and efficiencies; capture attack and defense,
+  bunks, crew equivalent; inertia reduction, drag reduction, heat capacity; weapons: damage per second of each type,
+  turret turn, velocity, lifetime/range, anti-missile, tractor beam, homing.
+- **Lower is better:** cost, mass; heat generation, energy/fuel consumption, cooling energy, cooling inefficiency;
+  thrusting/turning/reverse/afterburner energy, heat and fuel; shield and hull energy and heat, solar heat; shield
+  delay, repair delay, disabled recovery time, threshold percentage; illegal, atrocity; weapons: inaccuracy, reload,
+  firing energy/heat/fuel, ammo per shot; drag.
+- **Not obvious, decide or block:**
+  - mass: lower is better, except that it is also a heat buffer and resists hit force. Strict option: a lighter A
+    only beats B if A also has at least B's heat capacity.
+  - required crew: block, unless neither outfit has capture stats and the ship is not an automaton.
+  - hit force: a class key (push + vs pull −, never compared across signs), and blocked outside the push/pull lens.
+  - firing force (recoil), self destruct, cloak: block.
+  - blast radius: block unless the weapon is "safe".
+  - piercing and hull damage: owned by the goal lens (good for destroy/normal, bad for disable, capture-intact,
+    non-lethal).
+- **Presence tags: A with a tag never beats B without it** (a request can forbid the tag): afterburner, cloak, illegal,
+  solar, ramscoop, torch, missile, fuel weapon, anti-missile, jump drive, hyperdrive, scram drive, damage weapon,
+  instantaneous, shield disruption, push/pull weapon, tractor beam. Safe rule: equal tag sets.
+- **Class keys (compare only within the same value):** category (Guns vs Turrets vs Secondary Weapons; Ammunition is
+  a pair item), ammo used (or count the ammo outfit in the cost), copy limit (a copy-limited A never beats an unlimited
+  B), availability tier (A no harder to get than B; check the user's availability at load), special slots (spinal,
+  anchors, bay types: capacities, never interchangeable).
+- **Fit before dominance:** A must use no more of *every* capacity B uses (so it fits wherever B fits).
