@@ -200,10 +200,15 @@ def obsolescence_report(verdicts, availability):
             used = "ladder | — | —"
         banned = f"+{v.penalty} at {v.penalty_at[0]:g} E, {v.penalty_at[1]:g} H" if v.penalty else "—"
         lines.append(f"| {v.name} | {v.family} | {avail} | {used} | {banned} |")
-    lines += ["", "## Obsolete", "", "| Outfit | Family | Why |", "|---|---|---|"]
+    lines += ["", "## Obsolete", "",
+              "Obsolete *for power and cooling*. Outfits with other stats are flagged: they may still be worth",
+              "keeping for those (a big battery, ion resistance...). Dominance is never claimed between outfits",
+              "that differ on such stats, or where only one depends on sunlight.", "",
+              "| Outfit | Family | Why | Other stats |", "|---|---|---|---|"]
     for v in sorted((v for v in singles if v.status != "kept"),
                     key=lambda v: (FAMILIES.index(v.family), STATUSES.index(v.status), v.name)):
-        lines.append(f"| {v.name} | {v.family} | {v.status}{': ' + v.reason if v.reason else ''} |")
+        extras = ", ".join(f"{k} {val:g}" if isinstance(val, float) else f"{k} {val}" for k, val in v.extras.items())
+        lines.append(f"| {v.name} | {v.family} | {v.status}{': ' + v.reason if v.reason else ''} | {extras} |")
     return "\n".join(lines) + "\n"
 
 
@@ -223,7 +228,7 @@ def main():
     full_plant = PowerPlant.from_game(outfits, availability)
     cooling, items, excluded = full_plant.passive, full_plant.generator_items, full_plant.excluded
     energy = EnergyLadder(items, cooling)
-    verdicts, plant = analyse(full_plant, availability, OBSOLESCENCE_ENERGY, OBSOLESCENCE_HEAT)
+    verdicts, plant = analyse(full_plant, availability, OBSOLESCENCE_ENERGY, OBSOLESCENCE_HEAT, outfits)
     passive_only = plant.without(c.name for c in plant.active_items)
 
     args.out.mkdir(parents=True, exist_ok=True)
@@ -233,6 +238,9 @@ def main():
     (args.out / "obsolescence.md").write_text(obsolescence_report(verdicts, availability), encoding="utf-8")
     core = {family: sorted(v.name for v in verdicts.values() if v.family == family and v.status == "kept")
             for family in FAMILIES}
+    core["obsolete for power, but has other stats"] = {
+        v.name: v.extras for v in sorted(verdicts.values(), key=lambda v: v.name)
+        if v.status != "kept" and v.extras and " + " not in v.name}
     (args.out / "core_outfits.json").write_text(json.dumps(core, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote cooling_ladder.md, energy_ladder.md, power_plant.md, obsolescence.md and core_outfits.json to {args.out}")
 
