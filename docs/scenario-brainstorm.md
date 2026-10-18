@@ -1,6 +1,7 @@
-# Design scenario brainstorm (notes, draft 1)
+# Design scenario brainstorm (notes, draft 2)
 
-Working notes for choosing obsolescence passes. Tiers: **LC** likely/common, **LU** likely/uncommon,
+Working notes for choosing obsolescence passes. Draft 2 merges the optimizer session's independent list (135
+scenarios, `aside/design-scenarios.md` in the optimizer repo, commit 20f0953): together about 165 distinct scenarios. Tiers: **LC** likely/common, **LU** likely/uncommon,
 **UU** unlikely/uncommon. "Drives" says what changes which outfits matter. Sources: the legacy workbook's tabs
 (Damage Weapons, Utility Weapons: shield disabling / moving / slowing / shield disruption / tractor beam / heat damage
 / ion, Anti-Missile, Jammers, Scanners, Fuel, Cargo & Outfit Expansions, Batteries, Cooling, Shields, Drives), the
@@ -167,3 +168,93 @@ discussions (Steam forums: boarding flagships, pirate-hunting loops).
 | 109 | Very heavy hull | LU | mass makes agility and heat capacity dominate |
 | 110 | Shortlist of hulls compared | LC | prune per hull band, not per hull |
 | 111 | Fleet of complementary hulls | UU | beyond single-ship design |
+
+## Added from the optimizer session's list (not in draft 1)
+
+Flotsam farmer of a specific drop (e.g. Antimatter Power Cell) · gas-giant lander (gaslining) · research vessel
+(Research Laboratory) · decoy tank (Decoy Plating) · self-destruct decoy · Holovid / Phantom Pallet trickster ·
+anti-cloak hunter · scrambler (make targets miss) · beam boat (instantaneous only) · missile-only ship · mixed
+primaries + secondaries (80% secondary window) · gravity anchor (push + pull) · disruptor + hull combo · spinal-mount
+warship · cloaked transport · escort-carrier hybrid · carrier + its fighters designed together · fleet line ship
+flown by AI · hero all-rounder (warship + freighter + escort) · stock-loadout upgrade · upgrade path (next affordable
+step) · speedrun (best design before a story point) · arena duel vs a named hull · counter-build vs a named
+government · siege vs station defences · faction-tech builds (Wanderer, Hai, Pug, Coalition/Heliarch, Korath
+territory, Remnant space) · human-tech purist / one-race showcase · source- and government-limited availability ·
+Quarg hunting · max cargo with no weapons · max jump range · max bunks · immobile regen fortress · minimum mass /
+heat / energy ships · zero-crew automaton · superheavy hulls · unique-only stress test · fleet repair tender (note:
+the game has no ally repair beyond fuel transfer, so this one probably isn't real).
+
+## Axes (from both lists)
+
+A scenario = an archetype (~45-60) with a setting on each axis:
+
+| Axis | Values | Closed? |
+|---|---|---|
+| Engagement | none, burst ~30 s, escort 90 s, dedicated 240 s, siege ~600 s | closed |
+| Light | dark, dim, median, bright, star-hugging | closed |
+| Enemy profile | generic, shield-heavy, hull-heavy, missile swarm, fighter swarm, heat, ion/energy drain, slowing, push/pull, disruption, cloaked | closed (~11) |
+| Pilot | hero, AI escort, carried fighter, drone | closed |
+| Availability | per user (licences x governments x sources); tiers sold / taken / all | open; tiers closed |
+| Money | unlimited, credit cap | open |
+| Hull band | agility band, mass band, slot shape (guns vs turrets, spinal, bays, anchors) | bands closed |
+| Mode | new design, refit (installed fixed), partial refit, upgrade step | closed |
+
+## Reality check: which lenses have outfits in play
+
+Counted in the current in-play list (`data/outfits-in-play.md`):
+
+| Stat | In-play outfits | | Stat | In-play outfits |
+|---|---|---|---|---|
+| heat damage | 18 | | capture attack | 17 |
+| ion / scrambling damage | 10 / 10 | | capture defense | 22 |
+| slowing damage | 6 | | anti-missile | 13 |
+| burn damage | 4 | | tactical / cargo / outfit scan | 9 / 7 / 5 |
+| disruption damage | 3 | | asteroid scan / minable damage | 8 / 7 |
+| corrosion / fuel damage | 2 / 2 | | radar / optical jamming | 5 / 4 |
+| energy damage | 1 | | scan interference | 5 |
+| discharge, leak, relative damage | **0** | | shield protection | 5 |
+| hit force (push/pull) | 60 | | ion protection | 2 |
+| piercing | 10 | | heat protection, cloak | **0** |
+| blast radius | 15 | | tractor beam | 2 |
+
+So lenses should be built from the data: a lens gets a pass only if at least two in-play outfits carry its stat (a
+lone outfit is kept anyway), and empty lenses (discharge, leak, relative damage, cloak, heat protection for this
+player) cost nothing.
+
+## Ramifications
+
+### For the pruner (sheet calc)
+
+1. **At import: strict dominance over every attribute.** The user's top priority. A is dropped only if some B is at
+   least as good on *every* attribute A has (direction-aware: more thrust is better, more mass, cost, heat, energy
+   draw is worse), strictly better on one, no more restricted in copies or availability tier, and the same kind of
+   outfit (same slot type, ammo, linked outfits). Unknown-direction attributes block. Because it ignores lenses, it
+   is valid for every scenario above, including credit caps (cost is an attribute). This needs a table of every
+   attribute's direction; unknown ones are listed so they can be classified.
+2. **Everything beyond that is relations, not lists.** Axes multiply to tens of thousands of shapes, so the smart
+   passes store "A is beaten by B (or this set), valid over this region of the axes, replacement from tier T". A
+   request becomes a set filter.
+3. **Wider value vectors.** Each workbook effect sheet is a value axis (heat, ion, scrambling, slowing, disruption,
+   burn, corrosion, fuel, energy damage, push/pull, piercing, blast, anti-missile, tractor, minable damage), plus
+   protections, jamming, scanning, capture, bunks, cargo. Dominance must hold on every axis any lens in the region
+   values.
+4. **Enemy profiles are lenses** that reweight damage axes. Splitting weapons by effect, as the workbook does, maps
+   directly.
+5. **Power stays as it is, re-aligned** to the optimizer's light bands and engagement lengths (burst and siege make
+   batteries a real family).
+6. **Hull facts as bands** (agility, mass, slot shape). Exact capacities stay with the optimizer's own filter.
+7. **Pairs and limits:** launchers + ammo + racks, reactors + overclockers, solar battery + cells; copy-limited
+   outfits; small x2 vs large x1.
+8. **Refit modes:** outfits already installed are never pruned.
+9. **Hand to Hand outfits are in scope** (capture attack/defense) for boarding scenarios.
+10. **Report the front size** per family and region; a front of 1 is a warning.
+
+### For the optimizer
+
+1. Map a request onto the closed axes (a shape key); open-ended fields narrow at run time and never prune.
+2. Apply relations: drop A only if its replacement is available to this user.
+3. New features most scenarios need: credit cap and cost scoring, enemy profiles, effect-damage scoring, Hand to Hand
+   outfits in the pool, bunks/mining/smuggling/scanning metrics, light as a request field, burst and siege lengths,
+   pilot axis, carriers and fleets, refit and upgrade modes.
+4. Safety net: polish re-tries the best dropped outfits; CLI reports what was pruned; `--no-prune`.
+5. Keep the weapon reference set independent of pruning.
