@@ -4,7 +4,8 @@ The pruner works out, once per game update, which outfits the optimizer can safe
 It writes its results as **relations** ("A is beaten by B under these conditions"), and the optimizer applies them to
 each request. This document is the full design; nothing beyond the power passes is built yet.
 
-Background: `docs/passes.md` (families and independence), `docs/scenario-brainstorm.md` (about 190 design scenarios,
+Background: `docs/tier-table.md` (how every attribute is treated), `docs/passes.md` (families and independence),
+`docs/scenario-brainstorm.md` (about 190 design scenarios,
 the attribute directions and zero-value rulings, worked out with the optimizer session).
 
 ## 1. Principles
