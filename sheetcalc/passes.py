@@ -20,7 +20,7 @@ from .gamedata import DEFAULT_DATA_DIR, load_outfits
 from .ladders import generators, passive_coolers
 from .obsolescence import analyse_items
 from .power import active_coolers
-from .settings import OBSOLESCENCE_ENERGY, OBSOLESCENCE_HEAT, SOLAR_SCENARIOS
+from .settings import OBSOLESCENCE_ENERGY, OBSOLESCENCE_HEAT, REFERENCE_LOADS, SOLAR_SCENARIOS
 
 # Availability tiers, from easiest to hardest to get. A tier's pool includes every easier tier.
 TIERS = {
@@ -62,7 +62,7 @@ def run_power_pass(solar, tier, energies=OBSOLESCENCE_ENERGY, heats=OBSOLESCENCE
     start = time.time()
     outfits, availability = _DATA["outfits"], pool(_DATA["availability"], tier)
     scenario = SOLAR_SCENARIOS[solar]
-    verdicts, _ = analyse_items(passive_coolers(outfits, availability), generators(outfits, availability, scenario)[0],
+    verdicts, plant = analyse_items(passive_coolers(outfits, availability), generators(outfits, availability, scenario)[0],
                                 active_coolers(outfits, availability), availability, energies, heats, outfits,
                                 heat_fraction=scenario.heat_fraction)
     singles = [v for v in verdicts.values() if " + " not in v.name or v.status == "kept"]
@@ -72,6 +72,8 @@ def run_power_pass(solar, tier, energies=OBSOLESCENCE_ENERGY, heats=OBSOLESCENCE
         "dropped": {v.name: {"family": v.family, "status": v.status, "reason": v.reason, "other stats": v.extras}
                     for v in sorted(singles, key=lambda v: v.name) if v.status != "kept"},
         "if banned": {v.name: v.penalty for v in singles if v.status == "kept" and v.penalty},
+        # Space per energy/s and per heat/s at each reference load, for pricing other families.
+        "prices": {ship: dict(zip(("energy", "heat"), plant.prices(*load))) for ship, load in REFERENCE_LOADS.items()},
     }
     return pass_id(solar, tier), result, time.time() - start
 
@@ -89,6 +91,13 @@ def robust_kept(passes, availability, solar):
         for family, names in result["kept"].items():
             kept[family].update(n for n in names if tier_of(availability[n.split(" + ")[0]]) == tier)
     return {f: sorted(names) for f, names in kept.items()}
+
+
+def price_envelope(passes):
+    """Lowest and highest energy and heat prices over every pass and reference load: the
+    range other families' true costs are judged over."""
+    prices = [p for r in passes.values() for p in r["prices"].values()]
+    return {k: [min(p[k] for p in prices), max(p[k] for p in prices)] for k in ("energy", "heat")}
 
 
 def report(passes, robust, availability, solars, tiers, timings):
@@ -117,6 +126,19 @@ def report(passes, robust, availability, solars, tiers, timings):
     for n in sorted(family_of, key=lambda n: (FAMILIES.index(family_of[n]), n)):
         lines.append(f"| {n} | {family_of[n]} | {tier_of(availability[n.split(' + ')[0]])} | "
                      + " | ".join("✓" if kept(n, s, t) else "" for s, t in columns) + " |")
+    env = price_envelope(passes)
+    lines += ["", "## Prices", "",
+              "Space per energy/s and per heat/s at the reference loads (`REFERENCE_LOADS`), per pass. Other",
+              "families judge true cost over the whole range (the envelope).", "",
+              "| Pass | " + " | ".join(f"{ship} energy | {ship} heat" for ship in REFERENCE_LOADS) + " |",
+              "|---" * (2 * len(REFERENCE_LOADS) + 1) + "|"]
+    for s, t in [(s, t) for s in solars for t in tiers]:
+        r = passes.get(pass_id(s, t))
+        if r:
+            lines.append(f"| {s}/{t} | " + " | ".join(f"{r['prices'][ship]['energy']:.4f} | {r['prices'][ship]['heat']:.5f}"
+                                                   for ship in REFERENCE_LOADS) + " |")
+    lines += ["", f"Envelope: energy {env['energy'][0]:.4f}–{env['energy'][1]:.4f}, "
+              f"heat {env['heat'][0]:.5f}–{env['heat'][1]:.5f} space per unit/s."]
     lines += ["", "## Counts", "", "| Pass | " + " | ".join(FAMILIES) + " | seconds |", "|---" * (len(FAMILIES) + 2) + "|"]
     for s, t in columns:
         r = passes.get(pass_id(s, t))
@@ -165,6 +187,7 @@ def main():
                      "solar": {s: vars(SOLAR_SCENARIOS[s]) for s in solars}, "availability": {t: TIERS[t] for t in tiers}},
         "passes": dict(sorted(passes.items())),
         "robust": robust,
+        "price envelope": price_envelope(passes),
     }
     (args.out / "passes.json").write_text(json.dumps(output, indent=1) + "\n", encoding="utf-8")
     (args.out / "passes.md").write_text(report(passes, robust, availability, solars, tiers, timings), encoding="utf-8")

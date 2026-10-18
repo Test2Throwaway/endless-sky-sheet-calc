@@ -48,3 +48,11 @@ def test_scenarios_follow_the_game_formula():
     assert SOLAR_SCENARIOS["median"].solar_energy < SOLAR_SCENARIOS["bright"].solar_energy < SOLAR_SCENARIOS["max"].solar_energy
     # Legacy convention: the median case counts heat as if in bright sunlight.
     assert SOLAR_SCENARIOS["median"].solar_heat == SOLAR_SCENARIOS["bright"].solar_heat
+
+
+def test_price_envelope_spans_every_pass():
+    results = {passes.pass_id(s, "sold"): _run(s, "sold") for s in ("none", "max")}
+    env = passes.price_envelope(results)
+    every = [p for r in results.values() for p in r["prices"].values()]
+    assert env["energy"] == [min(p["energy"] for p in every), max(p["energy"] for p in every)]
+    assert env["energy"][0] > 0
