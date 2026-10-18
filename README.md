@@ -43,3 +43,14 @@ This writes:
 - `reports/core_outfits.json`: the kept outfits per family, plus obsolete-for-power outfits that have other stats.
 
 A full run takes about 6 minutes, most of it the obsolescence analysis.
+
+## Obsolescence passes
+
+```
+sheetcalc-passes                      # or: python -m sheetcalc.passes; all cases, all cores
+sheetcalc-passes --solar none,median --availability sold --jobs 4
+```
+
+Runs one obsolescence pass per combination of design options (for power: solar case × availability tier) in
+parallel, and writes `reports/passes.json` (for the optimizer) and `reports/passes.md`. See `docs/passes.md` for the
+pass catalogue, the output format and why families of outfits can be pruned independently.

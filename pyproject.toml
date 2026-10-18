@@ -15,6 +15,7 @@ dev = ["pytest"]
 
 [project.scripts]
 sheetcalc = "sheetcalc.__main__:main"
+sheetcalc-passes = "sheetcalc.passes:main"
 
 [tool.setuptools]
 packages = ["sheetcalc"]

@@ -10,7 +10,7 @@ from collections import Counter
 from dataclasses import dataclass
 
 from .gamedata import per_second, space
-from .settings import SOLAR_ENERGY_CASE, SOLAR_HEAT_CASE, SOLAR_MULTIPLIER
+from .settings import DEFAULT_SCENARIO
 
 
 @dataclass(frozen=True)
@@ -93,13 +93,13 @@ class CoolingLadder:
 
 # ---------------------------------------------------------------- energy
 
-def _generator_item(name, space_, egen, solar, heat, solar_heat, max_count):
-    energy = egen + solar * SOLAR_MULTIPLIER[SOLAR_ENERGY_CASE]
-    heat = heat + solar_heat * SOLAR_MULTIPLIER[SOLAR_HEAT_CASE]
+def _generator_item(scenario, name, space_, egen, solar, heat, solar_heat, max_count):
+    energy = egen + solar * scenario.solar_energy
+    heat = heat + solar_heat * scenario.solar_heat
     return Item(name, int(space_), max_count, energy=energy, heat=heat)
 
 
-def generators(outfits, availability):
+def generators(outfits, availability, scenario=DEFAULT_SCENARIO):
     """In-play Power outfits that generate energy, plus slot-based combinations.
 
     Slot-limited outfits are folded into composites with the outfit that
@@ -126,14 +126,14 @@ def generators(outfits, availability):
             continue
         if o.get("solar cell", 0) < 0 or o.get("reactor upgrades", 0) < 0:
             continue  # handled as part of a composite below
-        items.append(_generator_item(name, *stats(name), _max_count(name, o, availability)))
+        items.append(_generator_item(scenario, name, *stats(name), _max_count(name, o, availability)))
 
     # Solar Battery + n Solar Cells.
     if "Solar Battery" in availability and "Solar Cell" in availability:
         battery, cell = outfits["Solar Battery"], stats("Solar Cell")
         for n in range(1, int(battery.get("solar cell", 0)) + 1):
             items.append(_generator_item(
-                f"Solar Battery + {n} Solar Cell{'s' if n > 1 else ''}",
+                scenario, f"Solar Battery + {n} Solar Cell{'s' if n > 1 else ''}",
                 space(battery) + n * cell[0], n * cell[1], n * cell[2], n * cell[3], n * cell[4],
                 _max_count("Solar Battery", battery, availability)))
 
@@ -148,7 +148,7 @@ def generators(outfits, availability):
             base = stats(name)
             for k in range(1, int(slots // slots_per) + 1):
                 items.append(_generator_item(
-                    f"{name} + {k} Reactor Overclocker{'s' if k > 1 else ''}",
+                    scenario, f"{name} + {k} Reactor Overclocker{'s' if k > 1 else ''}",
                     *(b + k * x for b, x in zip(base, oc)),
                     _max_count(name, outfits[name], availability)))
     return items, excluded

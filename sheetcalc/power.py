@@ -21,7 +21,7 @@ import numpy as np
 
 from .gamedata import per_second, space
 from .ladders import CoolingLadder, generator_states, generators, passive_coolers, _max_count
-from .settings import ACTIVE_COOLING_HEAT_FRACTION
+from .settings import ACTIVE_COOLING_HEAT_FRACTION, DEFAULT_SCENARIO
 
 
 @dataclass(frozen=True)
@@ -137,11 +137,12 @@ class PowerPlant:
         self._passive_best = np.array(self.passive.best)
 
     @classmethod
-    def from_game(cls, outfits, availability, use_active=True, **kwargs):
-        plant = cls(CoolingLadder(passive_coolers(outfits, availability)),
-                    generators(outfits, availability)[0],
+    def from_game(cls, outfits, availability, use_active=True, scenario=DEFAULT_SCENARIO, **kwargs):
+        gens, excluded = generators(outfits, availability, scenario)
+        kwargs.setdefault("heat_fraction", scenario.heat_fraction)
+        plant = cls(CoolingLadder(passive_coolers(outfits, availability)), gens,
                     active_coolers(outfits, availability) if use_active else [], **kwargs)
-        plant.excluded = generators(outfits, availability)[1]
+        plant.excluded = excluded
         return plant
 
     def without(self, names):

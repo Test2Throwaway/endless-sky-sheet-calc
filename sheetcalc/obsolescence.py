@@ -26,6 +26,7 @@ from dataclasses import dataclass, field
 
 from .ladders import CoolingLadder
 from .power import PowerPlant
+from .settings import ACTIVE_COOLING_HEAT_FRACTION
 
 
 # Attributes the power plant model accounts for (or that only gate how many fit).
@@ -119,13 +120,21 @@ def _plant_names(plant):
 def analyse(plant, availability, energies, heats, outfits=None):
     """Run all three passes on a full PowerPlant. `outfits` (the game data) lets the
     passes see stats beyond power and cooling. Returns (verdicts, pruned PowerPlant)."""
+    return analyse_items(plant.passive.coolers, plant.generator_items, plant.active_items, availability, energies,
+                         heats, outfits, plant.max_generator_space, plant.max_active_space, plant.heat_fraction)
+
+
+def analyse_items(passive_items, generator_items, active_items, availability, energies, heats, outfits=None,
+                  max_generator_space=400, max_active_space=48, heat_fraction=ACTIVE_COOLING_HEAT_FRACTION):
+    """Like analyse(), from item lists. The joint plant is only built after the cheap
+    passes have pruned the lists, which makes it much faster to build."""
     verdicts = {}
     grid = [(e, h) for e in energies for h in heats]
 
     # 1. Dumb dominance within each family. A passive cooler also dominates an active
     #    one that fits in no less space and removes no more heat even at full heat.
-    passive = dumb_prune(plant.passive.coolers, [("cooling", 1)], availability, "passive cooler", verdicts, outfits)
-    active = dumb_prune(plant.active_items, [("active", 1), ("cooling_energy", -1), ("passive", 1),
+    passive = dumb_prune(passive_items, [("cooling", 1)], availability, "passive cooler", verdicts, outfits)
+    active = dumb_prune(active_items, [("active", 1), ("cooling_energy", -1), ("passive", 1),
                                              ("consumption", -1)], availability, "active cooler", verdicts, outfits)
     for c in list(active):
         by = next((p for p in passive if p.space <= c.space and p.cooling >= c.active + c.passive
@@ -133,7 +142,7 @@ def analyse(plant, availability, energies, heats, outfits=None):
         if by:
             verdicts[c.name] = Verdict(c.name, "active cooler", "dominated", f"by {by.name} (passive)")
             active.remove(c)
-    gens = dumb_prune(plant.generator_items, [("energy", 1), ("heat", -1)], availability, "generator", verdicts,
+    gens = dumb_prune(generator_items, [("energy", 1), ("heat", -1)], availability, "generator", verdicts,
                       outfits)
 
     # 2. Passive coolers off the exact ladder.
@@ -146,7 +155,7 @@ def analyse(plant, availability, energies, heats, outfits=None):
     ladder = CoolingLadder([c for c in passive if c.name in on_ladder])
 
     # 3. Smart: joint plant over the load grid.
-    current = PowerPlant(ladder, gens, active, plant.max_generator_space, plant.max_active_space, plant.heat_fraction)
+    current = PowerPlant(ladder, gens, active, max_generator_space, max_active_space, heat_fraction)
     base = {pt: current.solve(*pt) for pt in grid}
     best_space = {pt: p.space for pt, p in base.items() if p is not None}
     used = set().union(*(_plant_names(p) for p in base.values() if p is not None))

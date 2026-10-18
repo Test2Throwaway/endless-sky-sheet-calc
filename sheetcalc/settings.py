@@ -1,4 +1,10 @@
-"""Design parameters, carried over from the legacy sheet's "Magic Numbers" tab."""
+"""Design parameters, carried over from the legacy sheet's "Magic Numbers" tab.
+
+Module-level values are defaults. Code that depends on them takes a `Scenario` (or explicit
+arguments) so that passes with different settings can run side by side.
+"""
+
+from dataclasses import dataclass
 
 
 def solar_scale(distance):
@@ -17,6 +23,36 @@ SOLAR_MULTIPLIER = {case: SOLAR_POWER[case] * solar_scale(SOLAR_DISTANCE[case]) 
 # above 100% heat and recovers below 90%, so a design should only count on active
 # cooling up to some comfortable heat fraction.
 ACTIVE_COOLING_HEAT_FRACTION = .75
+
+# The brightest star in the game is an O supergiant (power 5.2, data/stars.txt); 400 is a close orbit.
+MAX_SOLAR_POWER, MAX_SOLAR_DISTANCE = 5.2, 400
+
+
+@dataclass(frozen=True)
+class Scenario:
+    """The conditions a power plant is designed for."""
+    name: str
+    solar_energy: float  # multiplier on solar collection
+    solar_heat: float    # multiplier on solar heat
+    heat_fraction: float = ACTIVE_COOLING_HEAT_FRACTION
+
+
+def _solar_scenarios():
+    m = SOLAR_MULTIPLIER
+    brightest = MAX_SOLAR_POWER * solar_scale(MAX_SOLAR_DISTANCE)
+    return {
+        # No star, or a ship that must run dark: solar outfits give nothing.
+        "none": Scenario("none", 0., 0.),
+        # Far from a dim star (an "evader" in the optimizer's terms).
+        "dim": Scenario("dim", m["low"], m["low"]),
+        # The legacy design case: typical sunlight for energy, bright sunlight for heat, so a ship
+        # designed here never overheats when it visits a bright system.
+        "median": Scenario("median", m["median"], m["high"]),
+        "bright": Scenario("bright", m["high"], m["high"]),
+        # Close to the brightest star in the game: the most solar can ever do.
+        "max": Scenario("max", brightest, brightest),
+    }
+
 
 # Reference ships for pricing, as (energy draw/s, heat/s) that the rest of the ship
 # needs the power plant to cover. Rough guesses; adjust to the ships being designed.
@@ -38,3 +74,6 @@ OBSOLESCENCE_HEAT = [0, 100, 250, 500, 750, 1000, 1500, 2000, 2500, 3000, 4000, 
 # Solar energy is counted at the median case; solar heat at the high (worst) case.
 SOLAR_ENERGY_CASE = "median"
 SOLAR_HEAT_CASE = "high"
+
+SOLAR_SCENARIOS = _solar_scenarios()
+DEFAULT_SCENARIO = SOLAR_SCENARIOS["median"]
