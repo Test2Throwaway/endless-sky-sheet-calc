@@ -168,19 +168,24 @@ def analyse_items(passive_items, generator_items, active_items, availability, en
     candidates = sorted(used, key=lambda n: (_ease(n, availability), -_space_of(current, n)))
     for name in candidates:
         trial = current.without([name])
-        worst, worst_at, replaced_by = 0, (), Counter()
-        for pt, space in best_space.items():
-            p = trial.solve(*pt)
-            extra = (p.space - space) if p is not None else 10 ** 6
+        worst, worst_at, replaced_by, resolved = 0, (), Counter(), {}
+        # Only loads whose best plant uses this outfit can change: everywhere else that plant
+        # is still allowed, and still the best. (Only zero-cost removals are ever committed,
+        # so the current best plants are as small as the original ones.)
+        for pt, plant in base.items():
+            if plant is None or name not in _plant_names(plant):
+                continue
+            p = resolved[pt] = trial.solve(*pt)
+            extra = (p.space - best_space[pt]) if p is not None else 10 ** 6
             if extra > worst:
                 worst, worst_at = extra, pt
-            if p is not None and extra == 0 and name in _plant_names(base[pt]):
-                replaced_by.update(_plant_names(p) - _plant_names(base[pt]))
+            if p is not None and extra == 0:
+                replaced_by.update(_plant_names(p) - _plant_names(plant))
         if worst == 0:
             alternatives = ", ".join(n for n, _ in replaced_by.most_common(3)) or "the other outfits"
             verdicts[name] = Verdict(name, families[name], "replaceable", f"ties with {alternatives}")
             current = trial
-            base = {pt: current.solve(*pt) for pt in grid}
+            base.update(resolved)
         else:
             verdicts[name] = Verdict(name, families[name], "kept", penalty=worst, penalty_at=worst_at)
 

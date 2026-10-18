@@ -124,6 +124,8 @@ applies on top.
 
 - Cheap passes first: strict dominance and the passive ladder shrink the lists before the expensive joint search is
   built, which is much faster than building it from everything.
+- Banning an outfit can only change the best plant at loads where that plant uses it, so each removal test only
+  re-solves those loads. Together with pruning first, a power pass went from about 5½ minutes to 2.
 - Passes are independent, so they run in parallel (`--jobs`, default all cores).
 - Planned: cache each pass by a hash of its inputs (the outfits in its pool, the settings), so a game update only
   reruns the families whose outfits changed.
