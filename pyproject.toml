@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "endless-sky-sheet-calc"
+version = "0.1.0"
+description = "What Endless Sky outfits really cost once their power and cooling are counted, and which are obsolete."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+sheetcalc = "sheetcalc.__main__:main"
+
+[tool.setuptools]
+packages = ["sheetcalc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
