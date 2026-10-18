@@ -12,12 +12,10 @@ the cooling for their heat and the generators (plus those generators' cooling) f
 ## Setup
 
 Needs Python 3.11 or newer and a checkout of the game's source next to this repo (`../endless-sky`), since
-`data/outfits-in-play.md` is generated from the current game data. With pyenv:
+`data/outfits-in-play.md` is generated from the current game data:
 
 ```
-pyenv install 3.12          # or any 3.11+ you have
-pyenv local 3.12
-python -m venv .venv && . .venv/bin/activate
+python3 -m venv .venv && . .venv/bin/activate
 pip install -e '.[dev]'     # editable, so default paths resolve to this repo
 git clone --depth 1 https://github.com/endless-sky/endless-sky.git ../endless-sky
 python -m pytest -q
