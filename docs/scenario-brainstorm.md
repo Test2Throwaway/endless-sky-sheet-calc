@@ -1,7 +1,9 @@
-# Design scenario brainstorm (notes, draft 2)
+# Design scenario brainstorm (notes, draft 3)
 
 Working notes for choosing obsolescence passes. Draft 2 merges the optimizer session's independent list (135
-scenarios, `aside/design-scenarios.md` in the optimizer repo, commit 20f0953): together about 165 distinct scenarios. Tiers: **LC** likely/common, **LU** likely/uncommon,
+scenarios, `aside/design-scenarios.md` in the optimizer repo, commit 20f0953): together about 165 distinct scenarios;
+draft 3 adds the optimizer session's 44 replies to draft 1 (about 190 distinct in all), its tier changes, what the
+optimizer can express today, and where pruning is dangerous. Tiers: **LC** likely/common, **LU** likely/uncommon,
 **UU** unlikely/uncommon. "Drives" says what changes which outfits matter. Sources: the legacy workbook's tabs
 (Damage Weapons, Utility Weapons: shield disabling / moving / slowing / shield disruption / tractor beam / heat damage
 / ion, Anti-Missile, Jammers, Scanners, Fuel, Cargo & Outfit Expansions, Batteries, Cooling, Shields, Drives), the
@@ -184,6 +186,86 @@ Quarg hunting · max cargo with no weapons · max jump range · max bunks · imm
 heat / energy ships · zero-crew automaton · superheavy hulls · unique-only stress test · fleet repair tender (note:
 the game has no ally repair beyond fuel transfer, so this one probably isn't real).
 
+## Added in the optimizer session's reply to draft 1 (112-155)
+
+Tier changes: 35 heat killer UU → LU (Korath and plasma heat weapons are common late game); 99 energy weapons only
+LU → LC; 28 boarding flagship stays LC (capturing is a main money-maker).
+
+| # | Scenario | Tier | Axis |
+|---|---|---|---|
+| 112 | Anti-Korath (heat, push and slowing protection) | LU | enemy lens |
+| 113 | Anti-Ka'het (ion protection, energy reserve) | UU | enemy lens |
+| 114 | Counter-build from a named government's actual hulls | LU | enemy lens from data |
+| 115 | Duel vs one named hull | UU | targets |
+| 116 | Missile-heavy enemies, no anti-missile licence (jammers instead) | LU | availability × enemy |
+| 117 | Multi-wave defence (3 × ~90 s, short recovery) | LU | fight chain |
+| 118 | Endurance patrol (many short fights, no landing) | LU | fights per restock × recovery |
+| 119 | Station or planet siege at long range | UU | fight length, range |
+| 120 | Ambush survival: combat starting hot at a bright star | UU | solar, start heat |
+| 121 | Never kill by accident (ion and shield only) | UU | utility lens, goal inverted |
+| 122 | Pacifist: push, tractor and anti-missile only | UU | must_not damage weapon |
+| 123 | Crew transport for a capture fleet | LU | attribute (bunks) |
+| 124 | Rescue and refuel tender for disabled allies | LU | fuel, AI behaviour |
+| 125 | Aggro tank protecting the flagship | UU | AI targeting |
+| 126 | Escorts covering the flagship's weaknesses | UU | fleet |
+| 127 | Escort-carrier hybrid | LU | bays, 90 s |
+| 128 | Drone carrier | UU | bays |
+| 129 | Fighter for a specific bay type | LU | bay type, fighter rules |
+| 130 | Hyperdrive-only cheap trader | LC | drives subset |
+| 131 | Jump-drive-only explorer | UU | drives subset |
+| 132 | Jump-fuel economy (scram drive, fuel per jump) | UU | fuel |
+| 133 | Next affordable upgrade step | LU | cost × installed-fixed |
+| 134 | Resale-aware design | UU | cost |
+| 135 | Crew-salary-aware design (automaton, fewer crew) | UU | running cost |
+| 136 | Reserve outfit space for a future mission outfit | LU | free outfit space |
+| 137 | Warship with spare cargo for plunder | LU | free cargo |
+| 138 | Carries outfits as cargo for another ship | UU | cargo |
+| 139-144 | Gas-giant lander, research vessel, decoy plating tank, Holovid/Phantom Pallet trickster, self-destruct decoy, zero-crew automaton | UU | attribute |
+| 145 | Cloaked repair (cloaked regen/repair multipliers) | UU | cloak |
+| 146 | Mission scanner | LU | attribute |
+| 147 | Anti-cloak hunter | UU | cloak, scanning |
+| 148 | Mining drone fleet | UU | bays, minable |
+| 149 | Overheat-safe star-hugging miner | UU | solar |
+| 150 | Named story variant hull | LC | hull variant |
+| 151 | Event-gated speedrun | UU | availability by event |
+| 152 | Sold-only, can rebuy after losing it | LU | availability mode |
+| 153 | Plunder-only flex build | UU | availability mode |
+| 154 | Superheavy hull (excluded today) | UU | hull band |
+| 155 | Every unique allowed (stress test) | UU | copy limits |
+
+## What the optimizer can express (from the optimizer session)
+
+Roles can already weight or require *any* outfit or hull attribute summed over the ship, plus built-in metrics (speed,
+acceleration, reverse, turn, agility, effective shields/hull, regen, repair, weapon value, shield/hull DPS,
+anti-missile, tractor, push/pull, jumps, free space). So most systems-type scenarios are a role file away.
+
+- **Today:** line warship, escort, hero, freighters, tank/dogfighter, artillery, point defence, bounty hunter,
+  disabler, capture-intact, plunderer, scavenger, push/pull, shield tank, courier, liner, explorer, story minimums,
+  mobility extremes, must run dark, hull bands and shortlists. Weak today: missile boats (magazine window, ammo space).
+- **New role file only:** protection/resistance builds, scan and jam builds, jumps, bunks, drives subsets, free space
+  and cargo, gaslining/research/decoy/automaton, energy-only, pacifist.
+- **New modelling:** cost (credit cap, value per credit, upgrade steps); installed-fixed outfits (refits);
+  crew and capture strength (Hand to Hand outfits are excluded today); bays and carriers; effect-damage metrics;
+  mines and nukes; an enemy model (alpha, kiting, counters); fight lengths beyond 90/240 s and fight chains; solar
+  as a request input; cloak; fleets; shield/repair delays in recovery; overheat behaviour; per-request availability
+  modes; minable damage.
+
+## Where pruning is dangerous (from the optimizer session)
+
+- **Off, or additions only:** refits and upgrades (installed outfits always stay); must-has, story minimums and
+  allow-by-name (never prune a named outfit).
+- **Only with the cost lens:** budget scenarios; a pass without cost wrongly drops cheap-but-worse outfits.
+- **Inverted ranking:** capture-intact and non-lethal, where low hull damage is good. Use a separate utility lens
+  or no weapon pruning.
+- **Same effect vector only:** exotic damage and enemy counters; a plain damage weapon never beats an effect weapon.
+- **Fit before dominance:** fighters, drones, tiny hulls. B must fit wherever A fits (no more of every capacity A
+  uses, same gun/turret slot).
+- **Copy limits:** a copy-limited B can't beat an unlimited A beyond one copy.
+- **Solar-dependent scenarios:** never apply a median-solar pass.
+- **Hull-relative weapons:** prune weapons within an agility band only.
+- **Reference sets:** the weapon average stays independent of pruning.
+- **Audit mode:** occasionally run with pruning off and compare scores; polish re-tries the best dropped outfits.
+
 ## Axes (from both lists)
 
 A scenario = an archetype (~45-60) with a setting on each axis:
@@ -198,6 +280,8 @@ A scenario = an archetype (~45-60) with a setting on each axis:
 | Money | unlimited, credit cap | open |
 | Hull band | agility band, mass band, slot shape (guns vs turrets, spinal, bays, anchors) | bands closed |
 | Mode | new design, refit (installed fixed), partial refit, upgrade step | closed |
+| Goal | normal, disable, capture-intact, destroy, non-lethal | closed |
+| Drives subset | all, hyperdrive only, jump drive only | closed |
 
 ## Reality check: which lenses have outfits in play
 
