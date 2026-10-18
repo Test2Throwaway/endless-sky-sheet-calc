@@ -165,28 +165,34 @@ def _pareto(states):
     return kept
 
 
+def generator_states(items, max_space):
+    """states[s]: Pareto set of (heat, energy, combo) using exactly s generator space,
+    where combo is a tuple of indexes into `items`."""
+    states = [[] for _ in range(max_space + 1)]
+    states[0] = [(0., 0., ())]
+    for index, item in enumerate(items):
+        if item.max_count is None:
+            passes = [range(item.space, max_space + 1)]
+        else:
+            passes = [range(max_space, item.space - 1, -1)] * item.max_count
+        for spaces in passes:
+            for s in spaces:
+                prev = states[s - item.space]
+                if not prev:
+                    continue
+                added = [(h + item.heat, e + item.energy, c + (index,)) for h, e, c in prev]
+                states[s] = _pareto(states[s] + added)
+    return states
+
+
 class EnergyLadder:
     """Least total space (generators + passive cooling for their heat, plus any
     `base_heat` the rest of the ship needs cooled) for each energy level."""
 
-    def __init__(self, items, cooling, max_generator_space=400, base_heat=0.):
+    def __init__(self, items, cooling, max_generator_space=400, base_heat=0., states=None):
         self.items, self.cooling, self.base_heat = items, cooling, base_heat
-        n = max_generator_space
-        # states[s]: Pareto set of (heat, energy, combo) using exactly s generator space.
-        states = [[] for _ in range(n + 1)]
-        states[0] = [(0., 0., ())]
-        for index, item in enumerate(items):
-            if item.max_count is None:
-                passes = [range(item.space, n + 1)]
-            else:
-                passes = [range(n, item.space - 1, -1)] * item.max_count
-            for spaces in passes:
-                for s in spaces:
-                    prev = states[s - item.space]
-                    if not prev:
-                        continue
-                    added = [(h + item.heat, e + item.energy, c + (index,)) for h, e, c in prev]
-                    states[s] = _pareto(states[s] + added)
+        if states is None:
+            states = generator_states(items, max_generator_space)
         self.rungs = self._rungs(states)
 
     def _rungs(self, states):
