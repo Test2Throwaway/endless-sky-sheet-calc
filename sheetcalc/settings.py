@@ -27,6 +27,14 @@ REFERENCE_LOADS = {
     "capital": (2500, 10000),
 }
 
+# Ship loads (energy draw/s, heat/s from everything but the power plant) over which
+# smart obsolescence is judged. Denser at the small end, where whole outfits make
+# the biggest steps.
+OBSOLESCENCE_ENERGY = [0, 10, 20, 35, 50, 75, 100, 130, 160, 200, 250, 300, 375, 450, 550, 650, 800,
+                       950, 1100, 1300, 1500, 1750, 2000, 2400, 2800, 3300, 3800]
+OBSOLESCENCE_HEAT = [0, 100, 250, 500, 750, 1000, 1500, 2000, 2500, 3000, 4000, 5000, 6500, 8000,
+                     10000, 12500, 15000]
+
 # Solar energy is counted at the median case; solar heat at the high (worst) case.
 SOLAR_ENERGY_CASE = "median"
 SOLAR_HEAT_CASE = "high"

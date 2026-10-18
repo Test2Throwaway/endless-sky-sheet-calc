@@ -118,19 +118,38 @@ class Plant:
 
 
 class PowerPlant:
-    def __init__(self, outfits, availability, max_generator_space=400, max_active_space=48,
-                 heat_fraction=ACTIVE_COOLING_HEAT_FRACTION, use_active=True):
-        self.passive = CoolingLadder(passive_coolers(outfits, availability))
-        self.generator_items, self.excluded = generators(outfits, availability)
-        self.active_items = active_coolers(outfits, availability) if use_active else []
+    def __init__(self, passive, generator_items, active_items, max_generator_space=400, max_active_space=48,
+                 heat_fraction=ACTIVE_COOLING_HEAT_FRACTION):
+        """`passive` is a CoolingLadder; the item lists are the generators and active
+        coolers allowed in the plant."""
+        self.passive = passive
+        self.generator_items, self.active_items = list(generator_items), list(active_items)
         self.heat_fraction = heat_fraction
+        self.max_generator_space, self.max_active_space = max_generator_space, max_active_space
+        # Sorted by space, so the empty combination (no active cooling) comes first.
         self.active = sorted(active_states(self.active_items, max_active_space), key=lambda st: st[0])
+        # Sorted by space, so solve() can stop at the best total found so far.
         self.generator_front = _generator_front(generator_states(self.generator_items, max_generator_space))
         g = self.generator_front
         self._gen_space = np.array([st[0] for st in g])
         self._gen_heat = np.array([st[1] for st in g])
         self._gen_energy = np.array([st[2] for st in g])
         self._passive_best = np.array(self.passive.best)
+
+    @classmethod
+    def from_game(cls, outfits, availability, use_active=True, **kwargs):
+        plant = cls(CoolingLadder(passive_coolers(outfits, availability)),
+                    generators(outfits, availability)[0],
+                    active_coolers(outfits, availability) if use_active else [], **kwargs)
+        plant.excluded = generators(outfits, availability)[1]
+        return plant
+
+    def without(self, names):
+        """A copy of this plant with the named generators and active coolers removed."""
+        names = set(names)
+        return PowerPlant(self.passive, [i for i in self.generator_items if i.name not in names],
+                          [c for c in self.active_items if c.name not in names],
+                          self.max_generator_space, self.max_active_space, self.heat_fraction)
 
     def prices(self, energy_load, heat_load, spread=.25):
         """Marginal (space per energy/s, space per heat/s) around a load, from a
@@ -151,12 +170,15 @@ class PowerPlant:
         """Least-space plant covering `energy_load` energy/s and `heat_load` heat/s
         for the rest of the ship. Returns a Plant, or None if out of range."""
         f = self.heat_fraction
-        spare = self._gen_energy - energy_load
-        heat = heat_load + self._gen_heat
-        ok = spare >= 0
         best, best_key = None, None
         for sa, active, cooling_energy, passive, consumption, act_combo in self.active:
-            usable = ok & (spare >= consumption)
+            # Only generator combinations small enough to beat the best total so far.
+            n = len(self._gen_space) if best is None else int(np.searchsorted(self._gen_space, best - sa))
+            if n == 0:
+                break
+            spare = self._gen_energy[:n] - energy_load
+            heat = heat_load + self._gen_heat[:n]
+            usable = spare >= consumption
             remaining = np.maximum(heat - passive, 0.)
             cap = np.full_like(remaining, active * f)
             if cooling_energy > 0:
@@ -165,7 +187,7 @@ class PowerPlant:
             passive_need = remaining - active_heat
             passive_space = np.searchsorted(self._passive_best, passive_need - 1e-9)
             usable &= passive_space < len(self._passive_best)
-            total = np.where(usable, self._gen_space + sa + passive_space, np.iinfo(np.int64).max)
+            total = np.where(usable, self._gen_space[:n] + sa + passive_space, np.iinfo(np.int64).max)
             i = int(np.argmin(total))
             if usable[i] and (best is None or total[i] < best):
                 best = int(total[i])
