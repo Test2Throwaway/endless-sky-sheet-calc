@@ -377,3 +377,44 @@ and every capacity used, and every other condition below holds. Any attribute no
   B), availability tier (A no harder to get than B; check the user's availability at load), special slots (spinal,
   anchors, bay types: capacities, never interchangeable).
 - **Fit before dominance:** A must use no more of *every* capacity B uses (so it fits wherever B fits).
+
+## "Absent or 0" is not always the worst end (from the optimizer session, checked in the game source)
+
+Strict dominance compares *effective* values, not raw fields:
+
+- **∞good at 0/absent:** no ammo (unlimited magazine; also a class), projectile drag 0, arc absent (360°), no damage
+  dropoff, penetration count explicitly 0 (wraps to unlimited), firing costs 0, heat/energy/fuel use 0, delays 0.
+- **Default, not 0:** reload, burst reload, burst count (1); ammo usage (1); turret turn 0 on a turret that isn't
+  anti-missile or tractor (240°/s); jump fuel ≤ 0 (100 hyperdrive, 150 scram drive, 200 jump drive); jump range 0
+  (system default); disabled and minable damage absent (= hull damage); threshold percentage 0 (size formula);
+  ramscoop 0 (unless the universal-ramscoop rule is on); multipliers (applied as 1 + value, so 0 is neutral).
+- **Derived (compare this, not the field):** shots per second; range (range override, else velocity × total lifetime
+  including submunitions); instantaneous (beam) counts as infinitely fast.
+- **Class keys:** ammo-free vs ammo-using (and which ammo); missile (missile strength > 0) vs not; homing (and its
+  turn/tracking); instantaneous; blast / safe; damage dropoff; drives (hyperdrive, jump, scram); automaton; cloak,
+  illegal, atrocity, gaslining, inscrutable; phasing, gravitational, fused, parallel, stream, cluster, no-collision
+  flags; recoil (block).
+- **Count-capped:** capture attack and defense: each crew member uses at most one capture weapon, so copies beyond
+  crew are worth 0 and "2 × A beats 1 × B" can be false.
+
+## Pass chain (draft, after the user's ordering)
+
+Every family that draws energy or makes heat depends on power only through the energy and heat prices, so each
+multiplies by the power cases and nothing else, except weapons.
+
+| Order | Family | Cases | Passes |
+|---|---|---|---|
+| 0 | Strict dominance, every family | 1 | 1 |
+| 1 | Power and cooling | solar: normal (energy ×0.49, heat ×2.09), evader (×0.35, ×2.09), dark (0) | 3 |
+| 2 | Energy storage | a capacity ladder; barely touches power | 1 |
+| 2 | Fuel and travel | × power | 3 |
+| 2 | Engines (afterburners a class) | × power | 3 |
+| 2 | Regeneration (shields, hull, composites) | × power | 3 |
+| 2 | Anti-missile | × power | 3 |
+| 2 | Systems (cargo, bunks, scanners, jammers, capture, expansions) | strict only | 0 |
+| 3 | Standard combat weapons | agility {slow, nimble} × fight {90 s, 240 s} × power | 12 |
+| 3 | Optional: non-combat weapon rules; goal disable | × power each | +3, +3 |
+
+Total pre-run: about 29 (35 with the optional two). Specialty on first request, then cached: goal disable / destroy
+/ capture-intact, fighter, capture targets, must run dark (weapons), fights per restock ≠ 2, weighted effect
+metrics, new fight lengths, cost caps, refits.
