@@ -1,0 +1,91 @@
+{
+  "passive cooler": [
+    "Cooling Ducts",
+    "Large Heat Shunt",
+    "Small Heat Shunt",
+    "Wanderer Heat Sink"
+  ],
+  "active cooler": [
+    "Cooling Module",
+    "Small Hybrid Cooling",
+    "Thermoelectric Cooler"
+  ],
+  "generator": [
+    "Antimatter Power Cell",
+    "Concentrating Solar Cell",
+    "KP-6 Photovoltaic Panel",
+    "Large Collector Module",
+    "Large Reactor Module",
+    "Small Cogeneration Module",
+    "Small Collector Module",
+    "Small Reactor Module"
+  ],
+  "obsolete for power, but has other stats": {
+    "\"Nnesa\" Fusion Core": {
+      "shield energy multiplier": -0.08,
+      "hull energy multiplier": -0.08
+    },
+    "\"Ryuit\" Fusion Core": {
+      "shield energy multiplier": -0.14,
+      "hull energy multiplier": -0.14
+    },
+    "\"Uoret\" Fusion Core": {
+      "shield energy multiplier": -0.22,
+      "hull energy multiplier": -0.22
+    },
+    "1-\"Uurau\" Betavoltaic Cell": {
+      "energy capacity": 1200.0
+    },
+    "3-\"Kaska\" Betavoltaic Cell": {
+      "energy capacity": 3100.0
+    },
+    "6-\"Ruuv\" Betavoltaic Cell": {
+      "energy capacity": 8500.0
+    },
+    "Aeon Cell": {
+      "ion resistance": 0.14,
+      "scramble resistance": 0.14
+    },
+    "Blue Sun Reactor": {
+      "energy capacity": 8900.0
+    },
+    "Epoch Cell": {
+      "ion resistance": 0.085,
+      "scramble resistance": 0.085
+    },
+    "I70 Ameliorate Cell": {
+      "energy capacity": 2520.0
+    },
+    "Lantern Fission Core": {
+      "overheat damage rate": 3.0
+    },
+    "Large Biochemical Cell": {
+      "energy capacity": 30000.0
+    },
+    "Large Hybrid Cooling": {
+      "fuel capacity": 200.0
+    },
+    "Liquid Sodium Cooler": {
+      "heat capacity": 680.0
+    },
+    "Millennium Cell": {
+      "ion resistance": 0.025,
+      "scramble resistance": 0.025
+    },
+    "OC-\"Mavra\" Betavoltaic Cell": {
+      "energy capacity": 2000.0
+    },
+    "Red Sun Reactor": {
+      "energy capacity": 1100.0
+    },
+    "Small Biochemical Cell": {
+      "energy capacity": 7500.0
+    },
+    "White Sun Reactor": {
+      "energy capacity": 6700.0
+    },
+    "Yellow Sun Reactor": {
+      "energy capacity": 2600.0
+    }
+  }
+}
