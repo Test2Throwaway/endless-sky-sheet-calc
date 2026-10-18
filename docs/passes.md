@@ -35,7 +35,7 @@ obsolete; different families are linked only through the shared budgets (below).
 
 | Family | Outfits | Status |
 |---|---|---|
-| power | generators, passive coolers, active coolers | **done**: exact whole-outfit search (`power.py`) |
+| power | generators, passive coolers, active coolers | **done**: 15 passes (`sheetcalc-passes`), exact whole-outfit search (`power.py`) |
 | energy storage | batteries, capacitors (and generators' capacity) | planned: only matters for burst (combat) |
 | engines | thrusters, steering, reversers, afterburners | planned |
 | weapons | guns, turrets, secondary weapons + their ammo | planned |
