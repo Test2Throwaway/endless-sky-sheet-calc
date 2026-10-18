@@ -196,6 +196,9 @@ class EnergyLadder:
                 if not combo:
                     continue
                 total = s + self.cooling.space_for(heat + self.base_heat) - self.cooling.space_for(self.base_heat)
+                # Totals past the generator-space limit may be missing better combinations.
+                if total > len(states) - 1:
+                    continue
                 if total not in by_total or energy > by_total[total][0]:
                     by_total[total] = (energy, s, heat, combo)
         rungs, best = [], 0.

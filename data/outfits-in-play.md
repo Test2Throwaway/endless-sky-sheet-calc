@@ -1,22 +1,22 @@
 # Outfits in play
 
-Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 not. Regenerate with `python tools/outfit_availability.py` after changing settings.
+Generated 2026-10-18 12:33 from the current settings: 606 outfits in play, 169 not. Regenerate with `python tools/outfit_availability.py` after changing settings.
 
 ## In play, by category
 
 ### Ammunition (41)
 
 - "Nettle" KKV — sold
-- "Orchid" Nuclear Missile — plunder only
+- "Orchid" Nuclear Missile — taken from ships only (plunder, capture, flotsam)
 - Bullet Boxes — sold
 - Cluster Mine — sold
 - Cluster Mine Rack — sold
 - EMP Torpedo — sold
 - EMP Torpedo Storage Bay — sold
-- Finisher Storage Tube — plunder only
+- Finisher Storage Tube — taken from ships only (plunder, capture, flotsam)
 - Finisher Torpedo — sold
 - Firelight Missile — sold
-- Firelight Storage Rack — plunder only
+- Firelight Storage Rack — taken from ships only (plunder, capture, flotsam)
 - Firestorm Torpedo — sold
 - Gatling Gun Ammo — sold
 - Hai Tracker — sold
@@ -37,7 +37,7 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Speck Magazine — sold
 - Speck Round — sold
 - Star Tail Cell — sold
-- Star Tail Storage — plunder only
+- Star Tail Storage — taken from ships only (plunder, capture, flotsam)
 - Swarm Clip — sold
 - Swarm Missile — sold
 - Thunderhead Missile — sold
@@ -48,7 +48,7 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Typhoon Storage Tube — sold
 - Typhoon Torpedo — sold
 
-### Engines (154)
+### Engines (155)
 
 - "Aqra" Inductive Reverser — sold
 - "Aqra" Inductive Steering — sold
@@ -84,13 +84,13 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - A525 Atomic Steering — sold
 - A860 Atomic Thruster — sold
 - A865 Atomic Steering — sold
-- Afterburner (Asteroid Class) — plunder only
-- Afterburner (Comet Class) — plunder only
-- Afterburner (Planetary Class) — plunder only
+- Afterburner (Asteroid Class) — taken from ships only (plunder, capture)
+- Afterburner (Comet Class) — taken from ships only (plunder, capture)
+- Afterburner (Planetary Class) — taken from ships only (plunder, capture)
 - Anvil-Class Engine — sold
 - AR120 Reverse Thruster — sold
 - Bellows-Class Afterburner — sold
-- Bow Drive (Meteor Class) — plunder only
+- Bow Drive (Meteor Class) — taken from ships only (plunder, capture)
 - Caldera Afterburner — sold
 - Capybara Reverse Thruster — sold
 - Chiisana Rift Steering — sold
@@ -99,18 +99,19 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Chipmunk Plasma Thruster — sold
 - Crucible-Class Steering — sold
 - Crucible-Class Thruster — sold
-- Engine (Meteor Class) — plunder only
-- Farves GP Hybrid Thruster — plunder only
-- Fission Drive — plunder only, at most 1
+- Engine (Meteor Class) — taken from ships only (plunder, capture)
+- Farves GP Hybrid Thruster — taken from ships only (plunder, capture)
+- Fission Drive — taken from ships only (plunder, capture), at most 1
 - Forge-Class Steering — sold
 - Forge-Class Thruster — sold
-- Gaktem GP Hybrid Steering — plunder only
-- Gaktem GP Hybrid Thruster — plunder only
+- Fusion Drive — taken from ships only (capture), at most 1
+- Gaktem GP Hybrid Steering — taken from ships only (plunder, capture)
+- Gaktem GP Hybrid Thruster — taken from ships only (plunder, capture)
 - Greyhound Plasma Steering — sold
 - Greyhound Plasma Thruster — sold
 - Impala Plasma Steering — sold
 - Impala Plasma Thruster — sold
-- Inductive Extractor — plunder only
+- Inductive Extractor — taken from ships only (plunder, capture)
 - Ionic Afterburner — sold
 - Ka'het Compact Engine — sold
 - Ka'het Sustainer Nacelles — sold
@@ -127,56 +128,56 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - MH Red-Class Thruster — sold
 - Nami Rift Steering — sold
 - Nami Rift Thruster — sold
-- Nelmeb GP Hybrid Steering — plunder only
-- Nelmeb GP Hybrid Thruster — plunder only
+- Nelmeb GP Hybrid Steering — taken from ships only (plunder, capture)
+- Nelmeb GP Hybrid Thruster — taken from ships only (plunder, capture)
 - Ookii Rift Steering — sold
 - Ookii Rift Thruster — sold
 - Orca Plasma Steering — sold
 - Orca Plasma Thruster — sold
-- Pug Akfar Steering — plunder only
-- Pug Akfar Thruster — plunder only
-- Pug Cormet Steering — plunder only
-- Pug Cormet Thruster — plunder only
-- Pug Lohmar Steering — plunder only
-- Pug Lohmar Thruster — plunder only
+- Pug Akfar Steering — taken from ships only (plunder, capture)
+- Pug Akfar Thruster — taken from ships only (plunder, capture)
+- Pug Cormet Steering — taken from ships only (plunder, capture)
+- Pug Cormet Thruster — taken from ships only (plunder, capture)
+- Pug Lohmar Steering — taken from ships only (plunder, capture)
+- Pug Lohmar Thruster — taken from ships only (plunder, capture)
 - R-180 RCS Thrusters — sold
 - R-360 RCS Thrusters — sold
 - R-720 RCS Thrusters — sold
-- Remass Injector — plunder only
-- Reverser (Asteroid Class) — plunder only
-- Reverser (Comet Class) — plunder only
-- Reverser (Lunar Class) — plunder only
-- Reverser (Planetary Class) — plunder only
-- RG15 Torch Steering — plunder only
-- RG15 Torch Thruster — plunder only
-- RG18 Torch Steering — plunder only
-- RG18 Torch Thruster — plunder only
-- RG3 Torch Steering — plunder only
-- RG3 Torch Thruster — plunder only
-- SC-1 Plasma Engines — plunder only
-- SC-12 Plasma Steering — plunder only
-- SC-12 Plasma Thruster — plunder only
-- SC-14 Plasma Steering — plunder only
-- SC-14 Plasma Thruster — plunder only
-- SC-15 Plasma Thrusters — plunder only
+- Remass Injector — taken from ships only (plunder, capture)
+- Reverser (Asteroid Class) — taken from ships only (plunder, capture)
+- Reverser (Comet Class) — taken from ships only (plunder, capture)
+- Reverser (Lunar Class) — taken from ships only (plunder, capture)
+- Reverser (Planetary Class) — taken from ships only (plunder, capture)
+- RG15 Torch Steering — taken from ships only (plunder, capture)
+- RG15 Torch Thruster — taken from ships only (plunder, capture)
+- RG18 Torch Steering — taken from ships only (plunder, capture)
+- RG18 Torch Thruster — taken from ships only (plunder, capture)
+- RG3 Torch Steering — taken from ships only (plunder, capture)
+- RG3 Torch Thruster — taken from ships only (plunder, capture)
+- SC-1 Plasma Engines — taken from ships only (plunder, capture)
+- SC-12 Plasma Steering — taken from ships only (plunder, capture)
+- SC-12 Plasma Thruster — taken from ships only (plunder, capture)
+- SC-14 Plasma Steering — taken from ships only (plunder, capture)
+- SC-14 Plasma Thruster — taken from ships only (plunder, capture)
+- SC-15 Plasma Thrusters — taken from ships only (plunder, capture)
 - Small Reverse Module — sold
 - Small Steering Module — sold
 - Small Thrust Module — sold
 - Smelter-Class Steering — sold
 - Smelter-Class Thruster — sold
 - Steering (Asteroid Class) — sold
-- Steering (Comet Class) — plunder only
+- Steering (Comet Class) — taken from ships only (plunder, capture)
 - Steering (Lunar Class) — sold
 - Steering (Planetary Class) — sold
-- Steering (Stellar Class) — plunder only
+- Steering (Stellar Class) — taken from ships only (plunder, capture)
 - Subarashii Rift Steering — sold
 - Subarashii Rift Thruster — sold
 - Telis Engine Nacelles — sold
 - Thruster (Asteroid Class) — sold
 - Thruster (Comet Class) — sold
-- Thruster (Lunar Class) — plunder only
+- Thruster (Lunar Class) — taken from ships only (plunder, capture)
 - Thruster (Planetary Class) — sold
-- Thruster (Stellar Class) — plunder only
+- Thruster (Stellar Class) — taken from ships only (plunder, capture)
 - Type 1 Radiant Steering — sold
 - Type 1 Radiant Thruster — sold
 - Type 2 Radiant Steering — sold
@@ -202,72 +203,86 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - X4700 Ion Thruster — sold
 - X5200 Ion Steering — sold
 - X5700 Ion Thruster — sold
-- Z-333 "Spark" Fusion Torch — plunder only
-- Z-666 "Zap" Fusion Torch — plunder only
+- Z-333 "Spark" Fusion Torch — taken from ships only (plunder, capture)
+- Z-666 "Zap" Fusion Torch — taken from ships only (plunder, capture)
 
-### Guns (51)
+### Guns (53)
 
 - "Ojet" Bimodal Coilgun — sold
-- Acumen Bolt Cannon — plunder only
-- Asteroid Weapon Small — plunder only
-- Ballistic Cannon — plunder only
+- Acumen Bolt Cannon — taken from ships only (plunder, capture)
+- Asteroid Weapon Small — taken from ships only (plunder)
+- Ballistic Cannon — taken from ships only (plunder, capture)
 - Beam Laser — sold
-- Bombardment Cannon — plunder only
-- Choleric Cannon — plunder only
-- Digger Mining Beam — plunder only
+- Bombardment Cannon — taken from ships only (plunder, capture)
+- Choleric Cannon — taken from ships only (plunder, capture)
+- Digger Mining Beam — taken from ships only (plunder, capture)
 - Drag Cannon — sold
 - Electron Beam — sold
 - Energy Blaster — sold
-- Expeller Grav-Ray — plunder only
+- Expeller Grav-Ray — taken from ships only (plunder, capture)
 - Fire-Lance — sold
-- Guile Pulse Laser — plunder only
-- Heavy Blaster — plunder only
-- Heavy Ion Cyclotron — plunder only, at most 1
+- Guile Pulse Laser — taken from ships only (plunder, capture)
+- Heavy Blaster — taken from ships only (plunder, capture)
+- Heavy Ion Cyclotron — taken from ships only (plunder, capture), at most 1
 - Heavy Laser — sold
-- Husk-Slice — plunder only
+- Husk-Slice — taken from ships only (plunder, capture)
 - Inhibitor Cannon — sold
 - Ion Cannon — sold
-- Ion Rain Gun — plunder only
-- Ionic Blaster Prototype — plunder only
-- Irate Cannon — plunder only
+- Ion Rain Gun — taken from ships only (plunder, capture)
+- Ionic Blaster Prototype — taken from ships only (plunder, capture)
+- Irate Cannon — taken from ships only (plunder, capture)
 - Ka'het Annihilator — sold
 - Ka'het Nullifier — sold
 - Ka'het Ravager Beam — sold
-- Korath Detainer — plunder only
+- Korath Detainer — taken from ships only (plunder, capture)
 - Locust Blaster — sold
 - Mandible Cannon — sold
 - MCS Extractor — sold
 - Mining Laser — sold
 - Modified Blaster — sold
 - Moonbeam — sold
+- Nucleolysis Beam — taken from ships only (flotsam)
 - Overcharged Pulse Laser — sold
 - Particle Cannon — sold
 - Plasma Cannon — sold
 - Plasma Discharger — sold
 - Plasma Repeater — sold
 - Proton Gun — sold
-- Pug Seeker — plunder only
-- Pug Zapper — plunder only
+- Pug Seeker — taken from ships only (plunder, capture)
+- Pug Zapper — taken from ships only (plunder, capture)
 - Pulse Cannon — sold
+- Savagery Bludgeon — taken from ships only (capture)
 - Speckle Coilgun — sold
 - Successor Pulse Laser — sold
 - Sunbeam — sold
-- Thermal Repeater — plunder only
+- Thermal Repeater — taken from ships only (plunder, capture)
 - Thorax Cannon — sold
 - Thrasher Cannon — sold
-- Tripulse Shredder — plunder only
+- Tripulse Shredder — taken from ships only (plunder, capture)
 - Twin Blaster — sold
 - Twin Modified Blaster — sold
 
-### Hand to Hand (10)
+### Hand to Hand (22)
 
 - Anti-Materiel Gun — sold
+- Cloud Piercer — taken from ships only (capture)
+- Enforcer Confrontation Gear — taken from ships only (capture)
+- Enforcer Riot Staff — taken from ships only (capture)
 - Fragmentation Grenades — sold
+- Guardian Turret — taken from ships only (capture)
+- Irate Carronade — taken from ships only (capture)
 - Kinetic Rail Rifle — sold
 - Laser Rifle — sold
 - Lasher Pistol — sold
+- Microbot Defense Station — taken from ships only (capture)
 - Nerve Gas — sold
+- Optical Laser Rifle — taken from ships only (capture)
+- Plasma Grenades — taken from ships only (capture)
+- Plasmasickle — taken from ships only (capture)
+- Pug Biodefenses — taken from ships only (capture)
+- Pug Peacekeeping Staff — taken from ships only (capture)
 - Pulse Rifle — sold
+- Savagery Pike — taken from ships only (capture)
 - Security Station — sold
 - Thermal Repeater Rifle — sold
 - Tuning Rifle — sold
@@ -295,7 +310,7 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Voidfish — mission or event only, at most 1
 - Yottrite — mission or event only, at most 1
 
-### Power (91)
+### Power (92)
 
 - "Nnesa" Fusion Core — sold
 - "Ryuit" Fusion Core — sold
@@ -304,35 +319,36 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - 3-"Kaska" Betavoltaic Cell — sold
 - 6-"Ruuv" Betavoltaic Cell — sold
 - Aeon Cell — sold
+- Antimatter Power Cell — taken from ships only (flotsam)
 - Armageddon Core — sold
 - Auxiliary Power Reserve — sold
 - Blue Sun Reactor — sold
 - Boulder Reactor — sold
 - Breeder Reactor — sold
-- C17 Warzone Core — plunder only
-- C27 Campaign Core — plunder only
-- C3 Scrap Cell — plunder only
-- C7 Brawl Cell — plunder only
+- C17 Warzone Core — taken from ships only (plunder, capture)
+- C27 Campaign Core — taken from ships only (plunder, capture)
+- C3 Scrap Cell — taken from ships only (plunder, capture)
+- C7 Brawl Cell — taken from ships only (plunder, capture)
 - Concentrating Solar Array — sold
 - Concentrating Solar Cell — sold
 - Crystal Capacitor — sold
 - Dark Reactor — sold
-- Double Plasma Core — plunder only
+- Double Plasma Core — taken from ships only (plunder, capture)
 - Dwarf Core — sold
 - Electroweak Reactor — sold
 - Epoch Cell — sold
 - Fission Reactor — sold
 - Fusion Reactor — sold
-- Generator (Candle Class) — plunder only
+- Generator (Candle Class) — taken from ships only (plunder, capture)
 - Generator (Furnace Class) — sold
-- Generator (Inferno Class) — plunder only
+- Generator (Inferno Class) — taken from ships only (plunder, capture)
 - Geode Reactor — sold
 - Hai Chasm Batteries — sold
 - Hai Fissure Batteries — sold
 - Hai Gorge Batteries — sold
 - Hai Ravine Batteries — sold
 - Hai Valley Batteries — sold
-- I70 Ameliorate Cell — plunder only
+- I70 Ameliorate Cell — taken from ships only (plunder, capture)
 - Ka'het MHD Generator — sold
 - Ka'het Reserve Accumulator — sold
 - KP-6 Photovoltaic Array — sold
@@ -342,8 +358,8 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Large Biochemical Cell — sold
 - Large Cogeneration Module — sold
 - Large Collector Module — sold
-- Large EM Battery — plunder only, at most 1
-- Large Reactor Module — plunder only
+- Large EM Battery — taken from ships only (plunder, capture), at most 1
+- Large Reactor Module — taken from ships only (plunder, capture)
 - LP036a Battery Pack — sold
 - LP072a Battery Pack — sold
 - LP144a Battery Pack — sold
@@ -360,13 +376,13 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - OC-"Mavra" Betavoltaic Cell — sold
 - Pebble Core — sold
 - Photoelectric Lamina — sold
-- Plasma Core — plunder only
+- Plasma Core — taken from ships only (plunder, capture)
 - Primary Power Reserve — sold
 - Quark Reactor — sold
-- R01 Skirmish Battery — plunder only
-- R02 Battlezone Battery — plunder only
-- R03 Warforge Battery — plunder only
-- R04 Crusade Battery — plunder only
+- R01 Skirmish Battery — taken from ships only (plunder, capture)
+- R02 Battlezone Battery — taken from ships only (plunder, capture)
+- R03 Warforge Battery — taken from ships only (plunder, capture)
+- R04 Crusade Battery — taken from ships only (plunder, capture)
 - Reactor Limiter — sold
 - Reactor Overclocker — sold
 - Red Sun Reactor — sold
@@ -377,8 +393,8 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Small Biochemical Cell — sold
 - Small Cogeneration Module — sold
 - Small Collector Module — sold
-- Small EM Battery — plunder only, at most 1
-- Small Reactor Module — plunder only
+- Small EM Battery — taken from ships only (plunder, capture), at most 1
+- Small Reactor Module — taken from ships only (plunder, capture)
 - Solar Battery — sold
 - Solar Cell — sold
 - Stack Core — sold
@@ -392,14 +408,14 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 ### Secondary Weapons (41)
 
 - "Sjeja" Kinetic Lance — sold
-- Cluster Mine Layer — plunder only
-- Dragonflame Cannon — plunder only, at most 1
+- Cluster Mine Layer — taken from ships only (plunder, capture)
+- Dragonflame Cannon — taken from ships only (plunder, capture), at most 1
 - EMP Torpedo Bay — sold
-- External Launch Tube — plunder only
-- Finisher Maegrolain — plunder only
-- Finisher Pod — plunder only
-- Firelight Missile Bank — plunder only
-- Firestorm Battery — plunder only
+- External Launch Tube — taken from ships only (plunder, capture)
+- Finisher Maegrolain — taken from ships only (plunder, capture)
+- Finisher Pod — taken from ships only (plunder, capture)
+- Firelight Missile Bank — taken from ships only (plunder, capture)
+- Firestorm Battery — taken from ships only (plunder, capture)
 - Flamethrower — sold
 - Gatling Gun — sold
 - Gatling Turret — sold
@@ -409,35 +425,36 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Javelin Mini Pod — sold
 - Javelin Pod — sold
 - Javelin Turret — sold
-- Ka'het Emergency Deployer — plunder only
+- Ka'het Emergency Deployer — taken from ships only (plunder, capture)
 - Ka'het EMP Deployer — sold
-- Langrage Hyper-Heaver — plunder only
-- Medium VLS — plunder only
+- Langrage Hyper-Heaver — taken from ships only (plunder, capture)
+- Medium VLS — taken from ships only (plunder, capture)
 - Meteor Missile Launcher — sold
 - Meteor Missile Pod — sold
 - Nuclear Missile — sold
-- Piercer Missile Launcher — plunder only
+- Piercer Missile Launcher — taken from ships only (plunder, capture)
 - Railgun — sold
-- Shard Fabricator — plunder only, at most 1
+- Shard Fabricator — taken from ships only (plunder, capture), at most 1
 - Sidewinder Missile Launcher — sold
 - Sidewinder Missile Pod — sold
-- Small VLS — plunder only
-- Star Tail — plunder only
+- Small VLS — taken from ships only (plunder, capture)
+- Star Tail — taken from ships only (plunder, capture)
 - Swarm Pod — sold
 - Teciimach Bay — sold
 - Teciimach Pod — sold
 - Thunderhead Launcher — sold
-- Tiny VLS — plunder only
+- Tiny VLS — taken from ships only (plunder, capture)
 - Torpedo Launcher — sold
 - Torpedo Pod — sold
 - Typhoon Launcher — sold
 - Typhoon Pod — sold
 
-### Special (1)
+### Special (2)
 
+- Anomalous Mass — taken from ships only (flotsam)
 - Local Map — sold
 
-### Systems (118)
+### Systems (119)
 
 - "Byiaa" Shield Cortex — sold
 - "Ej" Shield Cortex — sold
@@ -445,7 +462,8 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - "Jorv" Shield Cortex — sold
 - "Tuur" Scanning Suite — sold
 - "Veldt" Combat Scanner — sold
-- Asteroid Jump Drive (Patir 18) — plunder only
+- Anomalous Shield Restorer — taken from ships only (flotsam)
+- Asteroid Jump Drive (Patir 18) — taken from ships only (plunder)
 - Asteroid Scanner — sold
 - Brig — sold
 - Bright Cloud Shielding — sold
@@ -454,8 +472,8 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Cargo Scanner — sold
 - Catalytic Ramscoop — sold
 - Command Center — sold
-- Concealment Lamina — plunder only
-- Control Transceiver — plunder only
+- Concealment Lamina — taken from ships only (plunder, capture)
+- Control Transceiver — taken from ships only (plunder, capture)
 - Cooling Ducts — sold
 - Cooling Module — sold
 - Cryogenic Deuterium Tank — sold
@@ -468,7 +486,7 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Decoy Plating — sold
 - Deuterium Slush Tank — sold
 - Diffuse Deflector — sold
-- Electronic Warfare System — plunder only, at most 1
+- Electronic Warfare System — taken from ships only (plunder, capture), at most 1
 - Emergency Ramscoop — sold
 - Fuel Module — sold
 - Fuel Pod — sold
@@ -490,7 +508,7 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Ka'het Shield Restorer — sold
 - Ka'het Support Cooling — sold
 - Large Heat Shunt — sold
-- Large Hybrid Cooling — plunder only, at most 1
+- Large Hybrid Cooling — taken from ships only (plunder, capture), at most 1
 - Large Nanite Fabricator — sold
 - Large Radar Jammer — sold
 - Large Repair Module — sold
@@ -498,7 +516,7 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Large Shield Relay — sold
 - Liquid Helium Cooler — sold
 - Liquid Nitrogen Cooler — sold
-- Liquid Sodium Cooler — plunder only
+- Liquid Sodium Cooler — taken from ships only (plunder, capture)
 - Liquid-Class Shield — sold
 - Luxury Accommodations — sold
 - Magnetic Scoop — sold
@@ -513,21 +531,21 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Outfit Scanner — sold
 - Outfits Expansion — sold
 - Outskirts Gauger — mission or event only, at most 1
-- Overcharged Shield Module — plunder only
-- Overclocked Repair Module — plunder only
+- Overcharged Shield Module — taken from ships only (plunder, capture)
+- Overclocked Repair Module — taken from ships only (plunder, capture)
 - Phantom Pallet — sold
 - Plasmadyne Scoop — sold
 - Quantum Key Stone — sold
 - Quantum Keystone — sold
 - Radiative Lamina — sold
 - Ramscoop — sold
-- Reasoning Node — plunder only
+- Reasoning Node — taken from ships only (plunder, capture)
 - Refueling Module — sold
 - Research Laboratory — sold
 - S-270 Regenerator — sold
 - S-970 Regenerator — sold
 - Salvage Scanner — sold
-- Scanning Module — plunder only
+- Scanning Module — taken from ships only (plunder, capture)
 - Scram Drive — sold
 - Shield Cortex Interface — sold
 - Shield Refactor Module — sold
@@ -535,7 +553,7 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Shield Relay Limiter — sold
 - Small Bunk Room — sold
 - Small Heat Shunt — sold
-- Small Hybrid Cooling — plunder only, at most 1
+- Small Hybrid Cooling — taken from ships only (plunder, capture), at most 1
 - Small Nanite Fabricator — sold
 - Small Radar Jammer — sold
 - Small Recovery Module — sold
@@ -546,11 +564,11 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Specular Deflector — sold
 - Successor Cooling — sold
 - Successor Fuel Sail — sold
-- Surveillance Pod — plunder only
+- Surveillance Pod — taken from ships only (plunder, capture)
 - Systems Core (Large) — sold
 - Systems Core (Medium) — sold
 - Systems Core (Small) — sold
-- Systems Core (Tiny) — plunder only
+- Systems Core (Tiny) — taken from ships only (plunder, capture)
 - Tactical Scanner — sold
 - Thermoelectric Cooler — sold
 - Value Detector — sold
@@ -558,68 +576,70 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Wanderer Ramscoop — sold
 - Water Coolant System — sold
 
-### Turrets (62)
+### Turrets (64)
 
-- Acuit Artillery — plunder only
+- Acuit Artillery — taken from ships only (plunder, capture)
 - Anti-Missile Turret — sold
-- Astuit Battery — plunder only
-- Ballistic Cannon Turret — plunder only
+- Astuit Battery — taken from ships only (plunder, capture)
+- Ballistic Cannon Turret — taken from ships only (plunder, capture)
 - Banisher Grav-Turret — sold
 - Bimodal Coilgun Turret — sold
 - Blaster Turret — sold
-- Blaze-Pike Turret — plunder only
-- Blue Optical Laser — plunder only
-- Bombardment Turret — plunder only
+- Blaze-Pike Turret — taken from ships only (plunder, capture)
+- Blue Optical Laser — taken from ships only (plunder, capture)
+- Bombardment Turret — taken from ships only (plunder, capture)
 - Bullfrog Anti-Missile — sold
 - Buzzer Anti-Missile — sold
 - Chameleon Anti-Missile — sold
-- Choleric Cannon Turret — plunder only
-- Digger Mining Turret — plunder only
+- Choleric Cannon Turret — taken from ships only (plunder, capture)
+- Digger Mining Turret — taken from ships only (plunder, capture)
 - Dual Sunbeam Turret — sold
 - Electron Turret — sold
 - Grab-Strike Turret — sold
 - Green Optical Laser — sold
 - Heavy Anti-Missile Turret — sold
 - Heavy Laser Turret — sold
-- Heliarch Attractor — plunder only
-- Heliarch Repulsor — plunder only
+- Heliarch Attractor — taken from ships only (plunder, capture)
+- Heliarch Repulsor — taken from ships only (plunder, capture)
 - Horizon Grappler — sold
-- Husk-Slice Turret — plunder only
+- Husk-Slice Turret — taken from ships only (plunder, capture)
 - Inhibitor Turret — sold
-- Ion Hail Turret — plunder only
-- Ionic Turret Prototype — plunder only
-- Irate Cannon Turret — plunder only
+- Ion Hail Turret — taken from ships only (plunder, capture)
+- Ionic Turret Prototype — taken from ships only (plunder, capture)
+- Irate Cannon Turret — taken from ships only (plunder, capture)
 - Ka'het Annihilator Turret — sold
+- Ka'het Machinery — taken from ships only (capture)
 - Ka'het Ravager Turret — sold
-- Korath Inferno — plunder only
+- Korath Inferno — taken from ships only (plunder, capture)
 - Laser Turret — sold
 - Locust Turret — sold
 - Mining Laser Turret — sold
 - Modified Blaster Turret — sold
 - Moonbeam Turret — sold
 - Overcharged Laser Turret — sold
-- Particle Waveform Turret — plunder only, at most 1
+- Particle Waveform Turret — taken from ships only (plunder, capture), at most 1
 - Plasma Turret — sold
 - Point Defense Turret — sold
 - Proton Turret — sold
-- Pug Anti-Missile — plunder only
-- Pug Gridfire Turret — plunder only, at most 1
-- Pug Zapper Turret — plunder only
+- Pug Anti-Missile — taken from ships only (plunder, capture)
+- Pug Gridfire Turret — taken from ships only (plunder, capture), at most 1
+- Pug Zapper Turret — taken from ships only (plunder, capture)
 - Pulse Laser Turret — sold
 - Pulse Turret — sold
 - Quad Blaster Turret — sold
-- Sheragi Anti-Missile — plunder only, at most 1
-- Shield Disruptor Turret — plunder only
-- Shunt-Strike Turret — plunder only
+- Sheragi Anti-Missile — taken from ships only (plunder, capture), at most 1
+- Shield Disruptor Turret — taken from ships only (plunder, capture)
+- Shunt-Strike Turret — taken from ships only (plunder, capture)
 - Speckle Turret — sold
-- Stagnation Beam — plunder only
+- Stagnation Beam — taken from ships only (plunder, capture)
 - Sunbeam Turret — sold
-- Thermal Repeater Turret — plunder only
+- Telescopic Antimissile — taken from ships only (flotsam)
+- Thermal Repeater Turret — taken from ships only (plunder, capture)
 - Thrasher Turret — sold
-- Tier 3 Anti-Missile — plunder only, at most 1
+- Tier 3 Anti-Missile — taken from ships only (plunder, capture), at most 1
 - Tractor Beam — sold
-- Ultraviolet Excimer Laser — plunder only
-- UREB Turret — plunder only
+- Ultraviolet Excimer Laser — taken from ships only (plunder, capture)
+- UREB Turret — taken from ships only (plunder, capture)
 - Wanderer Anti-Missile — sold
 - Warder Anti-Missile — sold
 
@@ -683,6 +703,43 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Void Sprite Parts (Unique)
 - Z-3600 "Beam" Amat Torch (Engines)
 
+### Only on ships it can't be taken from (person ships, ships without a sprite, or unplunderable and no flotsam chance on ships that can't be captured) (34)
+
+- Aberrant Spiker (Secondary Weapons)
+- Absorption Organ (Turrets)
+- Abyssal Composer (Guns)
+- Asteroid Weapon Super (Guns)
+- Astral Mouth (Guns)
+- Boomerang Organ (Turrets)
+- Cloak Checker (Turrets)
+- Crystal Projector (Systems)
+- Crystalline Formation (Systems)
+- Drak Anti-Missile Field (Turrets)
+- Drak Anti-Missile Field (Augmented) (Turrets)
+- Drak Antimatter Cannon (Guns)
+- Drak Antimatter Cannon (Augmented) (Guns)
+- Drak Distancer (Turrets)
+- Drak Draining Field (Turrets)
+- Drak Draining Field (Augmented) (Turrets)
+- Drak Turret (Turrets)
+- Drak Turret (Augmented) (Turrets)
+- Ember Tear (Secondary Weapons)
+- Fate Divider (Guns)
+- Fate Sealer (Guns)
+- Floating Crystal (Systems)
+- Fuel Removal (Turret)
+- Hexagonal Crystal (Systems)
+- Imaginary Weapon (Guns)
+- LG Gridfire Turret (Turrets)
+- Mouthparts? (Guns)
+- Nano Strike (Guns)
+- Pinecone Launcher (Guns)
+- Plankton Mouth (Guns)
+- Prototype Fusion Cannon (Secondary Weapons)
+- Suicide Gun (Guns)
+- Timer Weapon (Guns)
+- Tree Skeleton Key Stone (Systems)
+
 ### Defined but used nowhere (future content) (32)
 
 - Arkrof GP Hybrid Steering (Engines)
@@ -718,68 +775,7 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Wanderer Outfits License (Licenses)
 - Z-999 "Arc" Fusion Torch (Engines)
 
-### Only on ships that can't be disabled (person ships, no sprite, never disabled) (31)
-
-- Absorption Organ (Turrets)
-- Abyssal Composer (Guns)
-- Asteroid Weapon Super (Guns)
-- Astral Mouth (Guns)
-- Boomerang Organ (Turrets)
-- Cloak Checker (Turrets)
-- Crystal Projector (Systems)
-- Crystalline Formation (Systems)
-- Drak Anti-Missile Field (Turrets)
-- Drak Anti-Missile Field (Augmented) (Turrets)
-- Drak Antimatter Cannon (Guns)
-- Drak Antimatter Cannon (Augmented) (Guns)
-- Drak Distancer (Turrets)
-- Drak Draining Field (Turrets)
-- Drak Draining Field (Augmented) (Turrets)
-- Drak Turret (Turrets)
-- Drak Turret (Augmented) (Turrets)
-- Fate Divider (Guns)
-- Fate Sealer (Guns)
-- Floating Crystal (Systems)
-- Fuel Removal (Turret)
-- Hexagonal Crystal (Systems)
-- Imaginary Weapon (Guns)
-- LG Gridfire Turret (Turrets)
-- Mouthparts? (Guns)
-- Nano Strike (Guns)
-- Plankton Mouth (Guns)
-- Prototype Fusion Cannon (Secondary Weapons)
-- Suicide Gun (Guns)
-- Timer Weapon (Guns)
-- Tree Skeleton Key Stone (Systems)
-
-### Unplunderable and not sold anywhere (24)
-
-- Aberrant Spiker (Secondary Weapons)
-- Anomalous Mass (Special)
-- Anomalous Shield Restorer (Systems)
-- Antigrav Glass (Hand to Hand)
-- Antimatter Power Cell (Power)
-- Ember Tear (Secondary Weapons)
-- Fusion Drive (Engines)
-- Irate Carronade (Hand to Hand)
-- Ka'het Electric Stunner (Hand to Hand)
-- Ka'het Machinery (Turrets)
-- Microbot Defense Station (Hand to Hand)
-- Microbot Grinder (Guns)
-- Mug (Hand to Hand)
-- Nucleolysis Beam (Guns)
-- Optical Laser Rifle (Hand to Hand)
-- Phalanx System (Hand to Hand)
-- Pinecone Launcher (Guns)
-- Plasma Grenades (Hand to Hand)
-- Plasmasickle (Hand to Hand)
-- Pug Biodefenses (Hand to Hand)
-- Pug Peacekeeping Staff (Hand to Hand)
-- Savagery Bludgeon (Guns)
-- Savagery Pike (Hand to Hand)
-- Telescopic Antimissile (Turrets)
-
-### Only on ships flown by governments you won't attack: Quarg, Quarg (Gegno), Quarg (Hai), Quarg (Kor Efret) (16)
+### Only on ships flown by governments you won't attack: Quarg, Quarg (Gegno), Quarg (Hai), Quarg (Kor Efret) (17)
 
 - Ancile Shield Generator (Systems)
 - Antimatter Core (Power)
@@ -789,6 +785,7 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Medium Graviton Steering (Engines)
 - Medium Graviton Thruster (Engines)
 - Peripheral Repair Hub (Systems)
+- Phalanx System (Hand to Hand)
 - Quantum Vacuum Battery (Power)
 - Quasar Core (Power)
 - Singularity Core (Power)
@@ -798,11 +795,12 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Small Graviton Thruster (Engines)
 - Stratospear (Turrets)
 
-### Only on ships flown by governments you won't attack: Korath (Civilian) (4)
+### Only on ships flown by governments you won't attack: Korath (Civilian) (5)
 
 - Afterburner (Lunar Class) (Engines)
 - Afterburner (Stellar Class) (Engines)
 - Firestorm Torpedo Rack (Ammunition)
+- Microbot Grinder (Guns)
 - Reverser (Stellar Class) (Engines)
 
 ### Only on ships flown by governments you won't attack: Magic Asteroid (4)
@@ -812,7 +810,7 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Asteroid Weapon Large 3 (Guns)
 - Asteroid Weapon Large 4 (Guns)
 
-### Needs a licence you don't have to buy (Avgi Atomics) and can't be plundered from an allowed source (3)
+### Needs a licence you don't have to buy (Avgi Atomics) and can't be taken from an allowed source (3)
 
 - "Ophrys" Nuclear Torpedo (Ammunition)
 - External Launch Rail (Secondary Weapons)
@@ -824,17 +822,17 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 - Celestial Culverin (Guns)
 - Large Graviton Thruster (Engines)
 
+### Unplunderable and not sold anywhere (3)
+
+- Antigrav Glass (Hand to Hand)
+- Ka'het Electric Stunner (Hand to Hand)
+- Mug (Hand to Hand)
+
 ### Only on ships flown by governments you won't attack: Gegno (3)
 
 - Burrower (Guns)
 - Excavator (Guns)
 - Ion Torch (Guns)
-
-### Needs a licence you don't have to buy (Heliarch) and can't be plundered from an allowed source (3)
-
-- Enforcer Confrontation Gear (Hand to Hand)
-- Enforcer Riot Staff (Hand to Hand)
-- Guardian Turret (Hand to Hand)
 
 ### Only on ships flown by governments you won't attack: Quarg (Gegno), Quarg (Hai), Quarg (Kor Efret) (2)
 
@@ -861,10 +859,6 @@ Generated 2026-10-18 12:12 from the current settings: 586 outfits in play, 189 n
 ### Only on ships flown by governments you won't attack: Magic Asteroid, Magic Asteroid (Disabled), Magic Asteroid (Patir 12.2) (1)
 
 - Asteroid Jump Drive (Systems)
-
-### Needs a licence you don't have to buy (Hicemus Conflict) and can't be plundered from an allowed source (1)
-
-- Cloud Piercer (Hand to Hand)
 
 ### Only on ships flown by governments you won't attack: Merchant (1)
 

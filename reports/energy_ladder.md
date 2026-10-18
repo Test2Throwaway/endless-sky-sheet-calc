@@ -13,11 +13,11 @@ energy draw is in that band.
 | Ship energy/s | Space per energy/s | Energy/s per space |
 |---|---|---|
 | 25–100 | 0.2410 | 4.15 |
-| 100–250 | 0.1511 | 6.62 |
-| 250–500 | 0.1237 | 8.08 |
-| 500–1000 | 0.0997 | 10.03 |
-| 1000–2000 | 0.0898 | 11.13 |
-| 2000–4000 | 0.0859 | 11.64 |
+| 100–250 | 0.1320 | 7.58 |
+| 250–500 | 0.1083 | 9.23 |
+| 500–1000 | 0.0970 | 10.31 |
+| 1000–2000 | 0.0888 | 11.26 |
+| 2000–4000 | 0.0851 | 11.74 |
 
 ## Single generators, each with its own cooling
 
@@ -26,14 +26,15 @@ energy draw is in that band.
 | Large Reactor Module | 98 | 24 | 1452.0 | 2700 | 11.90 | — | yes |
 | Small Reactor Module | 42 | 12 | 588.0 | 1140 | 10.89 | — | yes |
 | Blue Sun Reactor | 152 | 21 | 1878.0 | 2340 | 10.86 | — | obsolete |
-| Triple Plasma Core | 169 | 72 | 2616.0 | 9240 | 10.85 | — | yes |
+| Triple Plasma Core | 169 | 72 | 2616.0 | 9240 | 10.85 | — | obsolete |
 | "Uoret" Fusion Core | 145 | 21 | 1710.0 | 2106 | 10.30 | — | obsolete |
 | Double Plasma Core | 93 | 36 | 1320.0 | 4320 | 10.23 | — | obsolete |
 | White Sun Reactor | 127 | 19 | 1491.0 | 1920 | 10.21 | — | obsolete |
 | "Ryuit" Fusion Core | 98 | 14 | 1074.0 | 1410 | 9.59 | — | obsolete |
-| Plasma Core | 54 | 21 | 714.0 | 2160 | 9.52 | — | yes |
+| Plasma Core | 54 | 21 | 714.0 | 2160 | 9.52 | — | obsolete |
 | Yellow Sun Reactor | 82 | 14 | 912.0 | 1260 | 9.50 | — | obsolete |
 | Boulder Reactor | 90 | 21 | 1038.0 | 2040 | 9.35 | — | obsolete |
+| Antimatter Power Cell | 13 | 5 | 168.0 | 294 | 9.33 | — | yes |
 | Red Sun Reactor | 47 | 7 | 498.0 | 780 | 9.22 | — | obsolete |
 | Dark Reactor | 142 | 19 | 1482.0 | 1716 | 9.20 | — | obsolete |
 | Fusion Reactor | 100 | 21 | 1092.0 | 2400 | 9.02 | — | obsolete |
@@ -42,9 +43,9 @@ energy draw is in that band.
 | "Nnesa" Fusion Core | 56 | 12 | 576.0 | 876 | 8.47 | — | obsolete |
 | Stack Core | 140 | 29 | 1374.0 | 3300 | 8.13 | — | obsolete |
 | Large Collector Module | 21 | 5 | 206.9 | 201 | 7.96 | — | yes |
-| Ka'het MHD Generator | 22 | 7 | 228.0 | 348 | 7.86 | — | yes |
+| Ka'het MHD Generator | 22 | 7 | 228.0 | 348 | 7.86 | — | obsolete |
 | Breeder Reactor | 80 | 21 | 768.0 | 2100 | 7.60 | — | obsolete |
-| Lantern Fission Core | 24 | 24 | 360.0 | 2880 | 7.50 | — | yes |
+| Lantern Fission Core | 24 | 24 | 360.0 | 2880 | 7.50 | — | obsolete |
 | Geode Reactor | 58 | 14 | 534.0 | 1272 | 7.42 | — | obsolete |
 | Quark Reactor | 61 | 7 | 501.0 | 654 | 7.37 | — | obsolete |
 | Generator (Inferno Class) | 71 | 14 | 624.0 | 1620 | 7.34 | — | obsolete |
@@ -54,7 +55,7 @@ energy draw is in that band.
 | C27 Campaign Core | 145 | 24 | 1194.0 | 2778 | 7.07 | — | obsolete |
 | Pebble Core | 32 | 7 | 270.0 | 714 | 6.92 | — | obsolete |
 | Epoch Cell | 98 | 14 | 762.0 | 1188 | 6.80 | — | obsolete |
-| Concentrating Solar Array | 18 | 5 | 150.5 | 137 | 6.54 | — | yes |
+| Concentrating Solar Array | 18 | 5 | 150.5 | 137 | 6.54 | — | obsolete |
 | Large Cogeneration Module | 46 | 5 | 318.0 | 207 | 6.24 | — | obsolete |
 | Generator (Candle Class) | 23 | 7 | 186.0 | 420 | 6.20 | — | obsolete |
 | OC-"Mavra" Betavoltaic Cell | 17 | 5 | 135.0 | 228 | 6.14 | — | yes |
@@ -68,7 +69,7 @@ energy draw is in that band.
 | RT-I Radiothermal | 45 | 12 | 264.0 | 1080 | 4.63 | — | obsolete |
 | Small Collector Module | 6 | 5 | 50.2 | 54 | 4.56 | — | yes |
 | Large Biochemical Cell | 63 | 5 | 297.6 | 235 | 4.38 | — | obsolete |
-| Small Cogeneration Module | 11 | 5 | 69.0 | 51 | 4.31 | — | yes |
+| Small Cogeneration Module | 11 | 5 | 69.0 | 51 | 4.31 | — | obsolete |
 | KP-6 Photovoltaic Array | 16 | 0 | 69.0 | 0 | 4.31 | — | obsolete |
 | nGVF-EE Fuel Cell | 80 | 7 | 354.0 | 468 | 4.07 | — | obsolete |
 | C7 Brawl Cell | 39 | 5 | 162.0 | 204 | 3.68 | — | obsolete |
@@ -103,64 +104,54 @@ Excluded: Photoelectric Lamina (needs hull anchor points).
 | 14 | 69.0 | 4.93 | 9 | 5 | 1× Concentrating Solar Cell, 1× Small Collector Module |
 | 16 | 75.2 | 4.70 | 11 | 5 | 1× Concentrating Solar Cell, 1× KP-6 Photovoltaic Panel, 1× Small Collector Module |
 | 17 | 100.3 | 5.90 | 12 | 5 | 2× Small Collector Module |
-| 19 | 106.6 | 5.61 | 14 | 5 | 2× Small Collector Module, 1× KP-6 Photovoltaic Panel |
-| 20 | 119.1 | 5.96 | 15 | 5 | 2× Small Collector Module, 1× Concentrating Solar Cell |
-| 22 | 135.0 | 6.14 | 17 | 5 | 1× OC-"Mavra" Betavoltaic Cell |
-| 23 | 150.5 | 6.54 | 18 | 5 | 1× Concentrating Solar Array |
-| 25 | 156.8 | 6.27 | 20 | 5 | 1× Concentrating Solar Array, 1× KP-6 Photovoltaic Panel |
-| 26 | 206.9 | 7.96 | 21 | 5 | 1× Large Collector Module |
-| 28 | 213.2 | 7.61 | 23 | 5 | 1× KP-6 Photovoltaic Panel, 1× Large Collector Module |
-| 29 | 228.0 | 7.86 | 22 | 7 | 1× Ka'het MHD Generator |
-| 31 | 234.3 | 7.56 | 24 | 7 | 1× Ka'het MHD Generator, 1× KP-6 Photovoltaic Panel |
-| 32 | 257.1 | 8.03 | 27 | 5 | 1× Large Collector Module, 1× Small Collector Module |
-| 34 | 263.3 | 7.75 | 29 | 5 | 1× KP-6 Photovoltaic Panel, 1× Large Collector Module, 1× Small Collector Module |
-| 35 | 278.2 | 7.95 | 28 | 7 | 1× Ka'het MHD Generator, 1× Small Collector Module |
-| 37 | 284.4 | 7.69 | 30 | 7 | 1× Ka'het MHD Generator, 1× KP-6 Photovoltaic Panel, 1× Small Collector Module |
-| 38 | 297.0 | 7.82 | 31 | 7 | 1× Concentrating Solar Cell, 1× Ka'het MHD Generator, 1× Small Collector Module |
-| 40 | 307.2 | 7.68 | 33 | 7 | 2× Small Collector Module, 1× Large Collector Module |
-| 41 | 328.3 | 8.01 | 34 | 7 | 2× Small Collector Module, 1× Ka'het MHD Generator |
-| 43 | 334.6 | 7.78 | 36 | 7 | 2× Small Collector Module, 1× Ka'het MHD Generator, 1× KP-6 Photovoltaic Panel |
-| 44 | 347.1 | 7.89 | 37 | 7 | 2× Small Collector Module, 1× Concentrating Solar Cell, 1× Ka'het MHD Generator |
-| 46 | 363.0 | 7.89 | 39 | 7 | 1× Ka'het MHD Generator, 1× OC-"Mavra" Betavoltaic Cell |
-| 47 | 378.5 | 8.05 | 40 | 7 | 1× Concentrating Solar Array, 1× Ka'het MHD Generator |
-| 49 | 413.8 | 8.45 | 42 | 7 | 2× Large Collector Module |
-| 50 | 434.9 | 8.70 | 43 | 7 | 1× Ka'het MHD Generator, 1× Large Collector Module |
-| 51 | 456.0 | 8.94 | 44 | 7 | 2× Ka'het MHD Generator |
-| 53 | 462.3 | 8.72 | 46 | 7 | 2× Ka'het MHD Generator, 1× KP-6 Photovoltaic Panel |
+| 18 | 168.0 | 9.33 | 13 | 5 | 1× Antimatter Power Cell |
+| 20 | 174.3 | 8.71 | 15 | 5 | 1× Antimatter Power Cell, 1× KP-6 Photovoltaic Panel |
+| 22 | 180.5 | 8.21 | 17 | 5 | 2× KP-6 Photovoltaic Panel, 1× Antimatter Power Cell |
+| 23 | 186.8 | 8.12 | 16 | 7 | 1× Antimatter Power Cell, 1× Concentrating Solar Cell |
+| 25 | 193.1 | 7.72 | 18 | 7 | 1× Antimatter Power Cell, 1× Concentrating Solar Cell, 1× KP-6 Photovoltaic Panel |
+| 26 | 218.2 | 8.39 | 19 | 7 | 1× Antimatter Power Cell, 1× Small Collector Module |
+| 28 | 224.4 | 8.02 | 21 | 7 | 1× Antimatter Power Cell, 1× KP-6 Photovoltaic Panel, 1× Small Collector Module |
+| 29 | 237.0 | 8.17 | 22 | 7 | 1× Antimatter Power Cell, 1× Concentrating Solar Cell, 1× Small Collector Module |
+| 31 | 243.2 | 7.85 | 24 | 7 | 1× Antimatter Power Cell, 1× Concentrating Solar Cell, 1× KP-6 Photovoltaic Panel, 1× Small Collector Module |
+| 32 | 268.3 | 8.38 | 25 | 7 | 2× Small Collector Module, 1× Antimatter Power Cell |
+| 33 | 336.0 | 10.18 | 26 | 7 | 2× Antimatter Power Cell |
+| 35 | 342.3 | 9.78 | 28 | 7 | 2× Antimatter Power Cell, 1× KP-6 Photovoltaic Panel |
+| 36 | 354.8 | 9.86 | 29 | 7 | 2× Antimatter Power Cell, 1× Concentrating Solar Cell |
+| 38 | 361.1 | 9.50 | 31 | 7 | 2× Antimatter Power Cell, 1× Concentrating Solar Cell, 1× KP-6 Photovoltaic Panel |
+| 39 | 386.2 | 9.90 | 32 | 7 | 2× Antimatter Power Cell, 1× Small Collector Module |
+| 41 | 392.4 | 9.57 | 34 | 7 | 2× Antimatter Power Cell, 1× KP-6 Photovoltaic Panel, 1× Small Collector Module |
+| 42 | 405.0 | 9.64 | 35 | 7 | 2× Antimatter Power Cell, 1× Concentrating Solar Cell, 1× Small Collector Module |
+| 44 | 411.2 | 9.35 | 37 | 7 | 2× Antimatter Power Cell, 1× Concentrating Solar Cell, 1× KP-6 Photovoltaic Panel, 1× Small Collector Module |
+| 45 | 436.3 | 9.70 | 38 | 7 | 2× Antimatter Power Cell, 2× Small Collector Module |
+| 47 | 442.6 | 9.42 | 40 | 7 | 2× Antimatter Power Cell, 2× Small Collector Module, 1× KP-6 Photovoltaic Panel |
+| 48 | 455.1 | 9.48 | 41 | 7 | 2× Antimatter Power Cell, 2× Small Collector Module, 1× Concentrating Solar Cell |
+| 50 | 461.4 | 9.23 | 43 | 7 | 2× Antimatter Power Cell, 2× Small Collector Module, 1× Concentrating Solar Cell, 1× KP-6 Photovoltaic Panel |
+| 51 | 504.0 | 9.88 | 39 | 12 | 3× Antimatter Power Cell |
+| 53 | 510.3 | 9.63 | 41 | 12 | 3× Antimatter Power Cell, 1× KP-6 Photovoltaic Panel |
 | 54 | 588.0 | 10.89 | 42 | 12 | 1× Small Reactor Module |
 | 56 | 594.3 | 10.61 | 44 | 12 | 1× KP-6 Photovoltaic Panel, 1× Small Reactor Module |
 | 58 | 600.5 | 10.35 | 46 | 12 | 2× KP-6 Photovoltaic Panel, 1× Small Reactor Module |
 | 59 | 606.8 | 10.28 | 45 | 14 | 1× Concentrating Solar Cell, 1× Small Reactor Module |
-| 70 | 694.6 | 9.92 | 56 | 14 | 2× Small Collector Module, 1× KP-6 Photovoltaic Panel, 1× Small Reactor Module |
-| 80 | 822.3 | 10.28 | 66 | 14 | 1× Ka'het MHD Generator, 1× KP-6 Photovoltaic Panel, 1× Small Reactor Module |
-| 90 | 916.3 | 10.18 | 76 | 14 | 2× Small Collector Module, 1× Ka'het MHD Generator, 1× Small Reactor Module |
-| 100 | 1008.1 | 10.08 | 86 | 14 | 2× Large Collector Module, 1× KP-6 Photovoltaic Panel, 1× Small Reactor Module |
+| 90 | 942.8 | 10.48 | 71 | 19 | 2× Antimatter Power Cell, 1× Concentrating Solar Cell, 1× Small Reactor Module |
+| 100 | 1026.8 | 10.27 | 81 | 19 | 6× Antimatter Power Cell, 1× Concentrating Solar Cell |
 | 110 | 1201.1 | 10.92 | 89 | 21 | 2× Small Reactor Module, 1× Concentrating Solar Cell, 1× KP-6 Photovoltaic Panel |
 | 120 | 1295.1 | 10.79 | 99 | 21 | 2× Small Collector Module, 2× Small Reactor Module, 1× Concentrating Solar Cell |
 | 130 | 1508.4 | 11.60 | 106 | 24 | 1× KP-6 Photovoltaic Panel, 1× Large Reactor Module, 1× Small Collector Module |
-| 140 | 1602.5 | 11.45 | 116 | 24 | 1× Concentrating Solar Array, 1× Large Reactor Module |
-| 150 | 1730.2 | 11.53 | 126 | 24 | 1× Ka'het MHD Generator, 1× Large Reactor Module, 1× Small Collector Module |
-| 170 | 1916.0 | 11.27 | 146 | 24 | 2× Large Collector Module, 1× Large Reactor Module, 1× Small Collector Module |
+| 140 | 1645.1 | 11.75 | 116 | 24 | 1× Antimatter Power Cell, 1× Concentrating Solar Cell, 1× KP-6 Photovoltaic Panel, 1× Large Reactor Module |
+| 150 | 1739.1 | 11.59 | 126 | 24 | 2× Small Collector Module, 1× Antimatter Power Cell, 1× Concentrating Solar Cell, 1× Large Reactor Module |
+| 170 | 1962.3 | 11.54 | 139 | 31 | 3× Antimatter Power Cell, 1× KP-6 Photovoltaic Panel, 1× Large Reactor Module |
 | 180 | 2109.0 | 11.72 | 149 | 31 | 1× Concentrating Solar Cell, 1× Large Reactor Module, 1× Small Collector Module, 1× Small Reactor Module |
-| 200 | 2274.3 | 11.37 | 164 | 36 | 1× Ka'het MHD Generator, 1× KP-6 Photovoltaic Panel, 1× Large Reactor Module, 1× Small Reactor Module |
-| 220 | 2460.1 | 11.18 | 184 | 36 | 2× Large Collector Module, 1× KP-6 Photovoltaic Panel, 1× Large Reactor Module, 1× Small Reactor Module |
+| 210 | 2426.2 | 11.55 | 172 | 38 | 2× Antimatter Power Cell, 1× Large Reactor Module, 1× Small Collector Module, 1× Small Reactor Module |
+| 220 | 2562.8 | 11.65 | 182 | 38 | 3× Antimatter Power Cell, 1× Concentrating Solar Cell, 1× Large Reactor Module, 1× Small Reactor Module |
 | 230 | 2653.1 | 11.54 | 187 | 43 | 2× Small Reactor Module, 1× Concentrating Solar Cell, 1× KP-6 Photovoltaic Panel, 1× Large Reactor Module |
-| 240 | 2747.1 | 11.45 | 197 | 43 | 2× Small Collector Module, 2× Small Reactor Module, 1× Concentrating Solar Cell, 1× Large Reactor Module |
+| 240 | 2796.0 | 11.65 | 195 | 45 | 2× Small Reactor Module, 1× Antimatter Power Cell, 1× Large Reactor Module |
 | 250 | 2973.0 | 11.89 | 205 | 45 | 2× Large Reactor Module, 1× Concentrating Solar Cell, 1× Small Collector Module |
-| 270 | 3167.3 | 11.73 | 225 | 45 | 2× Large Reactor Module, 1× KP-6 Photovoltaic Panel, 1× Large Collector Module, 1× Small Collector Module |
-| 280 | 3272.4 | 11.69 | 232 | 48 | 3× Small Reactor Module, 1× KP-6 Photovoltaic Panel, 1× Large Reactor Module, 1× Small Collector Module |
-| 290 | 3366.5 | 11.61 | 242 | 48 | 3× Small Reactor Module, 1× Concentrating Solar Array, 1× Large Reactor Module |
+| 260 | 3090.8 | 11.89 | 212 | 48 | 2× Large Reactor Module, 1× Antimatter Power Cell, 1× Concentrating Solar Cell |
+| 270 | 3240.0 | 12.00 | 222 | 48 | 2× Antimatter Power Cell, 2× Large Reactor Module |
 | 300 | 3561.0 | 11.87 | 247 | 53 | 2× Large Reactor Module, 1× Concentrating Solar Cell, 1× Small Collector Module, 1× Small Reactor Module |
-| 320 | 3749.1 | 11.72 | 265 | 55 | 2× Large Reactor Module, 1× Large Collector Module, 1× Small Collector Module, 1× Small Reactor Module |
-| 330 | 3841.6 | 11.64 | 275 | 55 | 4× Small Reactor Module, 3× KP-6 Photovoltaic Panel, 1× Concentrating Solar Cell, 1× Large Reactor Module |
-| 340 | 3966.8 | 11.67 | 285 | 55 | 2× Ka'het MHD Generator, 2× Large Reactor Module, 1× Concentrating Solar Cell, 1× Small Reactor Module |
+| 340 | 4014.8 | 11.81 | 280 | 60 | 3× Antimatter Power Cell, 2× Large Reactor Module, 1× Concentrating Solar Cell, 1× Small Reactor Module |
 | 350 | 4136.4 | 11.82 | 288 | 62 | 2× Large Reactor Module, 2× Small Reactor Module, 1× KP-6 Photovoltaic Panel, 1× Small Collector Module |
 | 360 | 4368.5 | 12.13 | 298 | 62 | 3× Large Reactor Module, 2× KP-6 Photovoltaic Panel |
 | 370 | 4425.0 | 11.96 | 303 | 67 | 3× Large Reactor Module, 1× Concentrating Solar Cell, 1× Small Collector Module |
-| 390 | 4619.3 | 11.84 | 323 | 67 | 3× Large Reactor Module, 1× KP-6 Photovoltaic Panel, 1× Large Collector Module, 1× Small Collector Module |
-| 400 | 4737.0 | 11.84 | 331 | 69 | 3× Small Reactor Module, 2× Large Reactor Module, 1× Concentrating Solar Cell, 1× Small Collector Module |
-| 410 | 4950.3 | 12.07 | 338 | 72 | 3× Large Reactor Module, 1× KP-6 Photovoltaic Panel, 1× Small Reactor Module |
-| 420 | 5044.3 | 12.01 | 348 | 72 | 3× Large Reactor Module, 2× Small Collector Module, 1× Small Reactor Module |
-| 430 | 5172.0 | 12.03 | 358 | 72 | 3× Large Reactor Module, 1× Ka'het MHD Generator, 1× Small Reactor Module |
-| 450 | 5357.8 | 11.91 | 378 | 72 | 3× Large Reactor Module, 2× Large Collector Module, 1× Small Reactor Module |
-| 460 | 5550.8 | 12.07 | 381 | 79 | 3× Large Reactor Module, 2× Small Reactor Module, 1× Concentrating Solar Cell |
+| 380 | 4561.6 | 12.00 | 313 | 67 | 3× Large Reactor Module, 2× Concentrating Solar Cell, 1× Antimatter Power Cell |
+| 400 | 4767.2 | 11.92 | 331 | 69 | 3× Large Reactor Module, 2× Antimatter Power Cell, 1× Concentrating Solar Cell, 1× KP-6 Photovoltaic Panel, 1× Small Collector Module |
