@@ -8,9 +8,14 @@
 > 2. The power and cooling plant search per solar case (dark, evader, normal, bright, max), on what strict
 >    dominance leaves. Outfits with stats beyond steady power and cooling are kept.
 >
-> On the current in-play list it drops 83–86 of 587 designable outfits (14–15%). Weapons and ammunition (199) are
-> untouched: no weapon is at least as good as another in every way, so pruning them needs the compensated
-> layer below. Everything below the MVP is the plan for later.
+> 3. The engine pass per solar case (`sheetcalc/engines.py`): compensated dominance as in sections 5 and 6, with
+>    the case's power plant rates at the four reference loads as the rate box.
+> 4. The weapon lenses (`sheetcalc/weapons.py`, tier table section 2a): damage (general-purpose combat requests
+>    only) and anti-missile.
+>
+> On the current in-play list, strict + power + engines drop 121–125 of 587 designable outfits (21%); the engine
+> pass alone drops 38–41 of the 148 engines strict dominance keeps. The weapon lenses drop 2 of 142 fighting
+> weapons and none of the 13 anti-missile turrets. Everything below the MVP is the plan for later.
 
 The pruner works out, once per game update, which outfits the optimizer can safely skip for a given kind of design.
 It writes its results as **relations** ("A is beaten by B under these conditions"), and the optimizer applies them to
