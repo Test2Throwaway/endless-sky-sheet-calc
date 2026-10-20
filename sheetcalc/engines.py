@@ -5,9 +5,11 @@ at the solar case's rates. A compensated cost is
 
     outfit space + energy rate × energy/s + heat rate × heat/s
 
-with thrusting at 70% and turning at 30% duty (the optimizer's cruise duty cycles), plus any steady energy
-generation, consumption and heat generation on the outfit. The rates come from the case's power plant search at
-each reference ship load; their range is a box, and B beats A only if B's cost is no higher at every corner.
+for the thrusting and turning energy and heat, plus any steady energy generation, consumption and heat generation
+on the outfit. How much a ship thrusts and turns is not known, so thrust duty and turn duty are each taken at 0%
+and at 100%, independently; the cost is linear in each duty, so a drop that holds at those corners holds at every
+duty in between. The rates come from the case's power plant search at each reference ship load; their range is a
+box, and B beats A only if B's cost is no higher at every corner (rates × duties).
 
 Everything else uses the strict rules (attributes.py): thrust, turn, reverse thrust higher; engine capacity, mass
 and every other attribute as in strict dominance; afterburners, torches and other classes as presence keys.
@@ -21,67 +23,68 @@ from .attributes import PRESENCE, direction
 from .strict import MAX_MULTIPLE, _candidates, _compare, _scaled
 
 FPS = 60.
-THRUST_DUTY, TURN_DUTY = .7, .3
-# Attribute -> (resource, per-second weight). Positive energy generation lowers the energy bill.
+DUTIES = (0., 1.)
+# Traded attribute -> (resource, per-second weight, duty group). Steady power is always on (no duty group);
+# positive energy generation lowers the energy bill. Each duty group is taken at 0% and at 100%, independently.
+STEADY_POWER = {
+    "energy consumption": ("energy", FPS, None),
+    "energy generation": ("energy", -FPS, None),
+    "heat generation": ("heat", FPS, None),
+}
 TRADED = {
-    "thrusting energy": ("energy", THRUST_DUTY * FPS),
-    "thrusting heat": ("heat", THRUST_DUTY * FPS),
-    "turning energy": ("energy", TURN_DUTY * FPS),
-    "turning heat": ("heat", TURN_DUTY * FPS),
-    "energy consumption": ("energy", FPS),
-    "energy generation": ("energy", -FPS),
-    "heat generation": ("heat", FPS),
+    "thrusting energy": ("energy", FPS, "thrust"),
+    "thrusting heat": ("heat", FPS, "thrust"),
+    "turning energy": ("energy", FPS, "turn"),
+    "turning heat": ("heat", FPS, "turn"),
+    **STEADY_POWER,
 }
 
 
-def _load(attrs):
-    """(energy/s, heat/s) this outfit adds to the ship at cruise duty."""
-    load = {"energy": 0., "heat": 0.}
-    for key, (resource, weight) in TRADED.items():
-        load[resource] += attrs.get(key, 0.) * weight
-    return load["energy"], load["heat"]
-
-
-def _costs(attrs, corners):
-    """Compensated cost at each corner of the rate box."""
+def _costs(attrs, corners, traded):
+    """Compensated cost at each corner (energy rate, heat rate, {duty group: duty})."""
     space = -attrs.get("outfit space", 0.)
-    energy, heat = _load(attrs)
-    return [space + e * energy + h * heat for e, h in corners]
+    costs = []
+    for energy_rate, heat_rate, duty in corners:
+        rate = {"energy": energy_rate, "heat": heat_rate}
+        costs.append(space + sum(attrs.get(key, 0.) * weight * (duty[group] if group else 1.) * rate[resource]
+                                 for key, (resource, weight, group) in traded.items()))
+    return costs
 
 
-def _untraded(attrs):
-    return {k: v for k, v in attrs.items() if k not in TRADED and k != "outfit space"}
-
-
-def _compensated_beats(a, b_attrs, corners):
+def _compensated_beats(a, b_attrs, corners, traded):
     """None if b can't beat a; otherwise whether b is strictly better somewhere."""
-    rest = _compare(_untraded(a.attrs), _untraded(b_attrs), direction, PRESENCE)
+    untraded = lambda attrs: {k: v for k, v in attrs.items() if k not in traded and k != "outfit space"}
+    rest = _compare(untraded(a.attrs), untraded(b_attrs), direction, PRESENCE)
     if rest is None:
         return None
-    ca, cb = _costs(a.attrs, corners), _costs(b_attrs, corners)
+    ca, cb = _costs(a.attrs, corners, traded), _costs(b_attrs, corners, traded)
     if any(y > x + 1e-9 for x, y in zip(ca, cb)):
         return None
     return rest or any(y < x - 1e-9 for x, y in zip(ca, cb))
 
 
-def rate_box(prices):
-    """Corners of the rate box from {reference load: {"energy": rate, "heat": rate}}."""
+def rate_box(prices, traded=TRADED):
+    """Corners (energy rate, heat rate, {duty group: duty}) from {reference load: {"energy": rate, "heat": rate}}:
+    the lowest and highest rate of each resource, and each duty group of `traded` at 0% and 100%."""
     energy = [p["energy"] for p in prices.values()]
     heat = [p["heat"] for p in prices.values()]
-    return list(product((min(energy), max(energy)), (min(heat), max(heat))))
+    groups = sorted({g for _, _, g in traded.values() if g})
+    duties = [dict(zip(groups, d)) for d in product(DUTIES, repeat=len(groups))]
+    return list(product((min(energy), max(energy)), (min(heat), max(heat)), duties))
 
 
-def engine_dominance(outfits, availability, corners):
-    """Return (engines considered, {dropped engine: {engine that beats it: copies needed}})."""
-    group = [c for c in _candidates(outfits, availability) if c.category == "Engines"]
+def compensated_dominance(outfits, availability, corners, traded, select):
+    """Compensated dominance within each category among the candidates `select` accepts.
+    Return (outfits considered, {dropped outfit: {outfit that beats it: copies needed}})."""
+    group = [c for c in _candidates(outfits, availability) if select(c)]
     dropped = {}
     for a in group:
         beaters = {}
         for b in group:
-            if b is a or b.tier > a.tier:
+            if b is a or b.category != a.category or b.tier > a.tier:
                 continue
             if b.copy_limit >= a.copy_limit:
-                result = _compensated_beats(a, b.attrs, corners)
+                result = _compensated_beats(a, b.attrs, corners, traded)
                 if result or (result is False and (b.tier, -b.copy_limit, b.name) < (a.tier, -a.copy_limit, a.name)):
                     beaters[b.name] = 1
                     continue
@@ -91,9 +94,14 @@ def engine_dominance(outfits, availability, corners):
             for k in range(2, min(MAX_MULTIPLE, int(space_a // space_b)) + 1):
                 if k > b.copy_limit:
                     break
-                if _compensated_beats(a, _scaled(b.attrs, k), corners):
+                if _compensated_beats(a, _scaled(b.attrs, k), corners, traded):
                     beaters[b.name] = k
                     break
         if beaters:
             dropped[a.name] = dict(sorted(beaters.items()))
     return [c.name for c in group], dropped
+
+
+def engine_dominance(outfits, availability, corners):
+    """Return (engines considered, {dropped engine: {engine that beats it: copies needed}})."""
+    return compensated_dominance(outfits, availability, corners, TRADED, lambda c: c.category == "Engines")

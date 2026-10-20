@@ -9,12 +9,16 @@
 >    dominance leaves. Outfits with stats beyond steady power and cooling are kept.
 >
 > 3. The engine pass per solar case (`sheetcalc/engines.py`): compensated dominance as in sections 5 and 6, with
->    the case's power plant rates at the four reference loads as the rate box.
-> 4. The weapon lenses (`sheetcalc/weapons.py`, tier table section 2a): damage (general-purpose combat requests
+>    the case's power plant rates at the four reference loads as the rate box, and thrust and turn duty each at 0%
+>    and 100% instead of fixed duty cycles.
+> 4. The regeneration pass per solar case (`sheetcalc/regen.py`): the same, with regeneration duty at 0% and 100%.
+>    Steady power is traded; every other stat (storage, slots, links, protection, multipliers) uses the strict
+>    rules, so a multi-role outfit is only beaten by one at least as good at its other roles.
+> 5. The weapon lenses (`sheetcalc/weapons.py`, tier table section 2a): damage (general-purpose combat requests
 >    only) and anti-missile.
 >
-> On the current in-play list, strict + power + engines drop 121–125 of 587 designable outfits (21%); the engine
-> pass alone drops 38–41 of the 148 engines strict dominance keeps. The weapon lenses drop 2 of 142 fighting
+> On the current in-play list, strict + power + engines + regeneration drop 118–131 of 587 designable outfits
+> (20–22%): strict 60, power 23–26, engines 26–38 (of the 148 strict keeps), regeneration 8–9 (of 50). The weapon lenses drop 2 of 142 fighting
 > weapons and none of the 13 anti-missile turrets. Everything below the MVP is the plan for later.
 
 The pruner works out, once per game update, which outfits the optimizer can safely skip for a given kind of design.

@@ -1279,34 +1279,14 @@
     "\"Basrem\" Atomic Thruster": {
      "Small Thrust Module": 2
     },
-    "\"Biroo\" Atomic Steering": {
-     "Steering (Lunar Class)": 1
-    },
-    "A125 Atomic Steering": {
-     "Crucible-Class Steering": 1
-    },
     "A255 Atomic Steering": {
      "Large Steering Module": 1
-    },
-    "A525 Atomic Steering": {
-     "Smelter-Class Steering": 1
     },
     "Chiisana Rift Thruster": {
      "Small Thrust Module": 1
     },
-    "Chipmunk Plasma Steering": {
-     "Small Steering Module": 2
-    },
     "Chipmunk Plasma Thruster": {
      "Small Thrust Module": 2
-    },
-    "Greyhound Plasma Steering": {
-     "\"Basrem\" Atomic Steering": 2,
-     "Large Steering Module": 1
-    },
-    "Impala Plasma Steering": {
-     "A375 Atomic Steering": 1,
-     "Nami Rift Steering": 1
     },
     "Impala Plasma Thruster": {
      "Small Thrust Module": 6
@@ -1324,10 +1304,6 @@
      "Thruster (Asteroid Class)": 2,
      "Thruster (Comet Class)": 1
     },
-    "Pug Akfar Steering": {
-     "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1
-    },
     "Pug Akfar Thruster": {
      "Small Thrust Module": 4,
      "Type 3 Radiant Thruster": 1
@@ -1335,64 +1311,42 @@
     "Pug Cormet Thruster": {
      "Small Thrust Module": 6
     },
-    "Pug Lohmar Steering": {
-     "A525 Atomic Steering": 1,
-     "Forge-Class Steering": 2,
-     "Smelter-Class Steering": 1,
-     "Steering (Planetary Class)": 1
-    },
     "Pug Lohmar Thruster": {
      "Type 3 Radiant Thruster": 2
     },
     "RG15 Torch Steering": {
      "\"Aqra\" Inductive Steering": 1,
      "\"Basrem\" Atomic Steering": 1,
-     "\"Benga\" Atomic Steering": 1,
      "A125 Atomic Steering": 1,
-     "Chiisana Rift Steering": 1,
      "Chipmunk Plasma Steering": 1,
      "Crucible-Class Steering": 1,
      "SC-12 Plasma Steering": 1,
      "Small Steering Module": 2,
-     "Steering (Asteroid Class)": 2,
-     "Steering (Comet Class)": 1,
      "Type 1 Radiant Steering": 2,
      "Type 2 Radiant Steering": 1,
-     "X1200 Ion Steering": 2,
      "X2200 Ion Steering": 1
     },
     "RG15 Torch Thruster": {
      "\"Basrem\" Atomic Thruster": 1,
-     "A120 Atomic Thruster": 1,
-     "Chiisana Rift Thruster": 2,
      "Chipmunk Plasma Thruster": 1,
-     "Nami Rift Thruster": 1,
      "SC-12 Plasma Thruster": 1,
      "Small Thrust Module": 2,
      "Thruster (Asteroid Class)": 1,
-     "Type 1 Radiant Thruster": 2,
-     "Type 2 Radiant Thruster": 1
+     "Type 1 Radiant Thruster": 2
     },
     "RG18 Torch Steering": {
      "\"Basrem\" Atomic Steering": 2,
      "\"Benga\" Atomic Steering": 1,
-     "\"Biroo\" Atomic Steering": 1,
-     "\"Chyyra\" Inductive Steering": 1,
-     "A125 Atomic Steering": 2,
      "A255 Atomic Steering": 1,
      "Chiisana Rift Steering": 1,
      "Chipmunk Plasma Steering": 2,
-     "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1,
      "Greyhound Plasma Steering": 1,
      "Large Steering Module": 1,
      "Pug Akfar Steering": 1,
-     "SC-12 Plasma Steering": 2,
      "SC-14 Plasma Steering": 1,
      "Small Steering Module": 3,
      "Steering (Asteroid Class)": 2,
      "Steering (Comet Class)": 1,
-     "Steering (Lunar Class)": 1,
      "Type 1 Radiant Steering": 3,
      "Type 3 Radiant Steering": 1,
      "X1200 Ion Steering": 3,
@@ -1404,33 +1358,23 @@
      "A250 Atomic Thruster": 1,
      "Chiisana Rift Thruster": 3,
      "Chipmunk Plasma Thruster": 2,
-     "Engine (Meteor Class)": 2,
      "Greyhound Plasma Thruster": 1,
      "Large Thrust Module": 1,
-     "Ookii Rift Thruster": 1,
      "Pug Akfar Thruster": 1,
      "Small Thrust Module": 3,
      "Thruster (Asteroid Class)": 2,
      "Thruster (Comet Class)": 1,
      "Type 1 Radiant Thruster": 3,
      "Type 2 Radiant Thruster": 1,
-     "Type 3 Radiant Thruster": 1,
-     "X3700 Ion Thruster": 1
+     "Type 3 Radiant Thruster": 1
     },
     "RG3 Torch Steering": {
-     "\"Aqra\" Inductive Steering": 3,
      "\"Basrem\" Atomic Steering": 4,
      "\"Benga\" Atomic Steering": 2,
      "\"Biroo\" Atomic Steering": 1,
-     "\"Bondir\" Atomic Steering": 1,
      "\"Veusa\" Inductive Steering": 1,
      "A125 Atomic Steering": 3,
-     "A255 Atomic Steering": 2,
      "A375 Atomic Steering": 1,
-     "Chiisana Rift Steering": 2,
-     "Chipmunk Plasma Steering": 4,
-     "Crucible-Class Steering": 3,
-     "Gaktem GP Hybrid Steering": 1,
      "Greyhound Plasma Steering": 2,
      "Impala Plasma Steering": 1,
      "Large Steering Module": 2,
@@ -1440,13 +1384,8 @@
      "Steering (Asteroid Class)": 4,
      "Steering (Comet Class)": 2,
      "Steering (Lunar Class)": 1,
-     "Steering (Planetary Class)": 1,
      "Type 1 Radiant Steering": 6,
-     "Type 2 Radiant Steering": 3,
-     "Type 3 Radiant Steering": 2,
-     "Type 4 Radiant Steering": 1,
-     "X2200 Ion Steering": 3,
-     "X4200 Ion Steering": 1
+     "Type 4 Radiant Steering": 1
     },
     "RG3 Torch Thruster": {
      "\"Basrem\" Atomic Thruster": 3,
@@ -1459,7 +1398,6 @@
      "Greyhound Plasma Thruster": 2,
      "Impala Plasma Thruster": 1,
      "Large Thrust Module": 2,
-     "Nami Rift Thruster": 3,
      "Pug Cormet Thruster": 1,
      "SC-12 Plasma Thruster": 3,
      "Small Thrust Module": 5,
@@ -1473,11 +1411,8 @@
     },
     "SC-12 Plasma Steering": {
      "\"Basrem\" Atomic Steering": 1,
-     "A125 Atomic Steering": 1,
      "Chipmunk Plasma Steering": 1,
-     "Crucible-Class Steering": 1,
-     "Small Steering Module": 2,
-     "Type 1 Radiant Steering": 2
+     "Small Steering Module": 2
     },
     "SC-12 Plasma Thruster": {
      "\"Basrem\" Atomic Thruster": 1,
@@ -1487,12 +1422,8 @@
     },
     "SC-14 Plasma Steering": {
      "A255 Atomic Steering": 1,
-     "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1,
      "Large Steering Module": 1,
-     "Pug Akfar Steering": 1,
      "Small Steering Module": 4,
-     "Steering (Asteroid Class)": 3,
      "Type 3 Radiant Steering": 1
     },
     "Subarashii Rift Thruster": {
@@ -1500,27 +1431,13 @@
      "Small Thrust Module": 6,
      "Thruster (Comet Class)": 2
     },
-    "Tyrant Plasma Steering": {
-     "A865 Atomic Steering": 1
-    },
-    "X1200 Ion Steering": {
-     "Steering (Asteroid Class)": 1
-    },
     "X2200 Ion Steering": {
-     "\"Aqra\" Inductive Steering": 1,
      "A125 Atomic Steering": 1,
      "Crucible-Class Steering": 1
     },
     "X3200 Ion Steering": {
-     "\"Biroo\" Atomic Steering": 1,
-     "\"Chyyra\" Inductive Steering": 1,
-     "A125 Atomic Steering": 2,
-     "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1,
      "Large Steering Module": 1,
      "Small Steering Module": 4,
-     "Steering (Asteroid Class)": 3,
-     "Steering (Lunar Class)": 1,
      "Type 3 Radiant Steering": 1
     },
     "X3700 Ion Thruster": {
@@ -1532,23 +1449,15 @@
      "Type 3 Radiant Thruster": 1
     },
     "X4200 Ion Steering": {
-     "\"Bondir\" Atomic Steering": 1,
      "Large Steering Module": 2,
-     "Small Steering Module": 8,
      "Type 4 Radiant Steering": 1
     },
     "X4700 Ion Thruster": {
-     "A120 Atomic Thruster": 3,
      "Large Thrust Module": 2,
      "Small Thrust Module": 7,
-     "Thruster (Asteroid Class)": 4,
      "Type 4 Radiant Thruster": 1
     },
-    "X5200 Ion Steering": {
-     "\"Bufaer\" Atomic Steering": 1
-    },
     "X5700 Ion Thruster": {
-     "A250 Atomic Thruster": 3,
      "Impala Plasma Thruster": 2,
      "Large Thrust Module": 3
     }
@@ -1560,34 +1469,14 @@
     "\"Basrem\" Atomic Thruster": {
      "Small Thrust Module": 2
     },
-    "\"Biroo\" Atomic Steering": {
-     "Steering (Lunar Class)": 1
-    },
-    "A125 Atomic Steering": {
-     "Crucible-Class Steering": 1
-    },
     "A255 Atomic Steering": {
      "Large Steering Module": 1
-    },
-    "A525 Atomic Steering": {
-     "Smelter-Class Steering": 1
     },
     "Chiisana Rift Thruster": {
      "Small Thrust Module": 1
     },
-    "Chipmunk Plasma Steering": {
-     "Small Steering Module": 2
-    },
     "Chipmunk Plasma Thruster": {
      "Small Thrust Module": 2
-    },
-    "Greyhound Plasma Steering": {
-     "\"Basrem\" Atomic Steering": 2,
-     "Large Steering Module": 1
-    },
-    "Impala Plasma Steering": {
-     "A375 Atomic Steering": 1,
-     "Nami Rift Steering": 1
     },
     "Impala Plasma Thruster": {
      "Small Thrust Module": 6
@@ -1605,10 +1494,6 @@
      "Thruster (Asteroid Class)": 2,
      "Thruster (Comet Class)": 1
     },
-    "Pug Akfar Steering": {
-     "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1
-    },
     "Pug Akfar Thruster": {
      "Small Thrust Module": 4,
      "Type 3 Radiant Thruster": 1
@@ -1616,63 +1501,42 @@
     "Pug Cormet Thruster": {
      "Small Thrust Module": 6
     },
-    "Pug Lohmar Steering": {
-     "A525 Atomic Steering": 1,
-     "Forge-Class Steering": 2,
-     "Smelter-Class Steering": 1,
-     "Steering (Planetary Class)": 1
-    },
     "Pug Lohmar Thruster": {
      "Type 3 Radiant Thruster": 2
     },
     "RG15 Torch Steering": {
      "\"Aqra\" Inductive Steering": 1,
      "\"Basrem\" Atomic Steering": 1,
-     "\"Benga\" Atomic Steering": 1,
      "A125 Atomic Steering": 1,
-     "Chiisana Rift Steering": 1,
      "Chipmunk Plasma Steering": 1,
      "Crucible-Class Steering": 1,
      "SC-12 Plasma Steering": 1,
      "Small Steering Module": 2,
-     "Steering (Asteroid Class)": 2,
-     "Steering (Comet Class)": 1,
      "Type 1 Radiant Steering": 2,
      "Type 2 Radiant Steering": 1,
-     "X1200 Ion Steering": 2,
      "X2200 Ion Steering": 1
     },
     "RG15 Torch Thruster": {
      "\"Basrem\" Atomic Thruster": 1,
-     "A120 Atomic Thruster": 1,
      "Chipmunk Plasma Thruster": 1,
-     "Nami Rift Thruster": 1,
      "SC-12 Plasma Thruster": 1,
      "Small Thrust Module": 2,
      "Thruster (Asteroid Class)": 1,
-     "Type 1 Radiant Thruster": 2,
-     "Type 2 Radiant Thruster": 1
+     "Type 1 Radiant Thruster": 2
     },
     "RG18 Torch Steering": {
      "\"Basrem\" Atomic Steering": 2,
      "\"Benga\" Atomic Steering": 1,
-     "\"Biroo\" Atomic Steering": 1,
-     "\"Chyyra\" Inductive Steering": 1,
-     "A125 Atomic Steering": 2,
      "A255 Atomic Steering": 1,
      "Chiisana Rift Steering": 1,
      "Chipmunk Plasma Steering": 2,
-     "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1,
      "Greyhound Plasma Steering": 1,
      "Large Steering Module": 1,
      "Pug Akfar Steering": 1,
-     "SC-12 Plasma Steering": 2,
      "SC-14 Plasma Steering": 1,
      "Small Steering Module": 3,
      "Steering (Asteroid Class)": 2,
      "Steering (Comet Class)": 1,
-     "Steering (Lunar Class)": 1,
      "Type 1 Radiant Steering": 3,
      "Type 3 Radiant Steering": 1,
      "X1200 Ion Steering": 3,
@@ -1684,49 +1548,33 @@
      "A250 Atomic Thruster": 1,
      "Chiisana Rift Thruster": 3,
      "Chipmunk Plasma Thruster": 2,
-     "Engine (Meteor Class)": 2,
      "Greyhound Plasma Thruster": 1,
      "Large Thrust Module": 1,
-     "Ookii Rift Thruster": 1,
      "Pug Akfar Thruster": 1,
      "Small Thrust Module": 3,
      "Thruster (Asteroid Class)": 2,
      "Thruster (Comet Class)": 1,
      "Type 1 Radiant Thruster": 3,
      "Type 2 Radiant Thruster": 1,
-     "Type 3 Radiant Thruster": 1,
-     "X3700 Ion Thruster": 1
+     "Type 3 Radiant Thruster": 1
     },
     "RG3 Torch Steering": {
-     "\"Aqra\" Inductive Steering": 3,
      "\"Basrem\" Atomic Steering": 4,
      "\"Benga\" Atomic Steering": 2,
      "\"Biroo\" Atomic Steering": 1,
-     "\"Bondir\" Atomic Steering": 1,
      "\"Veusa\" Inductive Steering": 1,
      "A125 Atomic Steering": 3,
-     "A255 Atomic Steering": 2,
      "A375 Atomic Steering": 1,
-     "Chiisana Rift Steering": 2,
-     "Chipmunk Plasma Steering": 4,
-     "Crucible-Class Steering": 3,
-     "Gaktem GP Hybrid Steering": 1,
      "Greyhound Plasma Steering": 2,
      "Impala Plasma Steering": 1,
      "Large Steering Module": 2,
-     "Nami Rift Steering": 1,
      "Pug Cormet Steering": 1,
      "Small Steering Module": 6,
      "Steering (Asteroid Class)": 4,
      "Steering (Comet Class)": 2,
      "Steering (Lunar Class)": 1,
-     "Steering (Planetary Class)": 1,
      "Type 1 Radiant Steering": 6,
-     "Type 2 Radiant Steering": 3,
-     "Type 3 Radiant Steering": 2,
-     "Type 4 Radiant Steering": 1,
-     "X2200 Ion Steering": 3,
-     "X4200 Ion Steering": 1
+     "Type 4 Radiant Steering": 1
     },
     "RG3 Torch Thruster": {
      "\"Basrem\" Atomic Thruster": 3,
@@ -1734,7 +1582,6 @@
      "\"Biroo\" Atomic Thruster": 1,
      "A120 Atomic Thruster": 2,
      "A370 Atomic Thruster": 1,
-     "Chiisana Rift Thruster": 5,
      "Chipmunk Plasma Thruster": 3,
      "Greyhound Plasma Thruster": 2,
      "Impala Plasma Thruster": 1,
@@ -1752,11 +1599,8 @@
     },
     "SC-12 Plasma Steering": {
      "\"Basrem\" Atomic Steering": 1,
-     "A125 Atomic Steering": 1,
      "Chipmunk Plasma Steering": 1,
-     "Crucible-Class Steering": 1,
-     "Small Steering Module": 2,
-     "Type 1 Radiant Steering": 2
+     "Small Steering Module": 2
     },
     "SC-12 Plasma Thruster": {
      "\"Basrem\" Atomic Thruster": 1,
@@ -1766,12 +1610,8 @@
     },
     "SC-14 Plasma Steering": {
      "A255 Atomic Steering": 1,
-     "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1,
      "Large Steering Module": 1,
-     "Pug Akfar Steering": 1,
      "Small Steering Module": 4,
-     "Steering (Asteroid Class)": 3,
      "Type 3 Radiant Steering": 1
     },
     "Subarashii Rift Thruster": {
@@ -1779,27 +1619,12 @@
      "Small Thrust Module": 6,
      "Thruster (Comet Class)": 2
     },
-    "Tyrant Plasma Steering": {
-     "A865 Atomic Steering": 1
-    },
-    "X1200 Ion Steering": {
-     "Steering (Asteroid Class)": 1
-    },
     "X2200 Ion Steering": {
-     "\"Aqra\" Inductive Steering": 1,
-     "A125 Atomic Steering": 1,
-     "Crucible-Class Steering": 1
+     "A125 Atomic Steering": 1
     },
     "X3200 Ion Steering": {
-     "\"Biroo\" Atomic Steering": 1,
-     "\"Chyyra\" Inductive Steering": 1,
-     "A125 Atomic Steering": 2,
-     "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1,
      "Large Steering Module": 1,
      "Small Steering Module": 4,
-     "Steering (Asteroid Class)": 3,
-     "Steering (Lunar Class)": 1,
      "Type 3 Radiant Steering": 1
     },
     "X3700 Ion Thruster": {
@@ -1811,20 +1636,13 @@
      "Type 3 Radiant Thruster": 1
     },
     "X4200 Ion Steering": {
-     "\"Bondir\" Atomic Steering": 1,
      "Large Steering Module": 2,
-     "Small Steering Module": 8,
      "Type 4 Radiant Steering": 1
     },
     "X4700 Ion Thruster": {
-     "A120 Atomic Thruster": 3,
      "Large Thrust Module": 2,
      "Small Thrust Module": 7,
-     "Thruster (Asteroid Class)": 4,
      "Type 4 Radiant Thruster": 1
-    },
-    "X5200 Ion Steering": {
-     "\"Bufaer\" Atomic Steering": 1
     },
     "X5700 Ion Thruster": {
      "Impala Plasma Thruster": 2,
@@ -1838,34 +1656,14 @@
     "\"Basrem\" Atomic Thruster": {
      "Small Thrust Module": 2
     },
-    "\"Biroo\" Atomic Steering": {
-     "Steering (Lunar Class)": 1
-    },
-    "A125 Atomic Steering": {
-     "Crucible-Class Steering": 1
-    },
     "A255 Atomic Steering": {
      "Large Steering Module": 1
-    },
-    "A525 Atomic Steering": {
-     "Smelter-Class Steering": 1
     },
     "Chiisana Rift Thruster": {
      "Small Thrust Module": 1
     },
-    "Chipmunk Plasma Steering": {
-     "Small Steering Module": 2
-    },
     "Chipmunk Plasma Thruster": {
      "Small Thrust Module": 2
-    },
-    "Greyhound Plasma Steering": {
-     "\"Basrem\" Atomic Steering": 2,
-     "Large Steering Module": 1
-    },
-    "Impala Plasma Steering": {
-     "A375 Atomic Steering": 1,
-     "Nami Rift Steering": 1
     },
     "Impala Plasma Thruster": {
      "Small Thrust Module": 6
@@ -1883,10 +1681,6 @@
      "Thruster (Asteroid Class)": 2,
      "Thruster (Comet Class)": 1
     },
-    "Pug Akfar Steering": {
-     "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1
-    },
     "Pug Akfar Thruster": {
      "Small Thrust Module": 4,
      "Type 3 Radiant Thruster": 1
@@ -1894,64 +1688,43 @@
     "Pug Cormet Thruster": {
      "Small Thrust Module": 6
     },
-    "Pug Lohmar Steering": {
-     "A525 Atomic Steering": 1,
-     "Forge-Class Steering": 2,
-     "Smelter-Class Steering": 1,
-     "Steering (Planetary Class)": 1
-    },
     "Pug Lohmar Thruster": {
      "Type 3 Radiant Thruster": 2
     },
     "RG15 Torch Steering": {
      "\"Aqra\" Inductive Steering": 1,
      "\"Basrem\" Atomic Steering": 1,
-     "\"Benga\" Atomic Steering": 1,
      "A125 Atomic Steering": 1,
-     "Chiisana Rift Steering": 1,
      "Chipmunk Plasma Steering": 1,
      "Crucible-Class Steering": 1,
      "SC-12 Plasma Steering": 1,
      "Small Steering Module": 2,
-     "Steering (Asteroid Class)": 2,
-     "Steering (Comet Class)": 1,
      "Type 1 Radiant Steering": 2,
      "Type 2 Radiant Steering": 1,
-     "X1200 Ion Steering": 2,
      "X2200 Ion Steering": 1
     },
     "RG15 Torch Thruster": {
      "\"Basrem\" Atomic Thruster": 1,
-     "A120 Atomic Thruster": 1,
-     "Chiisana Rift Thruster": 2,
      "Chipmunk Plasma Thruster": 1,
      "Nami Rift Thruster": 1,
      "SC-12 Plasma Thruster": 1,
      "Small Thrust Module": 2,
      "Thruster (Asteroid Class)": 1,
-     "Type 1 Radiant Thruster": 2,
-     "Type 2 Radiant Thruster": 1
+     "Type 1 Radiant Thruster": 2
     },
     "RG18 Torch Steering": {
      "\"Basrem\" Atomic Steering": 2,
      "\"Benga\" Atomic Steering": 1,
-     "\"Biroo\" Atomic Steering": 1,
-     "\"Chyyra\" Inductive Steering": 1,
-     "A125 Atomic Steering": 2,
      "A255 Atomic Steering": 1,
      "Chiisana Rift Steering": 1,
      "Chipmunk Plasma Steering": 2,
-     "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1,
      "Greyhound Plasma Steering": 1,
      "Large Steering Module": 1,
      "Pug Akfar Steering": 1,
-     "SC-12 Plasma Steering": 2,
      "SC-14 Plasma Steering": 1,
      "Small Steering Module": 3,
      "Steering (Asteroid Class)": 2,
      "Steering (Comet Class)": 1,
-     "Steering (Lunar Class)": 1,
      "Type 1 Radiant Steering": 3,
      "Type 3 Radiant Steering": 1,
      "X1200 Ion Steering": 3,
@@ -1963,10 +1736,8 @@
      "A250 Atomic Thruster": 1,
      "Chiisana Rift Thruster": 3,
      "Chipmunk Plasma Thruster": 2,
-     "Engine (Meteor Class)": 2,
      "Greyhound Plasma Thruster": 1,
      "Large Thrust Module": 1,
-     "Ookii Rift Thruster": 1,
      "Pug Akfar Thruster": 1,
      "Small Thrust Module": 3,
      "Thruster (Asteroid Class)": 2,
@@ -1974,23 +1745,17 @@
      "Type 1 Radiant Thruster": 3,
      "Type 2 Radiant Thruster": 1,
      "Type 3 Radiant Thruster": 1,
-     "X1700 Ion Thruster": 3,
      "X3700 Ion Thruster": 1
     },
     "RG3 Torch Steering": {
-     "\"Aqra\" Inductive Steering": 3,
      "\"Basrem\" Atomic Steering": 4,
      "\"Benga\" Atomic Steering": 2,
      "\"Biroo\" Atomic Steering": 1,
-     "\"Bondir\" Atomic Steering": 1,
      "\"Veusa\" Inductive Steering": 1,
      "A125 Atomic Steering": 3,
-     "A255 Atomic Steering": 2,
      "A375 Atomic Steering": 1,
      "Chiisana Rift Steering": 2,
-     "Chipmunk Plasma Steering": 4,
      "Crucible-Class Steering": 3,
-     "Gaktem GP Hybrid Steering": 1,
      "Greyhound Plasma Steering": 2,
      "Impala Plasma Steering": 1,
      "Large Steering Module": 2,
@@ -2000,13 +1765,8 @@
      "Steering (Asteroid Class)": 4,
      "Steering (Comet Class)": 2,
      "Steering (Lunar Class)": 1,
-     "Steering (Planetary Class)": 1,
      "Type 1 Radiant Steering": 6,
-     "Type 2 Radiant Steering": 3,
-     "Type 3 Radiant Steering": 2,
-     "Type 4 Radiant Steering": 1,
-     "X2200 Ion Steering": 3,
-     "X4200 Ion Steering": 1
+     "Type 4 Radiant Steering": 1
     },
     "RG3 Torch Thruster": {
      "\"Basrem\" Atomic Thruster": 3,
@@ -2019,7 +1779,6 @@
      "Greyhound Plasma Thruster": 2,
      "Impala Plasma Thruster": 1,
      "Large Thrust Module": 2,
-     "Nami Rift Thruster": 3,
      "Pug Cormet Thruster": 1,
      "SC-12 Plasma Thruster": 3,
      "Small Thrust Module": 5,
@@ -2033,11 +1792,8 @@
     },
     "SC-12 Plasma Steering": {
      "\"Basrem\" Atomic Steering": 1,
-     "A125 Atomic Steering": 1,
      "Chipmunk Plasma Steering": 1,
-     "Crucible-Class Steering": 1,
-     "Small Steering Module": 2,
-     "Type 1 Radiant Steering": 2
+     "Small Steering Module": 2
     },
     "SC-12 Plasma Thruster": {
      "\"Basrem\" Atomic Thruster": 1,
@@ -2046,15 +1802,9 @@
      "Thruster (Asteroid Class)": 1
     },
     "SC-14 Plasma Steering": {
-     "A125 Atomic Steering": 2,
      "A255 Atomic Steering": 1,
-     "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1,
      "Large Steering Module": 1,
-     "Pug Akfar Steering": 1,
      "Small Steering Module": 4,
-     "Steering (Asteroid Class)": 3,
-     "Steering (Lunar Class)": 1,
      "Type 3 Radiant Steering": 1
     },
     "Subarashii Rift Thruster": {
@@ -2062,27 +1812,13 @@
      "Small Thrust Module": 6,
      "Thruster (Comet Class)": 2
     },
-    "Tyrant Plasma Steering": {
-     "A865 Atomic Steering": 1
-    },
-    "X1200 Ion Steering": {
-     "Steering (Asteroid Class)": 1
-    },
     "X2200 Ion Steering": {
-     "\"Aqra\" Inductive Steering": 1,
      "A125 Atomic Steering": 1,
      "Crucible-Class Steering": 1
     },
     "X3200 Ion Steering": {
-     "\"Biroo\" Atomic Steering": 1,
-     "\"Chyyra\" Inductive Steering": 1,
-     "A125 Atomic Steering": 2,
-     "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1,
      "Large Steering Module": 1,
      "Small Steering Module": 4,
-     "Steering (Asteroid Class)": 3,
-     "Steering (Lunar Class)": 1,
      "Type 3 Radiant Steering": 1
     },
     "X3700 Ion Thruster": {
@@ -2094,25 +1830,16 @@
      "Type 3 Radiant Thruster": 1
     },
     "X4200 Ion Steering": {
-     "\"Bondir\" Atomic Steering": 1,
      "Large Steering Module": 2,
-     "Small Steering Module": 8,
      "Type 4 Radiant Steering": 1
     },
     "X4700 Ion Thruster": {
-     "\"Bondir\" Atomic Thruster": 1,
-     "A120 Atomic Thruster": 3,
      "Large Thrust Module": 2,
      "Small Thrust Module": 7,
      "Thruster (Asteroid Class)": 4,
      "Type 4 Radiant Thruster": 1
     },
-    "X5200 Ion Steering": {
-     "\"Bufaer\" Atomic Steering": 1
-    },
     "X5700 Ion Thruster": {
-     "\"Basrem\" Atomic Thruster": 6,
-     "A250 Atomic Thruster": 3,
      "Impala Plasma Thruster": 2,
      "Large Thrust Module": 3
     }
@@ -2121,9 +1848,6 @@
   "bright": {
    "considered": 148,
    "dropped": {
-    "\"Biroo\" Atomic Steering": {
-     "Steering (Lunar Class)": 1
-    },
     "A125 Atomic Steering": {
      "Crucible-Class Steering": 1
     },
@@ -2133,25 +1857,9 @@
     "Chiisana Rift Thruster": {
      "Small Thrust Module": 1
     },
-    "Chipmunk Plasma Steering": {
-     "Crucible-Class Steering": 1,
-     "Small Steering Module": 2
-    },
-    "Chipmunk Plasma Thruster": {
-     "\"Basrem\" Atomic Thruster": 1
-    },
-    "Greyhound Plasma Steering": {
-     "\"Basrem\" Atomic Steering": 2
-    },
-    "Greyhound Plasma Thruster": {
-     "Thruster (Asteroid Class)": 2
-    },
     "Impala Plasma Steering": {
      "A375 Atomic Steering": 1,
      "Nami Rift Steering": 1
-    },
-    "Impala Plasma Thruster": {
-     "Thruster (Comet Class)": 2
     },
     "MH Red-Class Thruster": {
      "Small Thrust Module": 4
@@ -2166,33 +1874,11 @@
      "Thruster (Asteroid Class)": 2,
      "Thruster (Comet Class)": 1
     },
-    "Pug Akfar Steering": {
-     "\"Chyyra\" Inductive Steering": 1,
-     "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1,
-     "Steering (Lunar Class)": 1
-    },
     "Pug Akfar Thruster": {
-     "Farves GP Hybrid Thruster": 1,
      "Small Thrust Module": 4,
      "Type 3 Radiant Thruster": 1
     },
-    "Pug Cormet Steering": {
-     "Crucible-Class Steering": 3,
-     "Gaktem GP Hybrid Steering": 1
-    },
-    "Pug Cormet Thruster": {
-     "Thruster (Comet Class)": 2
-    },
-    "Pug Lohmar Steering": {
-     "A525 Atomic Steering": 1,
-     "Forge-Class Steering": 2,
-     "Ookii Rift Steering": 1,
-     "Smelter-Class Steering": 1,
-     "Steering (Planetary Class)": 1
-    },
     "Pug Lohmar Thruster": {
-     "Farves GP Hybrid Thruster": 2,
      "Type 3 Radiant Thruster": 2
     },
     "RG15 Torch Steering": {
@@ -2205,7 +1891,6 @@
      "Crucible-Class Steering": 1,
      "SC-12 Plasma Steering": 1,
      "Small Steering Module": 2,
-     "Steering (Asteroid Class)": 2,
      "Steering (Comet Class)": 1,
      "Type 1 Radiant Steering": 2,
      "Type 2 Radiant Steering": 1,
@@ -2217,7 +1902,6 @@
      "A120 Atomic Thruster": 1,
      "Chiisana Rift Thruster": 2,
      "Chipmunk Plasma Thruster": 1,
-     "Ka'het Compact Engine": 1,
      "Nami Rift Thruster": 1,
      "SC-12 Plasma Thruster": 1,
      "Small Thrust Module": 2,
@@ -2226,10 +1910,8 @@
      "Type 2 Radiant Thruster": 1
     },
     "RG18 Torch Steering": {
-     "\"Aqra\" Inductive Steering": 2,
      "\"Basrem\" Atomic Steering": 2,
      "\"Benga\" Atomic Steering": 1,
-     "\"Biroo\" Atomic Steering": 1,
      "\"Chyyra\" Inductive Steering": 1,
      "A125 Atomic Steering": 2,
      "A255 Atomic Steering": 1,
@@ -2239,14 +1921,11 @@
      "Forge-Class Steering": 1,
      "Greyhound Plasma Steering": 1,
      "Large Steering Module": 1,
-     "Nami Rift Steering": 1,
      "Pug Akfar Steering": 1,
-     "SC-12 Plasma Steering": 2,
      "SC-14 Plasma Steering": 1,
      "Small Steering Module": 3,
      "Steering (Asteroid Class)": 2,
      "Steering (Comet Class)": 1,
-     "Steering (Lunar Class)": 1,
      "Type 1 Radiant Steering": 3,
      "Type 3 Radiant Steering": 1,
      "X1200 Ion Steering": 3,
@@ -2285,25 +1964,18 @@
      "A255 Atomic Steering": 2,
      "A375 Atomic Steering": 1,
      "Chiisana Rift Steering": 2,
-     "Chipmunk Plasma Steering": 4,
      "Crucible-Class Steering": 3,
-     "Forge-Class Steering": 2,
      "Gaktem GP Hybrid Steering": 1,
      "Greyhound Plasma Steering": 2,
      "Impala Plasma Steering": 1,
      "Large Steering Module": 2,
      "Nami Rift Steering": 1,
-     "Ookii Rift Steering": 1,
      "Pug Cormet Steering": 1,
      "Small Steering Module": 6,
-     "Smelter-Class Steering": 1,
      "Steering (Asteroid Class)": 4,
      "Steering (Comet Class)": 2,
      "Steering (Lunar Class)": 1,
-     "Steering (Planetary Class)": 1,
      "Type 1 Radiant Steering": 6,
-     "Type 2 Radiant Steering": 3,
-     "Type 3 Radiant Steering": 2,
      "Type 4 Radiant Steering": 1,
      "X2200 Ion Steering": 3,
      "X4200 Ion Steering": 1
@@ -2314,16 +1986,13 @@
      "\"Biroo\" Atomic Thruster": 1,
      "\"Bondir\" Atomic Thruster": 1,
      "A120 Atomic Thruster": 2,
-     "A250 Atomic Thruster": 2,
      "A370 Atomic Thruster": 1,
      "Chiisana Rift Thruster": 5,
      "Chipmunk Plasma Thruster": 3,
-     "Gaktem GP Hybrid Thruster": 1,
      "Greyhound Plasma Thruster": 2,
      "Impala Plasma Thruster": 1,
      "Large Thrust Module": 2,
      "Nami Rift Thruster": 3,
-     "Ookii Rift Thruster": 2,
      "Pug Cormet Thruster": 1,
      "SC-12 Plasma Thruster": 3,
      "Small Thrust Module": 5,
@@ -2334,11 +2003,9 @@
      "Type 1 Radiant Thruster": 5,
      "Type 2 Radiant Thruster": 2,
      "Type 4 Radiant Thruster": 1,
-     "X1700 Ion Thruster": 4,
-     "X4700 Ion Thruster": 1
+     "X1700 Ion Thruster": 4
     },
     "SC-12 Plasma Steering": {
-     "\"Aqra\" Inductive Steering": 1,
      "\"Basrem\" Atomic Steering": 1,
      "A125 Atomic Steering": 1,
      "Chipmunk Plasma Steering": 1,
@@ -2355,17 +2022,12 @@
      "Type 1 Radiant Thruster": 2
     },
     "SC-14 Plasma Steering": {
-     "\"Biroo\" Atomic Steering": 1,
-     "\"Chyyra\" Inductive Steering": 1,
-     "A125 Atomic Steering": 2,
      "A255 Atomic Steering": 1,
      "Crucible-Class Steering": 2,
      "Forge-Class Steering": 1,
      "Large Steering Module": 1,
      "Pug Akfar Steering": 1,
      "Small Steering Module": 4,
-     "Steering (Asteroid Class)": 3,
-     "Steering (Lunar Class)": 1,
      "Type 3 Radiant Steering": 1
     },
     "Subarashii Rift Thruster": {
@@ -2373,28 +2035,16 @@
      "Small Thrust Module": 6,
      "Thruster (Comet Class)": 2
     },
-    "Tyrant Plasma Steering": {
-     "A865 Atomic Steering": 1
-    },
-    "X1200 Ion Steering": {
-     "Steering (Asteroid Class)": 1
-    },
     "X2200 Ion Steering": {
      "\"Aqra\" Inductive Steering": 1,
      "A125 Atomic Steering": 1,
-     "Chiisana Rift Steering": 1,
      "Crucible-Class Steering": 1
     },
     "X3200 Ion Steering": {
-     "\"Biroo\" Atomic Steering": 1,
-     "\"Chyyra\" Inductive Steering": 1,
-     "A125 Atomic Steering": 2,
      "Crucible-Class Steering": 2,
      "Forge-Class Steering": 1,
      "Large Steering Module": 1,
      "Small Steering Module": 4,
-     "Steering (Asteroid Class)": 3,
-     "Steering (Lunar Class)": 1,
      "Type 3 Radiant Steering": 1
     },
     "X3700 Ion Thruster": {
@@ -2407,36 +2057,25 @@
     },
     "X4200 Ion Steering": {
      "\"Bondir\" Atomic Steering": 1,
-     "Chiisana Rift Steering": 3,
      "Large Steering Module": 2,
-     "Small Steering Module": 8,
-     "Smelter-Class Steering": 1,
-     "Steering (Planetary Class)": 1,
      "Type 4 Radiant Steering": 1
     },
     "X4700 Ion Thruster": {
      "\"Bondir\" Atomic Thruster": 1,
      "A120 Atomic Thruster": 3,
-     "A250 Atomic Thruster": 2,
      "Large Thrust Module": 2,
      "Small Thrust Module": 7,
      "Thruster (Asteroid Class)": 4,
      "Type 4 Radiant Thruster": 1
     },
     "X5200 Ion Steering": {
-     "\"Bufaer\" Atomic Steering": 1,
-     "Crucible-Class Steering": 6
+     "\"Bufaer\" Atomic Steering": 1
     },
     "X5700 Ion Thruster": {
      "\"Basrem\" Atomic Thruster": 6,
-     "\"Bufaer\" Atomic Thruster": 1,
-     "A120 Atomic Thruster": 5,
      "A250 Atomic Thruster": 3,
-     "A370 Atomic Thruster": 2,
      "Impala Plasma Thruster": 2,
-     "Large Thrust Module": 3,
-     "Thruster (Asteroid Class)": 7,
-     "Thruster (Comet Class)": 4
+     "Large Thrust Module": 3
     }
    }
   },
@@ -2444,7 +2083,6 @@
    "considered": 148,
    "dropped": {
     "\"Biroo\" Atomic Steering": {
-     "Nami Rift Steering": 1,
      "Steering (Lunar Class)": 1
     },
     "A125 Atomic Steering": {
@@ -2456,31 +2094,21 @@
     "Chiisana Rift Thruster": {
      "Small Thrust Module": 1
     },
-    "Chipmunk Plasma Steering": {
-     "Crucible-Class Steering": 1,
-     "Small Steering Module": 2
-    },
     "Chipmunk Plasma Thruster": {
-     "\"Basrem\" Atomic Thruster": 1,
-     "Small Thrust Module": 2
+     "\"Basrem\" Atomic Thruster": 1
     },
     "Greyhound Plasma Steering": {
-     "\"Basrem\" Atomic Steering": 2,
-     "A255 Atomic Steering": 1,
-     "Large Steering Module": 1
+     "\"Basrem\" Atomic Steering": 2
     },
     "Greyhound Plasma Thruster": {
      "Thruster (Asteroid Class)": 2
     },
     "Impala Plasma Steering": {
-     "\"Veusa\" Inductive Steering": 1,
      "A375 Atomic Steering": 1,
-     "Crucible-Class Steering": 3,
      "Nami Rift Steering": 1
     },
     "Impala Plasma Thruster": {
      "A370 Atomic Thruster": 1,
-     "Small Thrust Module": 6,
      "Thruster (Comet Class)": 2
     },
     "MH Red-Class Thruster": {
@@ -2495,12 +2123,9 @@
      "Thruster (Comet Class)": 1
     },
     "Pug Akfar Steering": {
-     "\"Biroo\" Atomic Steering": 1,
      "\"Chyyra\" Inductive Steering": 1,
      "Crucible-Class Steering": 2,
-     "Forge-Class Steering": 1,
-     "Nami Rift Steering": 1,
-     "Steering (Lunar Class)": 1
+     "Forge-Class Steering": 1
     },
     "Pug Akfar Thruster": {
      "Farves GP Hybrid Thruster": 1,
@@ -2508,21 +2133,16 @@
      "Type 3 Radiant Thruster": 1
     },
     "Pug Cormet Steering": {
-     "Crucible-Class Steering": 3,
-     "Gaktem GP Hybrid Steering": 1
+     "Crucible-Class Steering": 3
     },
     "Pug Cormet Thruster": {
-     "\"Benga\" Atomic Thruster": 2,
      "A370 Atomic Thruster": 1,
-     "Small Thrust Module": 6,
      "Thruster (Comet Class)": 2
     },
     "Pug Lohmar Steering": {
-     "A525 Atomic Steering": 1,
      "Forge-Class Steering": 2,
      "Ookii Rift Steering": 1,
      "Smelter-Class Steering": 1,
-     "Steering (Lunar Class)": 2,
      "Steering (Planetary Class)": 1
     },
     "Pug Lohmar Thruster": {
@@ -2549,7 +2169,6 @@
     },
     "RG15 Torch Thruster": {
      "\"Basrem\" Atomic Thruster": 1,
-     "\"Benga\" Atomic Thruster": 1,
      "A120 Atomic Thruster": 1,
      "Chiisana Rift Thruster": 2,
      "Chipmunk Plasma Thruster": 1,
@@ -2605,7 +2224,6 @@
      "Nami Rift Thruster": 2,
      "Ookii Rift Thruster": 1,
      "Pug Akfar Thruster": 1,
-     "SC-12 Plasma Thruster": 2,
      "Small Thrust Module": 3,
      "Thruster (Asteroid Class)": 2,
      "Thruster (Comet Class)": 1,
@@ -2626,7 +2244,6 @@
      "A125 Atomic Steering": 3,
      "A255 Atomic Steering": 2,
      "A375 Atomic Steering": 1,
-     "A525 Atomic Steering": 1,
      "Chiisana Rift Steering": 2,
      "Chipmunk Plasma Steering": 4,
      "Crucible-Class Steering": 3,
@@ -2661,12 +2278,10 @@
      "A370 Atomic Thruster": 1,
      "Chiisana Rift Thruster": 5,
      "Chipmunk Plasma Thruster": 3,
-     "Engine (Meteor Class)": 4,
      "Farves GP Hybrid Thruster": 2,
      "Gaktem GP Hybrid Thruster": 1,
      "Greyhound Plasma Thruster": 2,
      "Impala Plasma Thruster": 1,
-     "Ka'het Compact Engine": 3,
      "Large Thrust Module": 2,
      "Maeri Engine Nacelles": 1,
      "Nami Rift Thruster": 3,
@@ -2678,7 +2293,6 @@
      "Thruster (Asteroid Class)": 3,
      "Thruster (Comet Class)": 2,
      "Thruster (Lunar Class)": 1,
-     "Thruster (Planetary Class)": 1,
      "Type 1 Radiant Thruster": 5,
      "Type 2 Radiant Thruster": 2,
      "Type 4 Radiant Thruster": 1,
@@ -2692,11 +2306,9 @@
      "\"Aqra\" Inductive Steering": 1,
      "\"Basrem\" Atomic Steering": 1,
      "A125 Atomic Steering": 1,
-     "Chiisana Rift Steering": 1,
      "Chipmunk Plasma Steering": 1,
      "Crucible-Class Steering": 1,
      "Small Steering Module": 2,
-     "Steering (Comet Class)": 1,
      "Type 1 Radiant Steering": 2
     },
     "SC-12 Plasma Thruster": {
@@ -2710,14 +2322,12 @@
      "Type 1 Radiant Thruster": 2
     },
     "SC-14 Plasma Steering": {
-     "\"Biroo\" Atomic Steering": 1,
      "\"Chyyra\" Inductive Steering": 1,
      "A125 Atomic Steering": 2,
      "A255 Atomic Steering": 1,
      "Crucible-Class Steering": 2,
      "Forge-Class Steering": 1,
      "Large Steering Module": 1,
-     "Nami Rift Steering": 1,
      "Pug Akfar Steering": 1,
      "Small Steering Module": 4,
      "Steering (Asteroid Class)": 3,
@@ -2729,17 +2339,10 @@
      "Thruster (Comet Class)": 2
     },
     "Tyrant Plasma Steering": {
-     "A865 Atomic Steering": 1,
-     "Subarashii Rift Steering": 1
-    },
-    "Tyrant Plasma Thruster": {
-     "Thruster (Comet Class)": 5
+     "A865 Atomic Steering": 1
     },
     "X1200 Ion Steering": {
      "Steering (Asteroid Class)": 1
-    },
-    "X1700 Ion Thruster": {
-     "Thruster (Asteroid Class)": 1
     },
     "X2200 Ion Steering": {
      "\"Aqra\" Inductive Steering": 1,
@@ -2754,7 +2357,6 @@
      "Crucible-Class Steering": 2,
      "Forge-Class Steering": 1,
      "Large Steering Module": 1,
-     "Nami Rift Steering": 1,
      "Small Steering Module": 4,
      "Steering (Asteroid Class)": 3,
      "Steering (Lunar Class)": 1,
@@ -2763,23 +2365,15 @@
     "X3700 Ion Thruster": {
      "\"Basrem\" Atomic Thruster": 2,
      "A250 Atomic Thruster": 1,
-     "Chiisana Rift Thruster": 4,
      "Chipmunk Plasma Thruster": 2,
      "Large Thrust Module": 1,
-     "MH Red-Class Thruster": 1,
      "Small Thrust Module": 4,
      "Type 3 Radiant Thruster": 1
     },
     "X4200 Ion Steering": {
      "\"Bondir\" Atomic Steering": 1,
      "Chiisana Rift Steering": 3,
-     "Crucible-Class Steering": 4,
-     "Forge-Class Steering": 2,
      "Large Steering Module": 2,
-     "Ookii Rift Steering": 1,
-     "Small Steering Module": 8,
-     "Smelter-Class Steering": 1,
-     "Steering (Planetary Class)": 1,
      "Type 4 Radiant Steering": 1
     },
     "X4700 Ion Thruster": {
@@ -2790,14 +2384,10 @@
      "Large Thrust Module": 2,
      "Small Thrust Module": 7,
      "Thruster (Asteroid Class)": 4,
-     "Thruster (Planetary Class)": 1,
      "Type 4 Radiant Thruster": 1
     },
     "X5200 Ion Steering": {
-     "\"Bufaer\" Atomic Steering": 1,
-     "Chiisana Rift Steering": 5,
-     "Crucible-Class Steering": 6,
-     "Forge-Class Steering": 3
+     "\"Bufaer\" Atomic Steering": 1
     },
     "X5700 Ion Thruster": {
      "\"Basrem\" Atomic Thruster": 6,
@@ -2808,9 +2398,352 @@
      "A370 Atomic Thruster": 2,
      "Impala Plasma Thruster": 2,
      "Large Thrust Module": 3,
-     "Subarashii Rift Thruster": 2,
      "Thruster (Asteroid Class)": 7,
      "Thruster (Comet Class)": 4
+    }
+   }
+  }
+ },
+ "regeneration": {
+  "dark": {
+   "considered": 50,
+   "dropped": {
+    "D14-RN Shield Generator": {
+     "Small Shield Module": 1
+    },
+    "D23-QP Shield Generator": {
+     "S-270 Regenerator": 1
+    },
+    "D41-HY Shield Generator": {
+     "Hai Corundum Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "S-270 Regenerator": 1,
+     "Small Shield Module": 2
+    },
+    "D67-TM Shield Generator": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 2,
+     "Ka'het Shield Restorer": 1,
+     "Large Shield Module": 1,
+     "S-270 Regenerator": 2,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 3
+    },
+    "D94-YV Shield Generator": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 2,
+     "Ka'het Shield Restorer": 2,
+     "S-270 Regenerator": 3,
+     "S-970 Regenerator": 1,
+     "Small Shield Module": 5,
+     "Systems Core (Small)": 1
+    },
+    "Gas-Class Shield": {
+     "D14-RN Shield Generator": 1,
+     "D23-QP Shield Generator": 1,
+     "Hai Corundum Regenerator": 1,
+     "S-270 Regenerator": 1,
+     "Small Shield Module": 1
+    },
+    "Large Shield Module": {
+     "Bright Cloud Shielding": 1
+    },
+    "Liquid-Class Shield": {
+     "Bright Cloud Shielding": 1,
+     "D14-RN Shield Generator": 2,
+     "D23-QP Shield Generator": 1,
+     "D41-HY Shield Generator": 1,
+     "Hai Corundum Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "S-270 Regenerator": 1,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 1
+    }
+   }
+  },
+  "evader": {
+   "considered": 50,
+   "dropped": {
+    "D14-RN Shield Generator": {
+     "Small Shield Module": 1
+    },
+    "D23-QP Shield Generator": {
+     "S-270 Regenerator": 1
+    },
+    "D41-HY Shield Generator": {
+     "Hai Corundum Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "S-270 Regenerator": 1,
+     "Small Shield Module": 2
+    },
+    "D67-TM Shield Generator": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 2,
+     "Ka'het Shield Restorer": 1,
+     "Large Shield Module": 1,
+     "S-270 Regenerator": 2,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 3
+    },
+    "D94-YV Shield Generator": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 2,
+     "Ka'het Shield Restorer": 2,
+     "S-270 Regenerator": 3,
+     "S-970 Regenerator": 1,
+     "Small Shield Module": 5,
+     "Systems Core (Small)": 1
+    },
+    "Gas-Class Shield": {
+     "D14-RN Shield Generator": 1,
+     "D23-QP Shield Generator": 1,
+     "Hai Corundum Regenerator": 1,
+     "S-270 Regenerator": 1,
+     "Small Shield Module": 1
+    },
+    "Large Shield Module": {
+     "Bright Cloud Shielding": 1
+    },
+    "Liquid-Class Shield": {
+     "D14-RN Shield Generator": 2,
+     "D23-QP Shield Generator": 1,
+     "D41-HY Shield Generator": 1,
+     "Hai Corundum Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "S-270 Regenerator": 1,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 1
+    }
+   }
+  },
+  "normal": {
+   "considered": 50,
+   "dropped": {
+    "D14-RN Shield Generator": {
+     "Small Shield Module": 1
+    },
+    "D23-QP Shield Generator": {
+     "S-270 Regenerator": 1
+    },
+    "D41-HY Shield Generator": {
+     "Hai Corundum Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "S-270 Regenerator": 1,
+     "Small Shield Module": 2
+    },
+    "D67-TM Shield Generator": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 2,
+     "Ka'het Shield Restorer": 1,
+     "Large Shield Module": 1,
+     "S-270 Regenerator": 2,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 3,
+     "Systems Core (Small)": 1
+    },
+    "D94-YV Shield Generator": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 2,
+     "Ka'het Shield Restorer": 2,
+     "S-270 Regenerator": 3,
+     "S-970 Regenerator": 1,
+     "Small Shield Module": 5,
+     "Systems Core (Small)": 1
+    },
+    "Gas-Class Shield": {
+     "D14-RN Shield Generator": 1,
+     "D23-QP Shield Generator": 1,
+     "Hai Corundum Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "S-270 Regenerator": 1,
+     "Small Shield Module": 1
+    },
+    "Large Shield Module": {
+     "Bright Cloud Shielding": 1
+    },
+    "Liquid-Class Shield": {
+     "Bright Cloud Shielding": 1,
+     "D14-RN Shield Generator": 2,
+     "D23-QP Shield Generator": 1,
+     "D41-HY Shield Generator": 1,
+     "Hai Corundum Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "S-270 Regenerator": 1,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 1
+    }
+   }
+  },
+  "bright": {
+   "considered": 50,
+   "dropped": {
+    "D14-RN Shield Generator": {
+     "Small Shield Module": 1
+    },
+    "D23-QP Shield Generator": {
+     "Hai Corundum Regenerator": 1,
+     "S-270 Regenerator": 1
+    },
+    "D41-HY Shield Generator": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "S-270 Regenerator": 1,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 2
+    },
+    "D67-TM Shield Generator": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 2,
+     "Ka'het Shield Restorer": 1,
+     "Large Shield Module": 1,
+     "S-270 Regenerator": 2,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 3,
+     "Systems Core (Small)": 1
+    },
+    "D94-YV Shield Generator": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 2,
+     "Ka'het Shield Restorer": 2,
+     "S-270 Regenerator": 3,
+     "S-970 Regenerator": 1,
+     "Small Recovery Module": 2,
+     "Small Shield Module": 5,
+     "Systems Core (Small)": 1
+    },
+    "Gas-Class Shield": {
+     "Bright Cloud Shielding": 1,
+     "D14-RN Shield Generator": 1,
+     "D23-QP Shield Generator": 1,
+     "D41-HY Shield Generator": 1,
+     "Hai Corundum Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "Large Shield Module": 1,
+     "S-270 Regenerator": 1,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 1,
+     "Systems Core (Small)": 1
+    },
+    "Hai Diamond Regenerator": {
+     "Bright Cloud Shielding": 2
+    },
+    "Large Shield Module": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 2,
+     "Systems Core (Small)": 1
+    },
+    "Liquid-Class Shield": {
+     "Bright Cloud Shielding": 1,
+     "D14-RN Shield Generator": 2,
+     "D23-QP Shield Generator": 1,
+     "D41-HY Shield Generator": 1,
+     "D67-TM Shield Generator": 1,
+     "D94-YV Shield Generator": 1,
+     "Dark Storm Shielding": 1,
+     "Hai Corundum Regenerator": 1,
+     "Hai Diamond Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "Large Shield Module": 1,
+     "S-270 Regenerator": 1,
+     "S-970 Regenerator": 1,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 1,
+     "Systems Core (Medium)": 1,
+     "Systems Core (Small)": 1
+    }
+   }
+  },
+  "max": {
+   "considered": 50,
+   "dropped": {
+    "D14-RN Shield Generator": {
+     "S-270 Regenerator": 1,
+     "Small Shield Module": 1
+    },
+    "D23-QP Shield Generator": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "S-270 Regenerator": 1
+    },
+    "D41-HY Shield Generator": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "S-270 Regenerator": 1,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 2
+    },
+    "D67-TM Shield Generator": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 2,
+     "Ka'het Shield Restorer": 1,
+     "Large Shield Module": 1,
+     "S-270 Regenerator": 2,
+     "S-970 Regenerator": 1,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 3,
+     "Systems Core (Small)": 1
+    },
+    "D94-YV Shield Generator": {
+     "Bright Cloud Shielding": 1,
+     "Dark Storm Shielding": 1,
+     "Hai Corundum Regenerator": 2,
+     "Hai Diamond Regenerator": 1,
+     "Ka'het Shield Restorer": 2,
+     "S-270 Regenerator": 3,
+     "S-970 Regenerator": 1,
+     "Small Recovery Module": 2,
+     "Small Shield Module": 5,
+     "Systems Core (Medium)": 1,
+     "Systems Core (Small)": 1
+    },
+    "Gas-Class Shield": {
+     "Bright Cloud Shielding": 1,
+     "D14-RN Shield Generator": 1,
+     "D23-QP Shield Generator": 1,
+     "D41-HY Shield Generator": 1,
+     "D67-TM Shield Generator": 1,
+     "Dark Storm Shielding": 1,
+     "Hai Corundum Regenerator": 1,
+     "Hai Diamond Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "Large Shield Module": 1,
+     "S-270 Regenerator": 1,
+     "S-970 Regenerator": 1,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 1,
+     "Systems Core (Small)": 1
+    },
+    "Hai Diamond Regenerator": {
+     "Bright Cloud Shielding": 2,
+     "Dark Storm Shielding": 1
+    },
+    "Large Shield Module": {
+     "Bright Cloud Shielding": 1,
+     "Hai Corundum Regenerator": 2,
+     "Ka'het Shield Restorer": 2,
+     "Systems Core (Small)": 1
+    },
+    "Liquid-Class Shield": {
+     "Bright Cloud Shielding": 1,
+     "D14-RN Shield Generator": 2,
+     "D23-QP Shield Generator": 1,
+     "D41-HY Shield Generator": 1,
+     "D67-TM Shield Generator": 1,
+     "D94-YV Shield Generator": 1,
+     "Dark Storm Shielding": 1,
+     "Hai Corundum Regenerator": 1,
+     "Hai Diamond Regenerator": 1,
+     "Ka'het Shield Restorer": 1,
+     "Large Shield Module": 1,
+     "S-270 Regenerator": 1,
+     "S-970 Regenerator": 1,
+     "Small Recovery Module": 1,
+     "Small Shield Module": 1,
+     "Systems Core (Medium)": 1,
+     "Systems Core (Small)": 1
     }
    }
   }
