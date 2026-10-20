@@ -38,17 +38,20 @@ class Scenario:
 
 
 def _solar_scenarios():
-    m = SOLAR_MULTIPLIER
+    """The pruner's solar cases. The middle three are the optimizer's own constants (calculator.py), so a
+    design routed to a case is checked against the same light it will be judged in."""
     brightest = MAX_SOLAR_POWER * solar_scale(MAX_SOLAR_DISTANCE)
+    stay = 1.70 * 1.229    # optimizer SOLAR_STAY: 75th-percentile star at 750 (the bright-star check)
     return {
         # No star, or a ship that must run dark: solar outfits give nothing.
-        "none": Scenario("none", 0., 0.),
-        # Far from a dim star (an "evader" in the optimizer's terms).
-        "dim": Scenario("dim", m["low"], m["low"]),
-        # The legacy design case: typical sunlight for energy, bright sunlight for heat, so a ship
-        # designed here never overheats when it visits a bright system.
-        "median": Scenario("median", m["median"], m["high"]),
-        "bright": Scenario("bright", m["high"], m["high"]),
+        "dark": Scenario("dark", 0., 0.),
+        # Optimizer SOLAR_EVADING: 20th-percentile star at 5000.
+        "evader": Scenario("evader", .70 * .50, stay),
+        # Optimizer SOLAR_COMBAT: 30th-percentile star at 3000; heat at the bright-star check, so a design
+        # never overheats when it visits a bright system.
+        "normal": Scenario("normal", .76 * .65, stay),
+        # Designed to stay near bright stars.
+        "bright": Scenario("bright", stay, stay),
         # Close to the brightest star in the game: the most solar can ever do.
         "max": Scenario("max", brightest, brightest),
     }
@@ -76,4 +79,6 @@ SOLAR_ENERGY_CASE = "median"
 SOLAR_HEAT_CASE = "high"
 
 SOLAR_SCENARIOS = _solar_scenarios()
-DEFAULT_SCENARIO = SOLAR_SCENARIOS["median"]
+# The legacy sheet's design case, used by the ladder and plant reports: typical sunlight for energy,
+# bright sunlight for heat.
+DEFAULT_SCENARIO = Scenario("median", SOLAR_MULTIPLIER["median"], SOLAR_MULTIPLIER["high"])

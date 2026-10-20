@@ -44,6 +44,16 @@ This writes:
 
 A full run takes about 6 minutes, most of it the obsolescence analysis.
 
+## Pruning (MVP)
+
+```
+sheetcalc-prune                       # or: python -m sheetcalc.prune; all solar cases, all cores
+```
+
+Strict dominance plus the power and cooling search per solar case, written to `reports/pruned.json` (for the
+optimizer) and `reports/pruned.md`. For a request in solar case S, skip every outfit under `strict` plus every
+outfit under `power/S`. About a minute on 4 cores. Design and plans: `docs/pruner-design.md`.
+
 ## Obsolescence passes
 
 ```

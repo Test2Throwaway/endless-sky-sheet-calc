@@ -53,3 +53,11 @@ def test_load_in_play_reads_source_and_limit(tmp_path):
     assert in_play["Antimatter Power Cell"].max_count is None
     assert in_play["Fission Drive"].source == "taken from ships only (plunder, capture)"
     assert in_play["Fission Drive"].max_count == 1
+
+
+def test_weapon_sub_block_is_kept(tmp_path):
+    (tmp_path / "w.txt").write_text('outfit "Gun"\n\tcategory "Guns"\n\tweapon\n\t\t"reload" 5\n\t\tsafe\n'
+                                    '\t\tsubmunition "Bit" 3\n\t\t\tfacing 10\n\t"mass" 2\n', encoding="utf-8")
+    gun = load_outfits(tmp_path)["Gun"]
+    assert gun["_weapon"] == {"reload": 5., "safe": 1., "submunition": [("Bit", 3.)]}
+    assert gun["mass"] == 2.

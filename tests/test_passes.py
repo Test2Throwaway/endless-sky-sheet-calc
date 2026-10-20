@@ -28,30 +28,31 @@ def _run(solar, tier):
 
 
 def test_solar_axis_changes_what_is_kept():
-    assert "Panel" in _run("median", "sold")["kept"]["generator"]
-    none = _run("none", "sold")
+    assert "Panel" in _run("normal", "sold")["kept"]["generator"]
+    none = _run("dark", "sold")
     assert "Panel" not in none["kept"]["generator"]
     assert none["dropped"]["Panel"]["status"] == "never in a best plant"
 
 
 def test_robust_list_keeps_sold_outfit_that_only_ties_with_plunder():
-    results = {passes.pass_id("median", t): _run("median", t) for t in passes.TIERS}
+    results = {passes.pass_id("normal", t): _run("normal", t) for t in passes.TIERS}
     # With everything allowed, the identical sold and plunder cells tie; the sold one wins the tie.
-    assert "Cell" in results[passes.pass_id("median", "all")]["kept"]["generator"]
-    robust = passes.robust_kept(results, AVAILABILITY, "median")
+    assert "Cell" in results[passes.pass_id("normal", "all")]["kept"]["generator"]
+    robust = passes.robust_kept(results, AVAILABILITY, "normal")
     assert "Cell" in robust["generator"]
     assert "Plunder Cell" not in robust["generator"]
 
 
 def test_scenarios_follow_the_game_formula():
-    assert SOLAR_SCENARIOS["none"].solar_energy == 0
-    assert SOLAR_SCENARIOS["median"].solar_energy < SOLAR_SCENARIOS["bright"].solar_energy < SOLAR_SCENARIOS["max"].solar_energy
-    # Legacy convention: the median case counts heat as if in bright sunlight.
-    assert SOLAR_SCENARIOS["median"].solar_heat == SOLAR_SCENARIOS["bright"].solar_heat
+    s = SOLAR_SCENARIOS
+    assert s["dark"].solar_energy == 0
+    assert s["evader"].solar_energy < s["normal"].solar_energy < s["bright"].solar_energy < s["max"].solar_energy
+    # Heat is counted at least at the bright-star check, so designs survive bright systems.
+    assert s["evader"].solar_heat == s["normal"].solar_heat == s["bright"].solar_heat
 
 
 def test_price_envelope_spans_every_pass():
-    results = {passes.pass_id(s, "sold"): _run(s, "sold") for s in ("none", "max")}
+    results = {passes.pass_id(s, "sold"): _run(s, "sold") for s in ("dark", "max")}
     env = passes.price_envelope(results)
     every = [p for r in results.values() for p in r["prices"].values()]
     assert env["energy"] == [min(p["energy"] for p in every), max(p["energy"] for p in every)]

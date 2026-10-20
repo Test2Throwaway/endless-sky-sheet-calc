@@ -1,5 +1,17 @@
 # Pruner design (paper draft)
 
+> **Built so far: the MVP** (`sheetcalc-prune`, `sheetcalc/strict.py`, `sheetcalc/prune.py`):
+> 1. Strict dominance over every in-play outfit in a designable category: one-to-one, plus whole copies of a smaller
+>    outfit (a ship's attributes are sums, so 2 × small can beat 1 × large). Cost is ignored (the optimizer never
+>    scores it); outfits with nothing but a footprint are kept (their value is their identity). Weapons and Hand to
+>    Hand outfits are never scaled.
+> 2. The power and cooling plant search per solar case (dark, evader, normal, bright, max), on what strict
+>    dominance leaves. Outfits with stats beyond steady power and cooling are kept.
+>
+> On the current in-play list it drops 83–86 of 587 designable outfits (14–15%). Weapons and ammunition (199) are
+> untouched: no weapon is at least as good as another in every way, so pruning them needs the compensated
+> layer below. Everything below the MVP is the plan for later.
+
 The pruner works out, once per game update, which outfits the optimizer can safely skip for a given kind of design.
 It writes its results as **relations** ("A is beaten by B under these conditions"), and the optimizer applies them to
 each request. This document is the full design; nothing beyond the power passes is built yet.

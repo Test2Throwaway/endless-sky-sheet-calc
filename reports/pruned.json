@@ -1,0 +1,1185 @@
+{
+ "pool": {
+  "in play": 606,
+  "considered": 587
+ },
+ "strict": {
+  "MH Blue-Class Steering": {
+   "A125 Atomic Steering": 1,
+   "Type 1 Radiant Steering": 2,
+   "Type 2 Radiant Steering": 1,
+   "X1200 Ion Steering": 2,
+   "X2200 Ion Steering": 1
+  },
+  "MH Blue-Class Thruster": {
+   "Type 1 Radiant Thruster": 2,
+   "Type 2 Radiant Thruster": 1,
+   "X2700 Ion Thruster": 1
+  },
+  "MH Green-Class Steering": {
+   "\"Aqra\" Inductive Steering": 1,
+   "\"Benga\" Atomic Steering": 1,
+   "Greyhound Plasma Steering": 1,
+   "Type 1 Radiant Steering": 3,
+   "Type 2 Radiant Steering": 1
+  },
+  "MH Green-Class Thruster": {
+   "Type 2 Radiant Thruster": 1
+  },
+  "MH Red-Class Steering": {
+   "\"Aqra\" Inductive Steering": 2,
+   "\"Basrem\" Atomic Steering": 3,
+   "\"Benga\" Atomic Steering": 2,
+   "\"Biroo\" Atomic Steering": 1,
+   "\"Chyyra\" Inductive Steering": 1,
+   "A125 Atomic Steering": 2,
+   "A375 Atomic Steering": 1,
+   "Small Steering Module": 5,
+   "Steering (Asteroid Class)": 3,
+   "Steering (Lunar Class)": 1,
+   "Type 2 Radiant Steering": 2,
+   "Type 3 Radiant Steering": 1
+  },
+  "SC-14 Plasma Thruster": {
+   "Type 1 Radiant Thruster": 3
+  },
+  "X2700 Ion Thruster": {
+   "Type 1 Radiant Thruster": 2
+  },
+  "Cloud Piercer": {
+   "Anti-Materiel Gun": 1,
+   "Enforcer Confrontation Gear": 1,
+   "Enforcer Riot Staff": 1,
+   "Kinetic Rail Rifle": 1,
+   "Lasher Pistol": 1,
+   "Optical Laser Rifle": 1,
+   "Pug Peacekeeping Staff": 1,
+   "Thermal Repeater Rifle": 1,
+   "Tuning Rifle": 1
+  },
+  "Enforcer Riot Staff": {
+   "Enforcer Confrontation Gear": 1
+  },
+  "Fragmentation Grenades": {
+   "Anti-Materiel Gun": 1,
+   "Kinetic Rail Rifle": 1,
+   "Thermal Repeater Rifle": 1
+  },
+  "Guardian Turret": {
+   "Pug Biodefenses": 1
+  },
+  "Irate Carronade": {
+   "Guardian Turret": 1,
+   "Pug Biodefenses": 1
+  },
+  "Laser Rifle": {
+   "Anti-Materiel Gun": 1,
+   "Kinetic Rail Rifle": 1,
+   "Lasher Pistol": 1,
+   "Pulse Rifle": 1,
+   "Thermal Repeater Rifle": 1,
+   "Tuning Rifle": 1
+  },
+  "Lasher Pistol": {
+   "Kinetic Rail Rifle": 1
+  },
+  "Optical Laser Rifle": {
+   "Anti-Materiel Gun": 1,
+   "Enforcer Confrontation Gear": 1,
+   "Enforcer Riot Staff": 1,
+   "Kinetic Rail Rifle": 1,
+   "Lasher Pistol": 1,
+   "Pug Peacekeeping Staff": 1,
+   "Thermal Repeater Rifle": 1,
+   "Tuning Rifle": 1
+  },
+  "Plasma Grenades": {
+   "Anti-Materiel Gun": 1,
+   "Enforcer Confrontation Gear": 1,
+   "Enforcer Riot Staff": 1,
+   "Kinetic Rail Rifle": 1,
+   "Pug Peacekeeping Staff": 1
+  },
+  "Plasmasickle": {
+   "Anti-Materiel Gun": 1,
+   "Enforcer Confrontation Gear": 1,
+   "Enforcer Riot Staff": 1,
+   "Kinetic Rail Rifle": 1,
+   "Lasher Pistol": 1,
+   "Optical Laser Rifle": 1,
+   "Plasma Grenades": 1,
+   "Pug Peacekeeping Staff": 1,
+   "Pulse Rifle": 1,
+   "Savagery Pike": 1,
+   "Thermal Repeater Rifle": 1,
+   "Tuning Rifle": 1
+  },
+  "Pug Peacekeeping Staff": {
+   "Enforcer Confrontation Gear": 1
+  },
+  "Pulse Rifle": {
+   "Anti-Materiel Gun": 1,
+   "Kinetic Rail Rifle": 1,
+   "Lasher Pistol": 1,
+   "Thermal Repeater Rifle": 1,
+   "Tuning Rifle": 1
+  },
+  "Savagery Pike": {
+   "Anti-Materiel Gun": 1,
+   "Enforcer Confrontation Gear": 1,
+   "Enforcer Riot Staff": 1,
+   "Kinetic Rail Rifle": 1,
+   "Lasher Pistol": 1,
+   "Optical Laser Rifle": 1,
+   "Plasma Grenades": 1,
+   "Pug Peacekeeping Staff": 1,
+   "Thermal Repeater Rifle": 1,
+   "Tuning Rifle": 1
+  },
+  "Thermal Repeater Rifle": {
+   "Kinetic Rail Rifle": 1
+  },
+  "Tuning Rifle": {
+   "Anti-Materiel Gun": 1,
+   "Kinetic Rail Rifle": 1,
+   "Thermal Repeater Rifle": 1
+  },
+  "Armageddon Core": {
+   "White Sun Reactor": 1
+  },
+  "C17 Warzone Core": {
+   "Ka'het MHD Generator": 3,
+   "Millennium Cell": 3,
+   "OC-\"Mavra\" Betavoltaic Cell": 5,
+   "Yellow Sun Reactor": 1
+  },
+  "C27 Campaign Core": {
+   "Ka'het MHD Generator": 6,
+   "Large Reactor Module": 1,
+   "Red Sun Reactor": 3,
+   "White Sun Reactor": 1
+  },
+  "C3 Scrap Cell": {
+   "1-\"Uurau\" Betavoltaic Cell": 2,
+   "Small Cogeneration Module": 2
+  },
+  "C7 Brawl Cell": {
+   "3-\"Kaska\" Betavoltaic Cell": 1,
+   "Small Cogeneration Module": 3
+  },
+  "Generator (Candle Class)": {
+   "Ka'het MHD Generator": 1
+  },
+  "Generator (Inferno Class)": {
+   "Ka'het MHD Generator": 3
+  },
+  "Hai Chasm Batteries": {
+   "Auxiliary Power Reserve": 1,
+   "Ka'het Reserve Accumulator": 1,
+   "Small Battery Module": 1
+  },
+  "Hai Fissure Batteries": {
+   "Auxiliary Power Reserve": 3,
+   "Ka'het Reserve Accumulator": 3,
+   "Small Battery Module": 2
+  },
+  "Hai Gorge Batteries": {
+   "Auxiliary Power Reserve": 6,
+   "Ka'het Reserve Accumulator": 7,
+   "Large Battery Module": 1,
+   "Small Battery Module": 5
+  },
+  "Hai Ravine Batteries": {
+   "Auxiliary Power Reserve": 10,
+   "Large Battery Module": 2,
+   "Primary Power Reserve": 2,
+   "Small Battery Module": 8
+  },
+  "Hai Valley Batteries": {
+   "Large Battery Module": 3,
+   "Primary Power Reserve": 3
+  },
+  "LP036a Battery Pack": {
+   "Auxiliary Power Reserve": 2,
+   "Hai Chasm Batteries": 2,
+   "Ka'het Reserve Accumulator": 2,
+   "Small Battery Module": 2
+  },
+  "LP072a Battery Pack": {
+   "Auxiliary Power Reserve": 3,
+   "Ka'het Reserve Accumulator": 4,
+   "Large Battery Module": 1,
+   "Primary Power Reserve": 1,
+   "Small Battery Module": 3
+  },
+  "LP144a Battery Pack": {
+   "Auxiliary Power Reserve": 7,
+   "Ka'het Reserve Accumulator": 8,
+   "Large Battery Module": 2,
+   "Primary Power Reserve": 2,
+   "Small Battery Module": 6
+  },
+  "LP288a Battery Pack": {
+   "Large Battery Module": 2,
+   "Primary Power Reserve": 3,
+   "Small Battery Module": 9
+  },
+  "LP576a Battery Pack": {
+   "Large Battery Module": 3,
+   "Primary Power Reserve": 4
+  },
+  "Metallic Hydrogen Cell": {
+   "Auxiliary Power Reserve": 1,
+   "Hai Chasm Batteries": 1,
+   "Hai Fissure Batteries": 1,
+   "Ka'het Reserve Accumulator": 1,
+   "LP036a Battery Pack": 1,
+   "LP072a Battery Pack": 1,
+   "Large Battery Module": 1,
+   "Primary Power Reserve": 1,
+   "Small Battery Module": 1,
+   "Supercapacitor": 1
+  },
+  "nGVF-AA Fuel Cell": {
+   "1-\"Uurau\" Betavoltaic Cell": 2,
+   "Small Biochemical Cell": 1
+  },
+  "nGVF-BB Fuel Cell": {
+   "1-\"Uurau\" Betavoltaic Cell": 3,
+   "Small Cogeneration Module": 2
+  },
+  "nGVF-CC Fuel Cell": {
+   "1-\"Uurau\" Betavoltaic Cell": 4,
+   "3-\"Kaska\" Betavoltaic Cell": 1,
+   "Small Cogeneration Module": 3
+  },
+  "nGVF-DD Fuel Cell": {
+   "1-\"Uurau\" Betavoltaic Cell": 5,
+   "Large Cogeneration Module": 1,
+   "Small Cogeneration Module": 4
+  },
+  "nGVF-EE Fuel Cell": {
+   "1-\"Uurau\" Betavoltaic Cell": 7,
+   "3-\"Kaska\" Betavoltaic Cell": 2,
+   "6-\"Ruuv\" Betavoltaic Cell": 1,
+   "Small Cogeneration Module": 6
+  },
+  "NT-200 Nucleovoltaic": {
+   "Ka'het MHD Generator": 2,
+   "Millennium Cell": 2,
+   "Red Sun Reactor": 1
+  },
+  "R01 Skirmish Battery": {
+   "Auxiliary Power Reserve": 2,
+   "Ka'het Reserve Accumulator": 2,
+   "Small Battery Module": 2
+  },
+  "R02 Battlezone Battery": {
+   "Auxiliary Power Reserve": 3,
+   "Ka'het Reserve Accumulator": 4,
+   "Large Battery Module": 1,
+   "Primary Power Reserve": 1,
+   "Small Battery Module": 3
+  },
+  "R03 Warforge Battery": {
+   "Auxiliary Power Reserve": 6,
+   "Hai Chasm Batteries": 8,
+   "Ka'het Reserve Accumulator": 7,
+   "LP072a Battery Pack": 2,
+   "LP144a Battery Pack": 1,
+   "Large Battery Module": 1,
+   "Primary Power Reserve": 2,
+   "Small Battery Module": 5
+  },
+  "R04 Crusade Battery": {
+   "Auxiliary Power Reserve": 10,
+   "Hai Gorge Batteries": 2,
+   "Hai Valley Batteries": 1,
+   "LP288a Battery Pack": 1,
+   "Large Battery Module": 2,
+   "Primary Power Reserve": 2,
+   "Small Battery Module": 8
+  },
+  "RT-I Radiothermal": {
+   "Dwarf Core": 1,
+   "Generator (Furnace Class)": 1,
+   "Ka'het MHD Generator": 2,
+   "OC-\"Mavra\" Betavoltaic Cell": 2,
+   "Pebble Core": 1,
+   "Small Cogeneration Module": 4
+  },
+  "S3 Thermionic": {
+   "Ka'het MHD Generator": 2,
+   "Large Cogeneration Module": 1,
+   "OC-\"Mavra\" Betavoltaic Cell": 3,
+   "Small Cogeneration Module": 5
+  },
+  "Sand Cell": {
+   "1-\"Uurau\" Betavoltaic Cell": 2,
+   "Small Cogeneration Module": 2
+  },
+  "Stack Core": {
+   "White Sun Reactor": 1
+  },
+  "Catalytic Ramscoop": {
+   "Wanderer Ramscoop": 2
+  },
+  "Hai Williwaw Cooling": {
+   "Small Heat Shunt": 1
+  },
+  "Large Radar Jammer": {
+   "Decoy Plating": 2
+  },
+  "Quantum Keystone": {
+   "Quantum Key Stone": 1
+  },
+  "Ramscoop": {
+   "Emergency Ramscoop": 1,
+   "Wanderer Ramscoop": 1
+  },
+  "Water Coolant System": {
+   "Small Heat Shunt": 1
+  }
+ },
+ "power": {
+  "dark": {
+   "dropped": {
+    "Boulder Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Breeder Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Concentrating Solar Array": {
+     "family": "generator",
+     "why": "dominated: by Concentrating Solar Cell"
+    },
+    "Concentrating Solar Cell": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Dark Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Double Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Dwarf Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Electroweak Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Fission Reactor": {
+     "family": "generator",
+     "why": "dominated: by Small Reactor Module"
+    },
+    "Fusion Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Generator (Furnace Class)": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Geode Reactor": {
+     "family": "generator",
+     "why": "dominated: by Small Reactor Module"
+    },
+    "KP-6 Photovoltaic Array": {
+     "family": "generator",
+     "why": "dominated: by Concentrating Solar Cell"
+    },
+    "KP-6 Photovoltaic Panel": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Ka'het Primary Cooling": {
+     "family": "active cooler",
+     "why": "never in a best plant"
+    },
+    "Ka'het Support Cooling": {
+     "family": "active cooler",
+     "why": "replaceable: ties with Small Hybrid Cooling"
+    },
+    "Large Cogeneration Module": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Large Collector Module": {
+     "family": "generator",
+     "why": "dominated: by Concentrating Solar Array"
+    },
+    "Liquid Helium Cooler": {
+     "family": "passive cooler",
+     "why": "off the ladder: some mix of other passive coolers always fits in no more space"
+    },
+    "Liquid Nitrogen Cooler": {
+     "family": "passive cooler",
+     "why": "off the ladder: some mix of other passive coolers always fits in no more space"
+    },
+    "Pebble Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Quark Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Small Collector Module": {
+     "family": "generator",
+     "why": "dominated: by Concentrating Solar Cell"
+    },
+    "Successor Cooling": {
+     "family": "active cooler",
+     "why": "never in a best plant"
+    },
+    "Triple Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    }
+   },
+   "kept for other stats": {
+    "\"Nnesa\" Fusion Core": {
+     "shield energy multiplier": -0.08,
+     "hull energy multiplier": -0.08
+    },
+    "\"Ryuit\" Fusion Core": {
+     "shield energy multiplier": -0.14,
+     "hull energy multiplier": -0.14
+    },
+    "\"Uoret\" Fusion Core": {
+     "shield energy multiplier": -0.22,
+     "hull energy multiplier": -0.22
+    },
+    "3-\"Kaska\" Betavoltaic Cell": {
+     "energy capacity": 3100.0
+    },
+    "6-\"Ruuv\" Betavoltaic Cell": {
+     "energy capacity": 8500.0
+    },
+    "Aeon Cell": {
+     "ion resistance": 0.14,
+     "scramble resistance": 0.14
+    },
+    "Blue Sun Reactor": {
+     "energy capacity": 8900.0
+    },
+    "Epoch Cell": {
+     "ion resistance": 0.085,
+     "scramble resistance": 0.085
+    },
+    "I70 Ameliorate Cell": {
+     "energy capacity": 2520.0
+    },
+    "Lantern Fission Core": {
+     "overheat damage rate": 3.0
+    },
+    "Large Biochemical Cell": {
+     "energy capacity": 30000.0
+    },
+    "Large Hybrid Cooling": {
+     "fuel capacity": 200.0
+    },
+    "Liquid Sodium Cooler": {
+     "heat capacity": 680.0
+    },
+    "Millennium Cell": {
+     "ion resistance": 0.025,
+     "scramble resistance": 0.025
+    },
+    "OC-\"Mavra\" Betavoltaic Cell": {
+     "energy capacity": 2000.0
+    },
+    "Red Sun Reactor": {
+     "energy capacity": 1100.0
+    },
+    "Small Biochemical Cell": {
+     "energy capacity": 7500.0
+    },
+    "White Sun Reactor": {
+     "energy capacity": 6700.0
+    },
+    "Yellow Sun Reactor": {
+     "energy capacity": 2600.0
+    }
+   }
+  },
+  "evader": {
+   "dropped": {
+    "Boulder Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Breeder Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Concentrating Solar Array": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Dark Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Double Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Dwarf Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Electroweak Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Fission Reactor": {
+     "family": "generator",
+     "why": "dominated: by Small Reactor Module"
+    },
+    "Fusion Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Generator (Furnace Class)": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Geode Reactor": {
+     "family": "generator",
+     "why": "dominated: by Small Reactor Module"
+    },
+    "KP-6 Photovoltaic Array": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Ka'het Primary Cooling": {
+     "family": "active cooler",
+     "why": "never in a best plant"
+    },
+    "Ka'het Support Cooling": {
+     "family": "active cooler",
+     "why": "replaceable: ties with Small Hybrid Cooling"
+    },
+    "Large Cogeneration Module": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Large Collector Module": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Liquid Helium Cooler": {
+     "family": "passive cooler",
+     "why": "off the ladder: some mix of other passive coolers always fits in no more space"
+    },
+    "Liquid Nitrogen Cooler": {
+     "family": "passive cooler",
+     "why": "off the ladder: some mix of other passive coolers always fits in no more space"
+    },
+    "Pebble Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Quark Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Successor Cooling": {
+     "family": "active cooler",
+     "why": "never in a best plant"
+    },
+    "Triple Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    }
+   },
+   "kept for other stats": {
+    "\"Nnesa\" Fusion Core": {
+     "shield energy multiplier": -0.08,
+     "hull energy multiplier": -0.08
+    },
+    "\"Ryuit\" Fusion Core": {
+     "shield energy multiplier": -0.14,
+     "hull energy multiplier": -0.14
+    },
+    "\"Uoret\" Fusion Core": {
+     "shield energy multiplier": -0.22,
+     "hull energy multiplier": -0.22
+    },
+    "3-\"Kaska\" Betavoltaic Cell": {
+     "energy capacity": 3100.0
+    },
+    "6-\"Ruuv\" Betavoltaic Cell": {
+     "energy capacity": 8500.0
+    },
+    "Aeon Cell": {
+     "ion resistance": 0.14,
+     "scramble resistance": 0.14
+    },
+    "Blue Sun Reactor": {
+     "energy capacity": 8900.0
+    },
+    "Epoch Cell": {
+     "ion resistance": 0.085,
+     "scramble resistance": 0.085
+    },
+    "I70 Ameliorate Cell": {
+     "energy capacity": 2520.0
+    },
+    "Lantern Fission Core": {
+     "overheat damage rate": 3.0
+    },
+    "Large Biochemical Cell": {
+     "energy capacity": 30000.0
+    },
+    "Large Hybrid Cooling": {
+     "fuel capacity": 200.0
+    },
+    "Liquid Sodium Cooler": {
+     "heat capacity": 680.0
+    },
+    "Millennium Cell": {
+     "ion resistance": 0.025,
+     "scramble resistance": 0.025
+    },
+    "OC-\"Mavra\" Betavoltaic Cell": {
+     "energy capacity": 2000.0
+    },
+    "Red Sun Reactor": {
+     "energy capacity": 1100.0
+    },
+    "Small Biochemical Cell": {
+     "energy capacity": 7500.0
+    },
+    "White Sun Reactor": {
+     "energy capacity": 6700.0
+    },
+    "Yellow Sun Reactor": {
+     "energy capacity": 2600.0
+    }
+   }
+  },
+  "normal": {
+   "dropped": {
+    "Boulder Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Breeder Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Concentrating Solar Array": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Dark Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Double Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Dwarf Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Electroweak Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Fission Reactor": {
+     "family": "generator",
+     "why": "dominated: by Small Reactor Module"
+    },
+    "Fusion Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Generator (Furnace Class)": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Geode Reactor": {
+     "family": "generator",
+     "why": "dominated: by Small Reactor Module"
+    },
+    "KP-6 Photovoltaic Array": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Ka'het Primary Cooling": {
+     "family": "active cooler",
+     "why": "never in a best plant"
+    },
+    "Ka'het Support Cooling": {
+     "family": "active cooler",
+     "why": "replaceable: ties with Small Hybrid Cooling"
+    },
+    "Large Cogeneration Module": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Large Collector Module": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Liquid Helium Cooler": {
+     "family": "passive cooler",
+     "why": "off the ladder: some mix of other passive coolers always fits in no more space"
+    },
+    "Liquid Nitrogen Cooler": {
+     "family": "passive cooler",
+     "why": "off the ladder: some mix of other passive coolers always fits in no more space"
+    },
+    "Pebble Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Quark Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Successor Cooling": {
+     "family": "active cooler",
+     "why": "never in a best plant"
+    },
+    "Triple Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    }
+   },
+   "kept for other stats": {
+    "\"Nnesa\" Fusion Core": {
+     "shield energy multiplier": -0.08,
+     "hull energy multiplier": -0.08
+    },
+    "\"Ryuit\" Fusion Core": {
+     "shield energy multiplier": -0.14,
+     "hull energy multiplier": -0.14
+    },
+    "\"Uoret\" Fusion Core": {
+     "shield energy multiplier": -0.22,
+     "hull energy multiplier": -0.22
+    },
+    "3-\"Kaska\" Betavoltaic Cell": {
+     "energy capacity": 3100.0
+    },
+    "6-\"Ruuv\" Betavoltaic Cell": {
+     "energy capacity": 8500.0
+    },
+    "Aeon Cell": {
+     "ion resistance": 0.14,
+     "scramble resistance": 0.14
+    },
+    "Blue Sun Reactor": {
+     "energy capacity": 8900.0
+    },
+    "Epoch Cell": {
+     "ion resistance": 0.085,
+     "scramble resistance": 0.085
+    },
+    "I70 Ameliorate Cell": {
+     "energy capacity": 2520.0
+    },
+    "Lantern Fission Core": {
+     "overheat damage rate": 3.0
+    },
+    "Large Biochemical Cell": {
+     "energy capacity": 30000.0
+    },
+    "Large Hybrid Cooling": {
+     "fuel capacity": 200.0
+    },
+    "Liquid Sodium Cooler": {
+     "heat capacity": 680.0
+    },
+    "Millennium Cell": {
+     "ion resistance": 0.025,
+     "scramble resistance": 0.025
+    },
+    "OC-\"Mavra\" Betavoltaic Cell": {
+     "energy capacity": 2000.0
+    },
+    "Red Sun Reactor": {
+     "energy capacity": 1100.0
+    },
+    "Small Biochemical Cell": {
+     "energy capacity": 7500.0
+    },
+    "White Sun Reactor": {
+     "energy capacity": 6700.0
+    },
+    "Yellow Sun Reactor": {
+     "energy capacity": 2600.0
+    }
+   }
+  },
+  "bright": {
+   "dropped": {
+    "Antimatter Power Cell": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Boulder Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Breeder Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Dark Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Double Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Dwarf Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Electroweak Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Fission Reactor": {
+     "family": "generator",
+     "why": "dominated: by Small Reactor Module"
+    },
+    "Fusion Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Generator (Furnace Class)": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Geode Reactor": {
+     "family": "generator",
+     "why": "dominated: by Small Reactor Module"
+    },
+    "KP-6 Photovoltaic Array": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Ka'het MHD Generator": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Ka'het Primary Cooling": {
+     "family": "active cooler",
+     "why": "never in a best plant"
+    },
+    "Large Cogeneration Module": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Large Reactor Module": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Liquid Helium Cooler": {
+     "family": "passive cooler",
+     "why": "off the ladder: some mix of other passive coolers always fits in no more space"
+    },
+    "Liquid Nitrogen Cooler": {
+     "family": "passive cooler",
+     "why": "off the ladder: some mix of other passive coolers always fits in no more space"
+    },
+    "Pebble Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Quark Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Small Cogeneration Module": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Small Hybrid Cooling": {
+     "family": "active cooler",
+     "why": "never in a best plant"
+    },
+    "Small Reactor Module": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Successor Cooling": {
+     "family": "active cooler",
+     "why": "never in a best plant"
+    },
+    "Triple Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    }
+   },
+   "kept for other stats": {
+    "\"Nnesa\" Fusion Core": {
+     "shield energy multiplier": -0.08,
+     "hull energy multiplier": -0.08
+    },
+    "\"Ryuit\" Fusion Core": {
+     "shield energy multiplier": -0.14,
+     "hull energy multiplier": -0.14
+    },
+    "\"Uoret\" Fusion Core": {
+     "shield energy multiplier": -0.22,
+     "hull energy multiplier": -0.22
+    },
+    "1-\"Uurau\" Betavoltaic Cell": {
+     "energy capacity": 1200.0
+    },
+    "3-\"Kaska\" Betavoltaic Cell": {
+     "energy capacity": 3100.0
+    },
+    "6-\"Ruuv\" Betavoltaic Cell": {
+     "energy capacity": 8500.0
+    },
+    "Aeon Cell": {
+     "ion resistance": 0.14,
+     "scramble resistance": 0.14
+    },
+    "Blue Sun Reactor": {
+     "energy capacity": 8900.0
+    },
+    "Epoch Cell": {
+     "ion resistance": 0.085,
+     "scramble resistance": 0.085
+    },
+    "I70 Ameliorate Cell": {
+     "energy capacity": 2520.0
+    },
+    "Lantern Fission Core": {
+     "overheat damage rate": 3.0
+    },
+    "Large Biochemical Cell": {
+     "energy capacity": 30000.0
+    },
+    "Large Hybrid Cooling": {
+     "fuel capacity": 200.0
+    },
+    "Liquid Sodium Cooler": {
+     "heat capacity": 680.0
+    },
+    "Millennium Cell": {
+     "ion resistance": 0.025,
+     "scramble resistance": 0.025
+    },
+    "OC-\"Mavra\" Betavoltaic Cell": {
+     "energy capacity": 2000.0
+    },
+    "Red Sun Reactor": {
+     "energy capacity": 1100.0
+    },
+    "Small Biochemical Cell": {
+     "energy capacity": 7500.0
+    },
+    "White Sun Reactor": {
+     "energy capacity": 6700.0
+    },
+    "Yellow Sun Reactor": {
+     "energy capacity": 2600.0
+    }
+   }
+  },
+  "max": {
+   "dropped": {
+    "Antimatter Power Cell": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Boulder Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Breeder Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Dark Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Double Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Dwarf Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Electroweak Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Fission Reactor": {
+     "family": "generator",
+     "why": "dominated: by Small Reactor Module"
+    },
+    "Fusion Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Generator (Furnace Class)": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Geode Reactor": {
+     "family": "generator",
+     "why": "dominated: by Small Reactor Module"
+    },
+    "KP-6 Photovoltaic Array": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Ka'het MHD Generator": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Large Cogeneration Module": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Large Reactor Module": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Liquid Helium Cooler": {
+     "family": "passive cooler",
+     "why": "off the ladder: some mix of other passive coolers always fits in no more space"
+    },
+    "Liquid Nitrogen Cooler": {
+     "family": "passive cooler",
+     "why": "off the ladder: some mix of other passive coolers always fits in no more space"
+    },
+    "Pebble Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Quark Reactor": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Small Cogeneration Module": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Small Reactor Module": {
+     "family": "generator",
+     "why": "never in a best plant"
+    },
+    "Successor Cooling": {
+     "family": "active cooler",
+     "why": "never in a best plant"
+    },
+    "Triple Plasma Core": {
+     "family": "generator",
+     "why": "never in a best plant"
+    }
+   },
+   "kept for other stats": {
+    "\"Nnesa\" Fusion Core": {
+     "shield energy multiplier": -0.08,
+     "hull energy multiplier": -0.08
+    },
+    "\"Ryuit\" Fusion Core": {
+     "shield energy multiplier": -0.14,
+     "hull energy multiplier": -0.14
+    },
+    "\"Uoret\" Fusion Core": {
+     "shield energy multiplier": -0.22,
+     "hull energy multiplier": -0.22
+    },
+    "1-\"Uurau\" Betavoltaic Cell": {
+     "energy capacity": 1200.0
+    },
+    "3-\"Kaska\" Betavoltaic Cell": {
+     "energy capacity": 3100.0
+    },
+    "6-\"Ruuv\" Betavoltaic Cell": {
+     "energy capacity": 8500.0
+    },
+    "Aeon Cell": {
+     "ion resistance": 0.14,
+     "scramble resistance": 0.14
+    },
+    "Blue Sun Reactor": {
+     "energy capacity": 8900.0
+    },
+    "Epoch Cell": {
+     "ion resistance": 0.085,
+     "scramble resistance": 0.085
+    },
+    "I70 Ameliorate Cell": {
+     "energy capacity": 2520.0
+    },
+    "Lantern Fission Core": {
+     "overheat damage rate": 3.0
+    },
+    "Large Biochemical Cell": {
+     "energy capacity": 30000.0
+    },
+    "Large Hybrid Cooling": {
+     "fuel capacity": 200.0
+    },
+    "Liquid Sodium Cooler": {
+     "heat capacity": 680.0
+    },
+    "Millennium Cell": {
+     "ion resistance": 0.025,
+     "scramble resistance": 0.025
+    },
+    "OC-\"Mavra\" Betavoltaic Cell": {
+     "energy capacity": 2000.0
+    },
+    "Red Sun Reactor": {
+     "energy capacity": 1100.0
+    },
+    "Small Biochemical Cell": {
+     "energy capacity": 7500.0
+    },
+    "White Sun Reactor": {
+     "energy capacity": 6700.0
+    },
+    "Yellow Sun Reactor": {
+     "energy capacity": 2600.0
+    }
+   }
+  }
+ }
+}
