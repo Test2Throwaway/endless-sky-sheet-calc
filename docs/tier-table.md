@@ -167,7 +167,7 @@ damage per second by type (including submunitions unless excluded).
 | firing fuel | 5 | U | lower | D |
 | firing force (recoil) | 24 | I | unclear | K |
 | firing ion, firing hull, relative firing shields | 1 each | I | lower | D |
-| lifetime, random lifetime, velocity, random velocity, velocity override, range override | 3–153 | U (range, speed) | higher | D via derived range and speed |
+| lifetime, random lifetime, velocity, random velocity, velocity override, range override | 3–153 | U (range, speed) | higher | D via derived range and speed, using the medians: velocity + ½ random velocity, lifetime + ½ random lifetime (`reports/random-stats.md`) |
 | acceleration, drag (projectile) | 28, 32 | U (speed) | higher, lower | D via derived speed |
 | inaccuracy | 134 | I | lower | D |
 | turret turn | 56 | U (turrets) | higher | D (absent on a turret = 240°/s) |
