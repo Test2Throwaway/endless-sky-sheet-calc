@@ -15,6 +15,13 @@ In play: 606; considered (designable categories): 587.
 | bright | 60 | 26 | 86 | 15% |
 | max | 60 | 24 | 84 | 14% |
 
+Weapon lenses (general-purpose combat requests only), on what strict dominance keeps:
+
+| Lens | Weapons in lens | Dropped | Share |
+|---|---|---|---|
+| damage | 142 | 2 | 1% |
+| anti-missile | 13 | 0 | 0% |
+
 ## Strict dominance
 
 Dropped because another outfit (or whole copies of it) is at least as good in every way. Valid for
@@ -241,3 +248,20 @@ Not needed for power here, but kept for other stats: "Nnesa" Fusion Core, "Ryuit
 | Triple Plasma Core | generator | never in a best plant |
 
 Not needed for power here, but kept for other stats: "Nnesa" Fusion Core, "Ryuit" Fusion Core, "Uoret" Fusion Core, 1-"Uurau" Betavoltaic Cell, 3-"Kaska" Betavoltaic Cell, 6-"Ruuv" Betavoltaic Cell, Aeon Cell, Blue Sun Reactor, Epoch Cell, I70 Ameliorate Cell, Lantern Fission Core, Large Biochemical Cell, Large Hybrid Cooling, Liquid Sodium Cooler, Millennium Cell, OC-"Mavra" Betavoltaic Cell, Red Sun Reactor, Small Biochemical Cell, White Sun Reactor, Yellow Sun Reactor.
+
+## Weapon lens: damage
+
+Dropped for general-purpose combat requests only: another weapon in the same category is at least
+as good on every stat this lens compares (docs/tier-table.md, section 2a).
+
+| Weapon | Beaten by |
+|---|---|
+| EMP Torpedo Bay | Teciimach Bay |
+| Nucleolysis Beam | Ka'het Ravager Beam |
+
+## Weapon lens: anti-missile
+
+Dropped for general-purpose combat requests only: another weapon in the same category is at least
+as good on every stat this lens compares (docs/tier-table.md, section 2a).
+
+Nothing: every weapon in this lens trades one compared stat against another.

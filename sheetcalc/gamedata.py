@@ -23,7 +23,8 @@ def load_outfits(data_dir=DEFAULT_DATA_DIR):
 
     First-level attributes are kept as-is: numeric values are floats, others strings. A
     weapon's sub-block is kept under "_weapon" the same way, except that bare flags (e.g.
-    "safe") are 1 and submunitions are a list of (name, count) under "submunition".
+    "safe") are 1, submunitions are a list of (name, count) under "submunition", and ammunition is
+    (name, used per shot) under "ammo".
     """
     outfits = {}
     for path in sorted(Path(data_dir).rglob("*.txt")):
@@ -50,6 +51,8 @@ def load_outfits(data_dir=DEFAULT_DATA_DIR):
                 if tokens[0] == "submunition" and len(tokens) >= 2:
                     count = float(tokens[2]) if len(tokens) >= 3 else 1.
                     weapon.setdefault("submunition", []).append((tokens[1], count))
+                elif tokens[0] == "ammo" and len(tokens) >= 2:
+                    weapon["ammo"] = (tokens[1], max(0., float(tokens[2])) if len(tokens) >= 3 else 1.)
                 elif len(tokens) == 1:
                     weapon[tokens[0]] = 1.
                 else:

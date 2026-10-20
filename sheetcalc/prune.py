@@ -1,9 +1,10 @@
-"""MVP pruner: strict dominance, then the power and cooling plant search per solar case.
+"""MVP pruner: strict dominance, then the power and cooling plant search per solar case, then the weapon lenses.
 
 Usage: python -m sheetcalc.prune [--jobs N] [--solar normal,dark]
 
 Writes reports/pruned.json (for the optimizer) and reports/pruned.md (for reading). For a request in solar case
-S, drop every outfit under "strict" plus every outfit under "power"/S. See docs/pruner-design.md for what comes
+S, drop every outfit under "strict" plus every outfit under "power"/S; for a general-purpose combat request, also
+the outfits under "weapons"/"damage" and "weapons"/"anti-missile". See docs/pruner-design.md for what comes
 after the MVP.
 """
 
@@ -22,6 +23,7 @@ from .obsolescence import analyse_items
 from .power import active_coolers
 from .settings import OBSOLESCENCE_ENERGY, OBSOLESCENCE_HEAT, SOLAR_SCENARIOS
 from .strict import strict_dominance
+from .weapons import LENSES, lens_dominance
 
 _DATA = {}
 
@@ -63,6 +65,11 @@ def report(result, outfits):
     for solar, p in result["power"].items():
         total = len(strict) + len(p["dropped"])
         lines.append(f"| {solar} | {len(strict)} | {len(p['dropped'])} | {total} | {total / considered:.0%} |")
+    lines += ["", "Weapon lenses (general-purpose combat requests only), on what strict dominance keeps:", "",
+              "| Lens | Weapons in lens | Dropped | Share |", "|---|---|---|---|"]
+    for lens, w in result["weapons"].items():
+        n = w["in lens"]
+        lines.append(f"| {lens} | {n} | {len(w['dropped'])} | {len(w['dropped']) / n:.0%} |" if n else f"| {lens} | 0 | 0 | – |")
     by_cat = Counter(outfits[n].get("category") for n in strict)
     lines += ["", "## Strict dominance", "",
               "Dropped because another outfit (or whole copies of it) is at least as good in every way. Valid for",
@@ -78,6 +85,15 @@ def report(result, outfits):
         if p["kept for other stats"]:
             lines += ["", "Not needed for power here, but kept for other stats: "
                       + ", ".join(sorted(p["kept for other stats"])) + "."]
+    for lens, w in result["weapons"].items():
+        lines += ["", f"## Weapon lens: {lens}", "",
+                  "Dropped for general-purpose combat requests only: another weapon in the same category is at least",
+                  "as good on every stat this lens compares (docs/tier-table.md, section 2a).", ""]
+        if w["dropped"]:
+            lines += ["| Weapon | Beaten by |", "|---|---|"]
+            lines += [f"| {n} | {', '.join(b)} |" for n, b in w["dropped"].items()]
+        else:
+            lines.append("Nothing: every weapon in this lens trades one compared stat against another.")
     return "\n".join(lines) + "\n"
 
 
@@ -101,10 +117,15 @@ def main():
     with ProcessPoolExecutor(max_workers=args.jobs, initializer=_init_worker,
                              initargs=(outfits, survivors)) as executor:
         results = list(executor.map(power_pass, solars))
+    weapons = {}
+    for lens in LENSES:
+        in_lens, dropped = lens_dominance(outfits, survivors, lens)
+        weapons[lens] = {"in lens": len(in_lens), "dropped": dict(sorted(dropped.items()))}
     result = {
         "pool": {"in play": len(availability), "considered": len(considered)},
         "strict": strict,
         "power": {s: {"dropped": d, "kept for other stats": k} for s, d, k in results},
+        "weapons": weapons,
     }
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / "pruned.json").write_text(json.dumps(result, indent=1) + "\n", encoding="utf-8")
@@ -112,6 +133,8 @@ def main():
     for s, d, _ in results:
         total = len(strict) + len(d)
         print(f"{s}: {total} of {len(considered)} dropped ({total / len(considered):.0%})")
+    for lens, w in weapons.items():
+        print(f"weapon lens {lens}: {len(w['dropped'])} of {w['in lens']} dropped")
     print(f"{time.time() - start:.0f}s; wrote pruned.json and pruned.md to {args.out}")
 
 

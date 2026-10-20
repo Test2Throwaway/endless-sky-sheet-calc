@@ -189,6 +189,33 @@ damage per second by type (including submunitions unless excluded).
 | submunition | 31 | U (damage, range, speed) | – | judged through the derived values |
 | sprite, sound, icon, effects, hardpoint sprite and offset, fade out | many | – | – | ignored |
 
+## 2a. Weapon lenses (built: `sheetcalc/weapons.py`)
+
+Two lens passes run after strict dominance. A lens compares only the stats one kind of request cares about, so
+its drops apply only to that kind of request. Weapons are compared within their category (guns, turrets,
+secondaries); outfit attributes, availability tiers and copy limits use the strict rules.
+
+**Damage lens** (regular fighting weapons for general-purpose combat roles, such as the Kar Ik Vot 349). Weapons
+with shield or hull damage that aren't anti-missile or tractor beams. Compared:
+
+1. shield damage and hull damage per second (higher). With submunitions: the shot always splits and 80% of the
+   final submunitions hit, for every such weapon.
+2. firing energy, heat, force, fuel, ion, hull and relative firing shields per second (lower)
+3. velocity (higher): the median, or velocity override where set
+4. range (higher): range override where set, else velocity × median total lifetime including submunitions
+5. inaccuracy (lower), projectile turn (higher), homing (having it is better), missile strength (higher)
+6. turret turn on turrets (higher; absent means 240°/s)
+7. ammo: needing ammunition, or a different one, never wins; with the same ammunition, less per second is better
+
+Ignored: effect damages, hit force, piercing, no damage scaling, projectile drag and acceleration (already in
+range), tracking, blast and trigger radius, split range, penetration count, damage dropoff, cluster, stream,
+safe, phasing, nuke alert, burst timing, cosmetics.
+
+**Anti-missile lens** (anti-missile turrets, compared only with each other; every combat ship wants some):
+anti-missile strength, shots per second, range (higher); firing energy and heat per second (lower); ammo as
+above. Turret turn is ignored: anti-missile aims instantly (`Hardpoint::FireSpecialSystem`). No damage weapon has
+anti-missile and no anti-missile turret deals damage, so the two lenses never overlap.
+
 ## 3. Family ownership (where T applies)
 
 | Family | Owns (its T stats) |

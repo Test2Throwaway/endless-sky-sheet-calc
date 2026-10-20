@@ -1181,5 +1181,22 @@
     }
    }
   }
+ },
+ "weapons": {
+  "damage": {
+   "in lens": 142,
+   "dropped": {
+    "EMP Torpedo Bay": [
+     "Teciimach Bay"
+    ],
+    "Nucleolysis Beam": [
+     "Ka'het Ravager Beam"
+    ]
+   }
+  },
+  "anti-missile": {
+   "in lens": 13,
+   "dropped": {}
+  }
  }
 }
